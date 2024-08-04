@@ -1,13 +1,23 @@
+###############################################
+#
+# Define server for the Shiny app
+#
+##############################################
+
+
 function(input, output, session) {
-  output$plot <- renderPlot({
-    plot(cars, type=input$plotType)
+  
+  # Source files with server code for each tab -----------------------------------------
+  source(file.path("server/islmServer.R"), local = TRUE)$value # 
+  
+  # Keeps the shiny app from timing out quickly 
+  autoInvalidate <- reactiveTimer(10000)
+  observe({
+    autoInvalidate()
+    cat(".")
   })
   
-  output$summary <- renderPrint({
-    summary(cars)
-  })
-  
-  output$table <- DT::renderDataTable({
-    DT::datatable(cars)
-  })
 }
+
+
+## END 

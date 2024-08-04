@@ -1,44 +1,62 @@
-library(markdown)
+###############################################
+#
+# User interface for the Shiny app
+#
+##############################################
 
-navbarPage("Navbar!",
-           tabPanel("Plot",
-                    sidebarLayout(
-                      sidebarPanel(
-                        radioButtons("plotType", "Plot type",
-                                     c("Scatter"="p", "Line"="l")
-                        )
-                      ),
-                      mainPanel(
-                        plotOutput("plot")
-                      )
-                    )
-           ),
-           tabPanel("Summary",
-                    verbatimTextOutput("summary")
-           ),
-           navbarMenu("More",
-                      tabPanel("Table",
-                               DT::dataTableOutput("table")
-                      ),
-                      tabPanel("About",
-                               fluidRow(
-                                 column(6,
-                                        includeMarkdown("about.md")
-                                 ),
-                                 column(3,
-                                        img(class="img-polaroid",
-                                            src=paste0("http://upload.wikimedia.org/",
-                                                       "wikipedia/commons/9/92/",
-                                                       "1919_Ford_Model_T_Highboy_Coupe.jpg")),
-                                        tags$small(
-                                          "Source: Photographed at the Bay State Antique ",
-                                          "Automobile Club's July 10, 2005 show at the ",
-                                          "Endicott Estate in Dedham, MA by ",
-                                          a(href="http://commons.wikimedia.org/wiki/User:Sfoskett",
-                                            "User:Sfoskett")
-                                        )
-                                 )
-                               )
-                      )
-           )
-)
+
+# Source files with UI code for each tab --------------
+walk(list.files("ui", full.names = TRUE), ~ source(.x))
+
+
+# define the UI structure -------------------------------
+tagList(
+  useShinyjs(), 
+  navbarPage(
+    
+    # add PHS logo to navigation bar 
+    title = div(style = "position: relative; 
+                       top: -15px; 
+                       margin-left: 10px; 
+                       margin-top: 5px;",
+                tags$a(img(src = "crane_circle.png", 
+                           width = 43, 
+                           alt = "link to personal website"),
+                       href = "https://www.peteroehlinger.com/",
+                       target = "_blank")
+    ),
+    
+    
+    # make navigation bar collapse on smaller screens
+    windowTitle = "ScotPHO profiles",
+    collapsible = TRUE,
+    
+    header = tags$head(
+      
+      # sourcing css style sheet 
+      #includeCSS("www/styles.css"),
+      
+      # include scotpho icon in web browser
+      HTML("<html lang='en'>"),
+      tags$link(rel = "shortcut icon", 
+                href = "favicon_scotpho.ico")#, 
+      
+      # include google analytics scripts
+      #includeScript("google-analytics.js"), # GA 3 
+      #HTML('<script async src="https://www.googletagmanager.com/gtag/js?id=G-KE1C59RLNS"></script>'),
+      #includeScript("gtag.js") # GA 4 
+      
+    ),
+    
+    
+    # order of tabs --------------------------------
+    
+    islmTab,
+    navbarMenu("Info",
+               aboutTab)
+    
+  ) # close navbarPage
+) # close taglist
+
+
+## END
