@@ -5,6 +5,7 @@
 ##############################################
 
 islmTab <- tabPanel("ISLM",
+                    withMathJax(), 
                     mainPanel(
                       tags$h2("Introduction to the ISLM Model"),
                       tags$p("We will now derive the IS-LM model and explore how changes in the model's 
@@ -15,7 +16,7 @@ islmTab <- tabPanel("ISLM",
                              The goal is to gain a general understanding of how the model works. For a more detailed introduction to the IS-LM model, 
                              refer to Chapter 5 of Blanchard and Illing (2021). Note that the book is in German and available via",
                              tags$a(href = "https://elibrary-1pearson-1de-1lwzuk0ln032a.han.ubl.jku.at/book/99.150005/9783863263249", "LISSS"), "."),
-                      tags$h3("IS Curve"),
+                      tags$h3("The IS Curve"),
                       tags$p("So far we have looked at the goods market and financial market separately. 
                              The two will meet in the ISLM model. Recall that from the goods market 
                              equilibrium we had that in equilibrium production equals demand:"),
@@ -36,30 +37,52 @@ islmTab <- tabPanel("ISLM",
                              interest rates make credits less attractive and companies will reduce their investments."),
                       tags$p("With this in mind our new equilibrium condition becomes:"),
                       withMathJax("$$Y = C(Y_d) + I(Y,i) + G$$"),
-                      tags$p("Now, how do we get from here, we are still focusing on the goods market, to the IS curve?"),
+                      tags$p("How do we get from here to the IS curve?"),
                       tags$p("Our goal is to connect the goods market with the financial market. On the goods market, we focus 
                               on determining output (i.e., GDP), while on the financial market, we primarily concentrate on the 
                               interest rate. Now that we have incorporated the interest rate into the goods market analysis, we 
-                              can effectively combine the two markets."),
+                              can effectively combine the two markets. We want to relate the equilibria in the goods market to 
+                             the interest rate. This can be done by varying the interest rate in the goods market and holding everything else 
+                             fixed. We then record the interest rate and the associated equilibrium output value and draw them in the i-Y diagram."),
                       
                       
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
+                      fluidRow(
+                        column(6,
+                               plotOutput("plotGoodsMarket"),
+                               plotOutput("plotIS")),
+                        column(3, 
+                               p("Here is an example of the goods market. You can vary the interest rate and 
+                                 observe how we move to new equilibria in the goods market. The results are than 
+                                 transferred to the i-Y diagram below."),
+                               numericInput("interestRateIS", "interest rate", value = 0.05, min = 0, max = 0.2, step = 0.01),
+                               actionButton("resetIS", "Reset")
+                        )
+                      ),
                       tags$h3("The LM Curve"),
-                      tags$p("The IS curve is derived from the equilibrium condition in the goods market:"),
+                      tags$p("The LM curve represents all equilibria in the money market. We have the following equilibrium condition:"),
+                      withMathJax("$$M = PYL(i)\\Leftrightarrow\\frac{M}{P} = YL(i)$$"),
+                      tags$p("where $M$ is the money supply, $P$ are prices and $L$ is the liquidity preference which depends on the interest rate. 
+                             Thus, in equilibrium real money supply equals real money demand. As central banks directly control the interest rate, 
+                             rather than money supply, we will also assume it here. This makes our derivation of the LM curve quite easy as it is 
+                             just a flat line. The central bank just sets the interest rate according to its policy goals."),
                       
-                      tags$p("where $Y$ is national income, $C$ is consumption, $T$ is taxes, $I$ is investment, $r$ is the interest rate, and $G$ is government spending."),
-                      tags$h3("The LM Curve"),
-                      tags$p("The LM curve represents the equilibrium in the money market:"),
-                      withMathJax("$$M = L(Y, r)$$"),
-                      tags$p("where $M$ is the money supply, and $L$ is the liquidity preference function."),
-                      # Your Shiny app content here
+                      tags$h3("Example:"),
+                      tags$p("Let's look at a numerical example:"),
+                      tags$p("Let the model parameters be given as below than we can solve for equilibrium output using the goods market equilibrium condition:"),
+                      withMathJax("$$Z = Y\\\\
+                                  Y = c_0 + c_1(Y-T)+I_0+I_1Y-I_2i+G$$"),
+                      HTML("$$\\begin{align}
+                              Z &= Y \\\\
+                              \\Leftrightarrow Y &= c_0 + c_1(Y-T)+I_0+I_1Y-I_2i+G \\\\
+                              \\Leftrightarrow Y-c_1Y-I_1Y &= c_0 - c_1T+I_0-I_2i+G\\\\
+                              \\Leftrightarrow Y(1-c_1-I_1) &= c_0 - c_1T+I_0-I_2i+G\\\\
+                              \\Leftrightarrow Y &= \\frac{1}{1-c_1-I_1}(c_0 - c_1T+I_0-I_2i+G)
+                           \\end{align}$$"),
+                      
+                      tags$p("Plugging in the values from below yields:"),
+                      uiOutput("dynamicEquilibriumFormula"),
+                      
+                      tags$p("This tool combines the two markets in the ISLM model. Vary the parameters and see how they impact equilibrium output!"),
                      hr(),
                      tags$head(
                        tags$style(type="text/css", "label{ display: table-cell; text-align: center; vertical-align: middle; } .form-group { display: table-row;}")
@@ -72,7 +95,8 @@ islmTab <- tabPanel("ISLM",
                               h4("Parameters ISLM"),
                               p("Define parameters of the ISLM model and change 
                                 endogenous and exogenous paramters to see how 
-                                those changes affect equilibrium output.")
+                                those changes affect equilibrium output."),
+                              textOutput("islmEquilibrium")
                        ),
                        column(2,
                               h4("Model Parameters (Intercept)"),
@@ -108,9 +132,7 @@ islmTab <- tabPanel("ISLM",
                        column(6, 
                               h4("Money Market"),
                               plotOutput("interestRatePlot"))
-                     ),
-                     #plotOutput("islmPlot"),
-                     textOutput("islmEquilibrium"),
-                     textOutput("test")
                      )
+                     
+                  )
 )
