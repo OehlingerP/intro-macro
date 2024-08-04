@@ -142,11 +142,6 @@ output$dynamicEquilibriumFormula <- renderUI({
               "&=", round((1/(1-c1-I1))*(c0-c1*T_islm+I0+G-I2*i_islm)), "\\end{align}$$"))
 })
 
-observe({
-  # Trigger MathJax re-rendering after the LaTeX code is updated
-  session$sendCustomMessage("updateMathJax", list())
-})
-
 # restriction on slope parameters (not allowed to be larger 1 as the model is unstable)
 observe({
   # Retrieve the input values
