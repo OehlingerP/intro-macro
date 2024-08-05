@@ -32,7 +32,26 @@ introLectureTab <- tabPanel("Intro Lecture",
                                      bank makes its decisions. The central bank, often called the Fed (short for Federal Reserve Bank), 
                                      has a goal of keeping the economy close to full employment. Thus, interest rates which are set by
                                      the Fed, can be influenced by a change in the unemployment rate."),
-                              plotOutput("testPlot")
+                              tags$h3("Okuns Law"),
+                              fluidRow(
+                                column(8, plotlyOutput("ocunsLaw")),
+                                column(4, 
+                                       p("Select countries from the dropdown. Do you see any differences between countries?"),
+                                       p("Question:"),
+                                       tags$ol(
+                                         tags$li("Can you explain why the fitted line is steeper for the U.S. than for Germany?"),
+                                         tags$li("Does Ocuns Law ``hold'' for all countries?")
+                                       ),
+                                       pickerInput(
+                                         inputId = "pickerOcun",
+                                         label = "Select Countries: ", 
+                                         choices = sort(c("USA", "Austria", "Germany", "Brazil", "South Africa", "Japan")),
+                                         selected = "USA",
+                                         multiple = TRUE
+                                       ))
+                              )  
+                              
+                              
                             
                             )
                             

@@ -31,6 +31,7 @@ fetch_data <- function(tickers,
     # Fetch data from FRED
     fred_data <- rbindlist(
       lapply(tickers, function(TICKER){
+        print(TICKER)
         fredr(
           series_id = TICKER,
           observation_start = as.Date("1990-01-01"),
