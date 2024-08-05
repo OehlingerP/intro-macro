@@ -4,7 +4,7 @@
 #
 ##############################################
 
-islmTab <- tabPanel("ISLM",
+islmTab <- tabPanel("ISLM Model",
                     withMathJax(), 
                     mainPanel(
                       tags$h2("Introduction to the ISLM Model"),
@@ -42,7 +42,7 @@ islmTab <- tabPanel("ISLM",
                               on determining output (i.e., GDP), while on the financial market, we primarily concentrate on the 
                               interest rate. Now that we have incorporated the interest rate into the goods market analysis, we 
                               can effectively combine the two markets. We want to relate the equilibria in the goods market to 
-                             the interest rate. This can be done by varying the interest rate in the goods market and holding everything else 
+                             the interest rate. This can be done by varying the interest rate in the goods market while holding everything else 
                              fixed. We then record the interest rate and the associated equilibrium output value and draw them in the i-Y diagram."),
                       
                       
@@ -53,7 +53,7 @@ islmTab <- tabPanel("ISLM",
                         column(3, 
                                p("Here is an example of the goods market. You can vary the interest rate and 
                                  observe how we move to new equilibria in the goods market. The results are than 
-                                 transferred to the i-Y diagram below."),
+                                 transferred to the i-Y diagram below. Before you start varying the interest rate, what would you expect?"),
                                numericInput("interestRateIS", "interest rate", value = 0.05, min = 0, max = 0.2, step = 0.01),
                                actionButton("resetIS", "Reset")
                         )
@@ -61,16 +61,14 @@ islmTab <- tabPanel("ISLM",
                       tags$h3("The LM Curve"),
                       tags$p("The LM curve represents all equilibria in the money market. We have the following equilibrium condition:"),
                       withMathJax("$$M = PYL(i)\\Leftrightarrow\\frac{M}{P} = YL(i)$$"),
-                      tags$p("where $M$ is the money supply, $P$ are prices and $L$ is the liquidity preference which depends on the interest rate. 
+                      tags$p("where M is the money supply, P are prices and L is the liquidity preference which depends on the interest rate. 
                              Thus, in equilibrium real money supply equals real money demand. As central banks directly control the interest rate, 
                              rather than money supply, we will also assume it here. This makes our derivation of the LM curve quite easy as it is 
                              just a flat line. The central bank just sets the interest rate according to its policy goals."),
                       
                       tags$h3("Example:"),
                       tags$p("Let's look at a numerical example:"),
-                      tags$p("Let the model parameters be given as below than we can solve for equilibrium output using the goods market equilibrium condition:"),
-                      withMathJax("$$Z = Y\\\\
-                                  Y = c_0 + c_1(Y-T)+I_0+I_1Y-I_2i+G$$"),
+                      tags$p("The model parameters be given as below. We can solve for equilibrium output using the goods market equilibrium condition:"),
                       HTML("$$\\begin{align}
                               Z &= Y \\\\
                               \\Leftrightarrow Y &= c_0 + c_1(Y-T)+I_0+I_1Y-I_2i+G \\\\
@@ -122,7 +120,7 @@ islmTab <- tabPanel("ISLM",
                               numericInput("T_islm", label = withMathJax("$$T = $$"), 
                                            value = 100, min = 0, max = 500, step = 50),
                               numericInput("i_islm", label = withMathJax("$$i = $$"), 
-                                           value = 0.02, min = -0.01, max = 0.5, step = 0.01)
+                                           value = 0.02, min = -0.01, max = 0.5, step = 0.02)
                        )
                      ),
                      fluidRow(

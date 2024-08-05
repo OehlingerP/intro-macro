@@ -15,7 +15,7 @@
     # Plot the goods market
     plot <- ggplot() +
       geom_abline(intercept = 1000 - 5000*input$interestRateIS,
-                  slope = 0.5) +
+                  slope = 0.5, color = gx_colors()[2]) +
       geom_abline(slope = 1) +
       #geom_vline(xintercept = input$interestRateIS) +
       scale_y_continuous(limits = c(0, 3000), expand = c(0,0)) +
@@ -45,7 +45,7 @@
 
     plot <- ggplot(eq_data, aes(x = yVal, y = iVal)) +
       #geom_vline(xintercept = input$interestRateIS) +
-      geom_point(color = "blue") +
+      geom_point(color = gx_colors()[2]) +
       scale_y_continuous(limits = c(0, 0.3), expand = c(0,0)) +
       scale_x_continuous(limits = c(0, 3000), expand = c(0,100))
 
@@ -135,11 +135,13 @@ output$dynamicEquilibriumFormula <- renderUI({
   T_islm <- input$T_islm
   i_islm <- input$i_islm
   
-  HTML(paste0("$$\\begin{align}Y &= ", 
-              "\\frac{1}{1-", c1, "-", I1,"}(", c0,"-",c1,"*", T_islm, "+", 
-              I0, "-", I2, "*i", "+", G, ")\\\\",
-              "&=", round(1/(1-c1-I1)), "(",c0-c1*T_islm+I0+G,"-",I2,"*i)\\\\",
-              "&=", round((1/(1-c1-I1))*(c0-c1*T_islm+I0+G-I2*i_islm)), "\\end{align}$$"))
+  eq <- paste0("$$\\begin{align}Y &= ", 
+               "\\frac{1}{1-", c1, "-", I1,"}(", c0,"-",c1,"*", T_islm, "+", 
+               I0, "-", I2, "*i", "+", G, ")\\\\",
+               "&=", round(1/(1-c1-I1),2), "(",c0-c1*T_islm+I0+G,"-",I2,"*i)\\\\",
+               "&=", round((1/(1-c1-I1))*(c0-c1*T_islm+I0+G-I2*i_islm),2), "\\end{align}$$")
+  
+  withMathJax(HTML(eq))
 })
 
 # restriction on slope parameters (not allowed to be larger 1 as the model is unstable)
