@@ -1,10 +1,10 @@
 ###############################################
 #
-# User interface for the goods market
+# User interface for math prerequisites
 #
 ##############################################
 
-goodsMarketTab <- tabPanel("Goods Market", 
+mathPrereqTab <- tabPanel("Math Prerequisites", 
                               withMathJax(),
                               mainPanel(
                                 

@@ -7,7 +7,7 @@
 islmTab <- tabPanel("ISLM Model",
                     withMathJax(), 
                     mainPanel(
-                      tags$h2("Introduction to the ISLM Model"),
+                      #tags$h2("Introduction to the ISLM Model"),
                       tags$p("We will now derive the IS-LM model and explore how changes in the model's 
                              parameters affect the equilibrium of our economy. The tool at the end will 
                              help you understand the model better and allow you to review your assignments 
@@ -48,14 +48,22 @@ islmTab <- tabPanel("ISLM Model",
                       
                       fluidRow(
                         column(6,
-                               plotOutput("plotGoodsMarket"),
-                               plotOutput("plotIS")),
+                               plotOutput("plotGoodsMarket")),
                         column(3, 
                                p("Here is an example of the goods market. You can vary the interest rate and 
                                  observe how we move to new equilibria in the goods market. The results are than 
                                  transferred to the i-Y diagram below. Before you start varying the interest rate, what would you expect?"),
                                numericInput("interestRateIS", "interest rate", value = 0.05, min = 0, max = 0.2, step = 0.01),
                                actionButton("resetIS", "Reset")
+                        )
+                      ),
+                      fluidRow(
+                        column(6,
+                               plotOutput("plotIS")),
+                        column(3,
+                               h5("The IS Curve"),
+                               p("On the left we record all goods market equilibria while varying the interest rate and holding everything 
+                                 else constant. This is the IS curve.")
                         )
                       ),
                       tags$h3("The LM Curve"),

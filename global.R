@@ -17,6 +17,7 @@
 
 # 1. required packages ----------------------------------------------------------
 library(cicerone) # for guided tours
+library(data.table)
 library(shiny) # shiny functions
 library(shinydashboard) # more shiny functions
 library(shinyBS) # modals
@@ -44,3 +45,7 @@ library(rmarkdown)
 library(knitr)
 library(gxplot)
 library(shinyvalidate)
+
+
+library(fredr)
+fredr_set_key("13cde7ca47173a5c9a9c1eece02455b9")

@@ -46,6 +46,7 @@
     plot <- ggplot(eq_data, aes(x = yVal, y = iVal)) +
       #geom_vline(xintercept = input$interestRateIS) +
       geom_point(color = gx_colors()[2]) +
+      geom_line(color = gx_colors()[2]) +
       scale_y_continuous(limits = c(0, 0.3), expand = c(0,0)) +
       scale_x_continuous(limits = c(0, 3000), expand = c(0,100))
 
@@ -73,7 +74,8 @@ output$goodsMarketPlot <- renderPlot({
   plot <- ggplot() +
     geom_abline(slope = 1) +
     geom_abline(intercept = input$c0_islm - input$c1_islm*input$T_islm + input$I0_islm - input$I2_islm*input$i_islm+input$G_islm, 
-                slope = input$c1_islm + input$I1_islm) +
+                slope = input$c1_islm + input$I1_islm,
+                color = gx_colors()[2]) +
     scale_y_continuous(limits = c(0, 5000), expand = c(0,0)) +
     scale_x_continuous(limits = c(0, 5000), expand = c(0,100))
   
@@ -86,7 +88,8 @@ output$goodsMarketPlot <- renderPlot({
 output$interestRatePlot <- renderPlot({
   
   plot <- ggplot() +
-    geom_hline(yintercept = input$i_islm) +
+    geom_hline(yintercept = input$i_islm,
+               color = gx_colors()[1]) +
     scale_y_continuous(limits = c(-0.05, 0.5), expand = c(0,0)) +
     scale_x_continuous(limits = c(0, 5000), expand = c(0,100))
   
@@ -100,8 +103,10 @@ output$islmPlot <- renderPlot({
   
   plot <- ggplot() +
     geom_abline(intercept = (input$c0_islm-input$c1_islm*input$T_islm+input$I0_islm+input$G_islm)/input$I2_islm,
-                slope = -(1-input$c1_islm-input$I1_islm)/input$I2_islm) +
-    geom_hline(yintercept = input$i_islm) +
+                slope = -(1-input$c1_islm-input$I1_islm)/input$I2_islm,
+                color = gx_colors()[2]) +
+    geom_hline(yintercept = input$i_islm,
+               color = gx_colors()[1]) +
     scale_y_continuous(limits = c(-0.05, 0.5), expand = c(0,0)) +
     scale_x_continuous(limits = c(0, 5000), expand = c(0,100))
   

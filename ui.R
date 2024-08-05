@@ -50,8 +50,11 @@ tagList(
     
     
     # order of tabs --------------------------------
-    
+    introLectureTab,
+    goodsMarketTab,
     islmTab,
+    policyAnalysisTab,
+    mathPrereqTab,
     navbarMenu("Info",
                aboutTab)
     
