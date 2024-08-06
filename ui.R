@@ -50,6 +50,7 @@ tagList(
     
     
     # order of tabs --------------------------------
+    homeTab, 
     introLectureTab,
     goodsMarketTab,
     islmTab,

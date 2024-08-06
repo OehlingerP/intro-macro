@@ -4,6 +4,8 @@
 #
 ##############################################
 
+countries <- sort(c("USA", "Austria", "Germany", "Brazil", "South Africa", "Japan"))
+
 introLectureTab <- tabPanel("Intro Lecture", 
                             withMathJax(),
                             mainPanel(
@@ -32,9 +34,44 @@ introLectureTab <- tabPanel("Intro Lecture",
                                      bank makes its decisions. The central bank, often called the Fed (short for Federal Reserve Bank), 
                                      has a goal of keeping the economy close to full employment. Thus, interest rates which are set by
                                      the Fed, can be influenced by a change in the unemployment rate."),
-                              tags$h3("Okuns Law"),
+                              tags$h3("Gross Domestic Product (GDP)"),
+                              
+                              tags$h3("Inflation"),
+                              
+                              tags$h3("Unemployment Rate"),
+                              
+                              tags$h3("Interest Rate"),
+                              
+                              tags$h3("How the variables are connected"),
+                              tags$h4("Inflation Rate and Interest Rate"),
                               fluidRow(
-                                column(8, plotlyOutput("ocunsLaw")),
+                                column(8, plotlyOutput("plotInterestInflation")),
+                                column(4, 
+                                       p("Select countries from the dropdown. Do you see any differences between countries?"),
+                                       p("Question:"),
+                                       tags$ol(
+                                         tags$li("Can you explain why the fitted line is steeper for the U.S. than for Germany?"),
+                                         tags$li("Does Ocuns Law ``hold'' for all countries?")
+                                       ),
+                                       pickerInput(
+                                         inputId = "pickerInterestInflation",
+                                         label = "Select Countries: ", 
+                                         choices = countries,
+                                         selected = "USA",
+                                         multiple = FALSE
+                                       ),
+                                       numericInput(
+                                         inputId = "numericLagInfInt",
+                                         label = "Select lag: ",
+                                         value = 0,
+                                         min = -24,
+                                         max = 24
+                                       ),
+                                       dataTableOutput("tabIntInfCorr") )
+                              ),
+                              tags$h4("Okuns Law"),
+                              fluidRow(
+                                column(8, plotlyOutput("plotOcunsLaw")),
                                 column(4, 
                                        p("Select countries from the dropdown. Do you see any differences between countries?"),
                                        p("Question:"),
@@ -45,13 +82,11 @@ introLectureTab <- tabPanel("Intro Lecture",
                                        pickerInput(
                                          inputId = "pickerOcun",
                                          label = "Select Countries: ", 
-                                         choices = sort(c("USA", "Austria", "Germany", "Brazil", "South Africa", "Japan")),
+                                         choices = countries,
                                          selected = "USA",
                                          multiple = TRUE
                                        ))
-                              )  
-                              
-                              
+                              )
                             
                             )
                             
