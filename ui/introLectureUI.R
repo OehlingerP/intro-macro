@@ -4,8 +4,6 @@
 #
 ##############################################
 
-countries <- sort(c("USA", "Austria", "Germany", "Brazil", "South Africa", "Japan"))
-
 introLectureTab <- tabPanel("Intro Lecture", 
                             withMathJax(),
                             mainPanel(

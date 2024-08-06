@@ -4,6 +4,7 @@
 #
 ##############################################
 
+countries <- sort(c("USA", "Austria", "Germany", "Brazil", "South Africa", "Japan"))
 
 # Source files with UI code for each tab --------------
 walk(list.files("ui", full.names = TRUE), ~ source(.x))
@@ -88,26 +89,21 @@ tagList(
     
     # order of tabs --------------------------------
     homeTab, 
+    navbarMenu("Intro",
+               introGoalsTab,
+               introGdpTab,
+               introInflationTab,
+               introUnempTab,
+               introRatesTab,
+               introExerciesTab),
+    
     introLectureTab,
     goodsMarketTab,
     islmTab,
     policyAnalysisTab,
     mathPrereqTab,
     navbarMenu("Info",
-               aboutTab),
-    navbarMenu("Test",
-               tabPanel("Goods Market",
-                        fluidPage(
-                          withMathJax(),
-                          selectInput("goods_market_dropdown", "Select Market Section:", choices = c("Overview", "Details", "Contacts")),
-                          
-                        )),
-               tabPanel("Other Tab",
-                        fluidPage(
-                          h3("Other Tab Content"),
-                          selectInput("other_tab_dropdown", "Select Option:", choices = c("Option A", "Option B"))
-                        ))
-    )
+               aboutTab)
     
   ) # close navbarPage
 ) # close taglist
