@@ -33,6 +33,43 @@ tagList(
     
     header = tags$head(
       
+      # TODO: OUTSOURCE IN OWN CSS FILE center navigation buttons
+      tags$style(HTML(
+        "
+      .btn-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .btn-container .action-button {
+        margin: 0 10px;
+      }
+      "
+      )),
+      # navigation buttons
+      tags$script(HTML(
+        "
+      Shiny.addCustomMessageHandler('navigatePage', function(message) {
+        var tabIndex = $('.navbar-nav .active').index();
+        var dropdownIndex = $('#goods_market_dropdown').prop('selectedIndex');
+        var dropdownOptions = $('#goods_market_dropdown option').length;
+        var tabCount = $('.navbar-nav li').length;
+
+        if (message.direction == 'next') {
+          if (dropdownIndex < dropdownOptions - 1) {
+            $('#goods_market_dropdown').prop('selectedIndex', dropdownIndex + 1).change();
+          } else if (tabIndex < tabCount - 1) {
+            $('.navbar-nav li').eq(tabIndex + 1).find('a').click();
+          }
+        } else if (message.direction == 'prev') {
+          if (dropdownIndex > 0) {
+            $('#goods_market_dropdown').prop('selectedIndex', dropdownIndex - 1).change();
+          } else if (tabIndex > 0) {
+            $('.navbar-nav li').eq(tabIndex - 1).find('a').click();
+          }
+        }
+      });
+      "
+      )),
       # sourcing css style sheet 
       #includeCSS("www/styles.css"),
       
@@ -57,7 +94,20 @@ tagList(
     policyAnalysisTab,
     mathPrereqTab,
     navbarMenu("Info",
-               aboutTab)
+               aboutTab),
+    navbarMenu("Test",
+               tabPanel("Goods Market",
+                        fluidPage(
+                          withMathJax(),
+                          selectInput("goods_market_dropdown", "Select Market Section:", choices = c("Overview", "Details", "Contacts")),
+                          
+                        )),
+               tabPanel("Other Tab",
+                        fluidPage(
+                          h3("Other Tab Content"),
+                          selectInput("other_tab_dropdown", "Select Option:", choices = c("Option A", "Option B"))
+                        ))
+    )
     
   ) # close navbarPage
 ) # close taglist

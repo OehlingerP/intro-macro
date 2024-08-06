@@ -8,8 +8,18 @@
 function(input, output, session) {
   
   # Source files with server code for each tab -----------------------------------------
-  source(file.path("server/introLectureServer.R"), local = TRUE)$value # 
-  source(file.path("server/islmServer.R"), local = TRUE)$value # 
+  source(file.path("server/introLectureServer.R"), local = TRUE)$value  
+  source(file.path("server/goodsMarketServer.R"), local = TRUE)$value 
+  source(file.path("server/islmServer.R"), local = TRUE)$value  
+  
+  # navigation buttons
+  observeEvent(input$prev_btn, {
+    session$sendCustomMessage(type = 'navigatePage', message = list(direction = 'prev'))
+  })
+  
+  observeEvent(input$next_btn, {
+    session$sendCustomMessage(type = 'navigatePage', message = list(direction = 'next'))
+  })
   
   # Keeps the shiny app from timing out quickly 
   autoInvalidate <- reactiveTimer(10000)

@@ -86,6 +86,11 @@ introLectureTab <- tabPanel("Intro Lecture",
                                          selected = "USA",
                                          multiple = TRUE
                                        ))
+                              ),
+                              br(),
+                              div(class = "btn-container",
+                                  actionButton("prev_btn", "Previous"),
+                                  actionButton("next_btn", "Next")
                               )
                             
                             )
