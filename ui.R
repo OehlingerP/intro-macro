@@ -51,20 +51,14 @@ tagList(
         "
       Shiny.addCustomMessageHandler('navigatePage', function(message) {
         var tabIndex = $('.navbar-nav .active').index();
-        var dropdownIndex = $('#goods_market_dropdown').prop('selectedIndex');
-        var dropdownOptions = $('#goods_market_dropdown option').length;
         var tabCount = $('.navbar-nav li').length;
 
         if (message.direction == 'next') {
-          if (dropdownIndex < dropdownOptions - 1) {
-            $('#goods_market_dropdown').prop('selectedIndex', dropdownIndex + 1).change();
-          } else if (tabIndex < tabCount - 1) {
+          if (tabIndex < tabCount - 1) {
             $('.navbar-nav li').eq(tabIndex + 1).find('a').click();
           }
         } else if (message.direction == 'prev') {
-          if (dropdownIndex > 0) {
-            $('#goods_market_dropdown').prop('selectedIndex', dropdownIndex - 1).change();
-          } else if (tabIndex > 0) {
+          if (tabIndex > 0) {
             $('.navbar-nav li').eq(tabIndex - 1).find('a').click();
           }
         }
@@ -92,12 +86,10 @@ tagList(
     navbarMenu("Intro",
                introGoalsTab,
                introGdpTab,
-               introInflationTab,
                introUnempTab,
                introRatesTab,
-               introExerciesTab),
-    
-    introLectureTab,
+               introInflationTab,
+               introExercisesTab),
     goodsMarketTab,
     islmTab,
     policyAnalysisTab,

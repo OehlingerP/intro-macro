@@ -30,8 +30,8 @@ introUnempTab <- tabPanel("Intro Lecture",
                               ),
                               br(),
                               div(class = "btn-container",
-                                  actionButton("prev_btn", "Previous"),
-                                  actionButton("next_btn", "Next")
+                                  actionButton("prev_unemp", "Previous"),
+                                  actionButton("next_unemp", "Next")
                               )
                               
                             )

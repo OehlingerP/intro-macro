@@ -14,8 +14,8 @@ introRatesTab <- tabPanel("Interest Rates",
                               
                               br(),
                               div(class = "btn-container",
-                                  actionButton("prev_btn", "Previous"),
-                                  actionButton("next_btn", "Next")
+                                  actionButton("prev_rates", "Previous"),
+                                  actionButton("next_rates", "Next")
                               )
                               
                             )
