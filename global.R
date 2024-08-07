@@ -49,3 +49,11 @@ library(shinyvalidate)
 
 library(fredr)
 fredr_set_key("13cde7ca47173a5c9a9c1eece02455b9")
+
+
+# 2. data files
+countries <- sort(c("USA", "Austria", "Germany", "Brazil", "South Africa", "Japan"))
+tab_names <- c("homeTab", "introGoalsTab", "introGdpTab", "introUnempTab",
+            "introRatesTab", "introInflationTab", "introExercisesTab", 
+            "goodsMarketTab", "islmTab", "policyAnalysisTab",
+            "mathPrereqTab","aboutTab")

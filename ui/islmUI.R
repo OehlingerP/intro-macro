@@ -138,11 +138,6 @@ islmTab <- tabPanel("ISLM Model",
                        column(6, 
                               h4("Money Market"),
                               plotOutput("interestRatePlot"))
-                     ),
-                     br(),
-                     div(class = "btn-container",
-                         actionButton("prev_btn", "Previous"),
-                         actionButton("next_btn", "Next")
                      )
                      
                   )

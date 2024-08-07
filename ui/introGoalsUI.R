@@ -31,12 +31,7 @@ introGoalsTab <- tabPanel("Intro Lecture",
                               tags$p("The first article explains that in the U.S., the unemployment rate can affect how the central 
                                      bank makes its decisions. The central bank, often called the Fed (short for Federal Reserve Bank), 
                                      has a goal of keeping the economy close to full employment. Thus, interest rates which are set by
-                                     the Fed, can be influenced by a change in the unemployment rate."),
-                              br(),
-                              div(class = "btn-container",
-                                  actionButton("prev_btn", "Previous"),
-                                  actionButton("next_btn", "Next")
-                              )
+                                     the Fed, can be influenced by a change in the unemployment rate.")
                               
                             )
                             

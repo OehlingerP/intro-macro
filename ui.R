@@ -4,11 +4,9 @@
 #
 ##############################################
 
-countries <- sort(c("USA", "Austria", "Germany", "Brazil", "South Africa", "Japan"))
 
 # Source files with UI code for each tab --------------
 walk(list.files("ui", full.names = TRUE), ~ source(.x))
-
 
 # define the UI structure -------------------------------
 tagList(
@@ -33,38 +31,6 @@ tagList(
     collapsible = TRUE,
     
     header = tags$head(
-      
-      # TODO: OUTSOURCE IN OWN CSS FILE center navigation buttons
-      tags$style(HTML(
-        "
-      .btn-container {
-        text-align: center;
-        margin-top: 20px;
-      }
-      .btn-container .action-button {
-        margin: 0 10px;
-      }
-      "
-      )),
-      # navigation buttons
-      tags$script(HTML(
-        "
-      Shiny.addCustomMessageHandler('navigatePage', function(message) {
-        var tabIndex = $('.navbar-nav .active').index();
-        var tabCount = $('.navbar-nav li').length;
-
-        if (message.direction == 'next') {
-          if (tabIndex < tabCount - 1) {
-            $('.navbar-nav li').eq(tabIndex + 1).find('a').click();
-          }
-        } else if (message.direction == 'prev') {
-          if (tabIndex > 0) {
-            $('.navbar-nav li').eq(tabIndex - 1).find('a').click();
-          }
-        }
-      });
-      "
-      )),
       # sourcing css style sheet 
       #includeCSS("www/styles.css"),
       

@@ -27,11 +27,6 @@ introUnempTab <- tabPanel("Intro Lecture",
                                          selected = "USA",
                                          multiple = TRUE
                                        ))
-                              ),
-                              br(),
-                              div(class = "btn-container",
-                                  actionButton("prev_unemp", "Previous"),
-                                  actionButton("next_unemp", "Next")
                               )
                               
                             )
