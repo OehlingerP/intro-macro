@@ -1,13 +1,13 @@
 #' Fetching data from the Fred St Louis database once a month
 #' @param tickers char; ticker symbol for the time series to download
-#' @param freq char; frequency of data, one of q, a, sa
+#' @param freq char; vector of frequency of data, one of m, q, a, sa
 #' @param time_diff num; time difference in days when to download the data again; default 30 days
 #' @param file_name char; file name (and path) of the cache file (without RDS!)
 #' @export
 
 # Function to fetch and cache data
 fetch_data <- function(tickers,
-                       freq = "q",
+                       freq,
                        time_diff = 30,
                        file_name) {
   
@@ -30,13 +30,13 @@ fetch_data <- function(tickers,
   if (difftime(current_date, last_update, units = "days") > time_diff) {
     # Fetch data from FRED
     fred_data <- rbindlist(
-      lapply(tickers, function(TICKER){
+      lapply(seq_along(tickers), function(TICKER){
         print(TICKER)
         fredr(
-          series_id = TICKER,
-          observation_start = as.Date("1990-01-01"),
+          series_id = tickers[TICKER],
+          observation_start = as.Date("1920-01-01"),
           observation_end = current_date,
-          frequency = freq)
+          frequency = freq[TICKER])
       }))
     
     # Save the data and the current date to the cache

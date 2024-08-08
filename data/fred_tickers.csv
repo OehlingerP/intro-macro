@@ -1,37 +1,219 @@
-﻿country;variable;series_id
-USA;Central Bank Policy Rate;FEDFUNDS
-USA;10 Year Interest Rate;IRLTLT01USM156N
-USA;Real GDP;GDPC1
-USA;Unemployment Rate;UNRATE
-USA;Inflation Rate;CPALTT01USM659N
-Germany;10 Year Interest Rate;IRLTLT01DEM156N
-Germany;Real GDP;CLVMNACSCAB1GQDE
-Germany;Unemployment Rate;LMUNRRTTDEM156S
-Germany;Inflation Rate;CPALTT01DEM659N
-Austria;10 Year Interest Rate;IRLTLT01ATM156N
-Austria;Real GDP;CLVMNACSCAB1GQAT
-Austria;Unemployment Rate;LMUNRRTTATM156S
-Austria;Inflation Rate;CPALTT01ATM659N
-Japan;Central Bank Policy Rate;IRSTCB01JPM156N
-Japan;10 Year Interest Rate;IRLTLT01JPM156N
-Japan;Real GDP;JPNRGDPEXP
-Japan;Unemployment Rate;LRUN64TTJPM156S
-Japan;Inflation Rate;CPALTT01JPM659N
-China;Central Bank Policy Rate;IRSTCB01CNM156N
-China;Unemployment Rate;LMUNRRTTCNQ156S
-China;Inflation Rate;CPALTT01CNM659N
-South Africa;Central Bank Policy Rate;IRSTCB01ZAM156N
-South Africa;10 Year Interest Rate;IRLTLT01ZAM156N
-South Africa;Real GDP;NGDPRSAXDCZAQ
-South Africa;Unemployment Rate;LRUN64TTZAQ156S
-South Africa;Inflation Rate;CPALTT01ZAM659N
-Brazil;Central Bank Policy Rate;IRSTCB01BRM156N
-Brazil;Real GDP;NGDPRSAXDCBRQ
-Brazil;Unemployment Rate;LRUNTTTTBRM156S
-Brazil;Inflation Rate;CPALTT01BRM659N
-India;Central Bank Policy Rate;IRSTCB01INM156N
-India;10 Year Interest Rate;INDIRLTLT01STM
-India;Real GDP;NAEXKP01INQ652S
-India;Inflation Rate;CPALTT01INM659N
-European Union;Real GDP;CLVMNACSCAB1GQEU272020
-Euro Area;Central Bank Policy Rate;ECBMRRFR
+﻿country,variable,series_id,source,frequency
+United States,10 Year Interest Rate,IRLTLT01USM156N,OECD,m
+Germany,10 Year Interest Rate,IRLTLT01DEM156N,OECD,m
+Austria,10 Year Interest Rate,IRLTLT01ATM156N,OECD,m
+Japan,10 Year Interest Rate,IRLTLT01JPM156N,OECD,m
+South Africa,10 Year Interest Rate,IRLTLT01ZAM156N,OECD,m
+India,10 Year Interest Rate,INDIRLTLT01STM,OECD,m
+United States,Central Bank Policy Rate,FEDFUNDS,Fed,m
+Euro Area,Central Bank Policy Rate,ECBMRRFR,ECB,m
+United States,Real GDP,GDPC1,U.S. Bureau of Economic Analysis,q
+India,Real GDP,NAEXKP01INQ652S,OECD,q
+United States,Unemployment Rate,UNRATE,U.S. Bureau of Labor Statistics,m
+United States,US Recessions,JHDUSRGDPBR,"Hamilton, James",q
+Euro Area,Unemployment Rate,LRHUTTTTEZM156S,OECD,m
+France,Unemployment Rate,LRHUTTTTFRM156S,OECD,m
+United Kingdom,Unemployment Rate,LRHUTTTTGBM156S,OECD,m
+Italy,Unemployment Rate,LRHUTTTTITM156S,OECD,m
+Germany,Unemployment Rate,LRHUTTTTDEM156S,OECD,m
+Spain,Unemployment Rate,LRHUTTTTESM156S,OECD,m
+Sweden,Unemployment Rate,LRHUTTTTSEM156S,OECD,m
+European Union,Unemployment Rate,LRHUTTTTEUM156S,OECD,m
+Netherlands,Unemployment Rate,LRHUTTTTNLM156S,OECD,m
+Poland,Unemployment Rate,LRHUTTTTPLM156S,OECD,m
+Japan,Unemployment Rate,LRHUTTTTJPM156S,OECD,m
+Finland,Unemployment Rate,LRHUTTTTFIM156S,OECD,m
+OECD,Unemployment Rate,OECDLRHUTTTTSTSAM,OECD,m
+Mexico,Unemployment Rate,LRHUTTTTMXM156S,OECD,m
+Greece,Unemployment Rate,LRHUTTTTGRM156S,OECD,m
+Denmark,Unemployment Rate,LRHUTTTTDKM156S,OECD,m
+United States,Unemployment Rate,LRHUTTTTUSM156S,OECD,m
+Australia,Unemployment Rate,LRHUTTTTAUM156S,OECD,m
+Belgium,Unemployment Rate,LRHUTTTTBEM156S,OECD,m
+Canada,Unemployment Rate,LRHUTTTTCAM156S,OECD,m
+Portugal,Unemployment Rate,LRHUTTTTPTM156S,OECD,m
+Korea,Unemployment Rate,LRHUTTTTKRM156S,OECD,m
+Ireland,Unemployment Rate,LRHUTTTTIEM156S,OECD,m
+Czechia,Unemployment Rate,LRHUTTTTCZM156S,OECD,m
+Germany,Real GDP,CLVMNACSCAB1GQDE,Eurostat,q
+Italy,Real GDP,CLVMNACSCAB1GQIT,Eurostat,q
+France,Real GDP,CLVMNACSCAB1GQFR,Eurostat,q
+Spain,Real GDP,CLVMNACSCAB1GQES,Eurostat,q
+Greece,Real GDP,CLVMNACSCAB1GQEL,Eurostat,q
+European Union,Real GDP,CLVMNACSCAB1GQEU28,Eurostat,q
+Sweden,Real GDP,CLVMNACSCAB1GQSE,Eurostat,q
+Norway,Real GDP,CLVMNACSCAB1GQNO,Eurostat,q
+Poland,Real GDP,CLVMNACSCAB1GQPL,Eurostat,q
+Switzerland,Real GDP,CLVMNACSCAB1GQCH,Eurostat,q
+Netherlands,Real GDP,CLVMNACSCAB1GQNL,Eurostat,q
+Euro Area,Real GDP,CLVMNACSCAB1GQEA19,Eurostat,q
+Portugal,Real GDP,CLVMNACSCAB1GQPT,Eurostat,q
+Finland,Real GDP,CLVMNACSCAB1GQFI,Eurostat,q
+Denmark,Real GDP,CLVMNACSCAB1GQDK,Eurostat,q
+Belgium,Real GDP,CLVMNACSCAB1GQBE,Eurostat,q
+Czech Republic,Real GDP,CLVMNACSCAB1GQCZ,Eurostat,q
+Hungary,Real GDP,CLVMNACSCAB1GQHU,Eurostat,q
+Japan,Real GDP,NGDPRSAXDCJPQ,IMF,q
+Canada,Real GDP,NGDPRSAXDCCAQ,IMF,q
+Mexico,Real GDP,NGDPRSAXDCMXQ,IMF,q
+Australia,Real GDP,NGDPRSAXDCAUQ,IMF,q
+Great Britain,Real GDP,NGDPRSAXDCGBQ,IMF,q
+Brazil,Real GDP,NGDPRSAXDCBRQ,IMF,q
+Turkey,Real GDP,NGDPRSAXDCTRQ,IMF,q
+Republic of Korea,Real GDP,NGDPRSAXDCKRQ,IMF,q
+South Africa,Real GDP,NGDPRSAXDCZAQ,IMF,q
+Indonesia,Real GDP,NGDPRSAXDCIDQ,IMF,q
+Argentina,Real GDP,NGDPRSAXDCARQ,IMF,q
+Saudi Arabia,Real GDP,NGDPRSAXDCSAQ,IMF,q
+Estonia,Real GDP,NGDPRSAXDCESQ,IMF,q
+United States,Inflation Rate,CPALTT01USM659N,OECD,m
+United Kingdom,Inflation Rate,CPALTT01GBM659N,OECD,m
+China,Inflation Rate,CPALTT01CNM659N,OECD,m
+Japan,Inflation Rate,CPALTT01JPM659N,OECD,m
+India,Inflation Rate,CPALTT01INM659N,OECD,m
+Germany,Inflation Rate,CPALTT01DEM659N,OECD,m
+France,Inflation Rate,CPALTT01FRM659N,OECD,m
+Brazil,Inflation Rate,CPALTT01BRM659N,OECD,m
+Canada,Inflation Rate,CPALTT01CAM659N,OECD,m
+Italy,Inflation Rate,CPALTT01ITM659N,OECD,m
+Mexico,Inflation Rate,CPALTT01MXM659N,OECD,m
+Turkiye,Inflation Rate,CPALTT01TRM659N,OECD,m
+South Africa,Inflation Rate,CPALTT01ZAM659N,OECD,m
+Korea,Inflation Rate,CPALTT01KRM659N,OECD,m
+Argentina,Inflation Rate,ARGCPALTT01GYM,OECD,m
+Indonesia,Inflation Rate,CPALTT01IDM659N,OECD,m
+Spain,Inflation Rate,CPALTT01ESM659N,OECD,m
+Switzerland,Inflation Rate,CPALTT01CHM659N,OECD,m
+Sweden,Inflation Rate,CPALTT01SEM659N,OECD,m
+Russia,Inflation Rate,CPALTT01RUM659N,OECD,m
+Poland,Inflation Rate,CPALTT01PLM659N,OECD,m
+OECD,Inflation Rate,OECDCPALTT01GYM,OECD,m
+Chile,Inflation Rate,CPALTT01CLM659N,OECD,m
+Norway,Inflation Rate,CPALTT01NOM659N,OECD,m
+Netherlands,Inflation Rate,CPALTT01NLM659N,OECD,m
+Saudi Arabia,Inflation Rate,SAUCPALTT01GYM,OECD,m
+Denmark,Inflation Rate,CPALTT01DKM659N,OECD,m
+Greece,Inflation Rate,CPALTT01GRM659N,OECD,m
+Belgium,Inflation Rate,CPALTT01BEM659N,OECD,m
+Colombia,Inflation Rate,COLCPALTT01GYM,OECD,m
+Portugal,Inflation Rate,CPALTT01PTM659N,OECD,m
+Austria,Inflation Rate,CPALTT01ATM659N,OECD,m
+Hungary,Inflation Rate,CPALTT01HUM659N,OECD,m
+Ireland,Inflation Rate,CPALTT01IEM659N,OECD,m
+Finland,Inflation Rate,CPALTT01FIM659N,OECD,m
+Israel,Inflation Rate,CPALTT01ILM659N,OECD,m
+Czechia,Inflation Rate,CPALTT01CZM659N,OECD,m
+G7,Inflation Rate,G7CPALTT01GYM,OECD,m
+Iceland,Inflation Rate,CPALTT01ISM659N,OECD,m
+Luxembourg,Inflation Rate,CPALTT01LUM659N,OECD,m
+Slovak Republic,Inflation Rate,CPALTT01SKM659N,OECD,m
+Estonia,Inflation Rate,CPALTT01EEM659N,OECD,m
+OECD Europe,Inflation Rate,OECDECPALTT01GYM,OECD,m
+Costa Rica,Inflation Rate,CRICPALTT01GYM,OECD,m
+Lithuania,Inflation Rate,LTUCPALTT01GYM,OECD,m
+Latvia,Inflation Rate,LVACPALTT01GYM,OECD,m
+Slovenia,Inflation Rate,CPALTT01SIM659N,OECD,m
+G20,Inflation Rate,G20CPALTT01GYM,OECD,m
+Canada,Central Bank Policy Rate,IRSTCB01CAM156N,OECD,m
+Japan,Central Bank Policy Rate,IRSTCB01JPM156N,OECD,m
+China,Central Bank Policy Rate,IRSTCB01CNM156N,OECD,m
+Brazil,Central Bank Policy Rate,IRSTCB01BRM156N,OECD,m
+India,Central Bank Policy Rate,IRSTCB01INM156N,OECD,m
+Russia,Central Bank Policy Rate,IRSTCB01RUM156N,OECD,m
+Hungary,Central Bank Policy Rate,IRSTCB01HUM156N,OECD,m
+Czech Republic,Central Bank Policy Rate,IRSTCB01CZM156N,OECD,m
+South Africa,Central Bank Policy Rate,IRSTCB01ZAM156N,OECD,m
+Denmark,Central Bank Policy Rate,IRSTCB01DKM156N,OECD,m
+Indonesia,Central Bank Policy Rate,IRSTCB01IDM156N,OECD,m
+Poland,Central Bank Policy Rate,IRSTCB01PLM156N,OECD,m
+United States,Labor Force Participation Rate,CIVPART,U.S. Bureau of Labor Statistics,m
+Japan,Labor Force Participation Rate,LRAC64TTJPQ156S,OECD,q
+France,Labor Force Participation Rate,LRAC64TTFRQ156S,OECD,q
+United States,Labor Force Participation Rate,LRAC64TTUSQ156S,OECD,q
+United Kingdom,Labor Force Participation Rate,LRAC64TTGBQ156S,OECD,q
+South Africa,Labor Force Participation Rate,LRAC64TTZAQ156S,OECD,q
+Germany,Labor Force Participation Rate,LRAC64TTDEQ156S,OECD,q
+Italy,Labor Force Participation Rate,LRAC64TTITQ156S,OECD,q
+Spain,Labor Force Participation Rate,LRAC64TTESQ156S,OECD,q
+Sweden,Labor Force Participation Rate,LRAC64TTSEQ156S,OECD,q
+Greece,Labor Force Participation Rate,LRAC64TTGRQ156S,OECD,q
+Belgium,Labor Force Participation Rate,LRAC64TTBEQ156S,OECD,q
+Korea,Labor Force Participation Rate,LRAC64TTKRQ156S,OECD,q
+Canada,Labor Force Participation Rate,LRAC64TTCAQ156S,OECD,q
+Switzerland,Labor Force Participation Rate,LRAC64TTCHQ156S,OECD,q
+Portugal,Labor Force Participation Rate,LRAC64TTPTQ156S,OECD,q
+Mexico,Labor Force Participation Rate,LRAC64TTMXQ156S,OECD,q
+Poland,Labor Force Participation Rate,LRAC64TTPLQ156S,OECD,q
+Netherlands,Labor Force Participation Rate,LRAC64TTNLQ156S,OECD,q
+Norway,Labor Force Participation Rate,LRAC64TTNOQ156S,OECD,q
+New Zealand,Labor Force Participation Rate,LRAC64TTNZQ156S,OECD,q
+Denmark,Labor Force Participation Rate,LRAC64TTDKQ156S,OECD,q
+Turkiye,Labor Force Participation Rate,LRAC64TTTRQ156S,OECD,q
+Luxembourg,Labor Force Participation Rate,LRAC64TTLUQ156S,OECD,q
+Slovak Republic,Labor Force Participation Rate,LRAC64TTSKQ156S,OECD,q
+OECD,Labor Force Participation Rate,OECDLRAC64TTSTSAQ,OECD,q
+Finland,Labor Force Participation Rate,LRAC64TTFIQ156S,OECD,q
+Slovenia,Labor Force Participation Rate,LRAC64TTSIQ156S,OECD,q
+Hungary,Labor Force Participation Rate,LRAC64TTHUQ156S,OECD,q
+Czechia,Labor Force Participation Rate,LRAC64TTCZQ156S,OECD,q
+Latvia,Labor Force Participation Rate,LVALRAC64TTSTSAQ,OECD,q
+Lithuania,Labor Force Participation Rate,LTULRAC64TTSTSAQ,OECD,q
+Australia,Labor Force Participation Rate,LRAC64TTAUQ156S,OECD,q
+Israel,Labor Force Participation Rate,LRAC64TTILQ156S,OECD,q
+Chile,Labor Force Participation Rate,LRAC64TTCLQ156S,OECD,q
+Ireland,Labor Force Participation Rate,LRAC64TTIEQ156S,OECD,q
+Iceland,Labor Force Participation Rate,LRAC64TTISQ156S,OECD,q
+Austria,Labor Force Participation Rate,LRAC64TTATQ156S,OECD,q
+Estonia,Labor Force Participation Rate,LRAC64TTEEQ156S,OECD,q
+Mexico,Labor Compensation (Manufacturing),LCEAMN01MXQ659S,OECD,q
+United States,Labor Compensation (Manufacturing),LCEAMN01USQ659S,OECD,q
+Japan,Labor Compensation (Manufacturing),LCEAMN01JPQ659S,OECD,q
+Euro Area,Labor Compensation (Manufacturing),LCEAMN01EZQ659S,OECD,q
+Canada,Labor Compensation (Manufacturing),LCEAMN01CAQ659S,OECD,q
+Turkey,Labor Compensation (Manufacturing),LCEAMN01TRQ659S,OECD,q
+Germany,Labor Compensation (Manufacturing),LCEAMN01DEQ659S,OECD,q
+Poland,Labor Compensation (Manufacturing),LCEAMN01PLQ659S,OECD,q
+United Kingdom,Labor Compensation (Manufacturing),LCEAMN01GBQ659S,OECD,q
+Spain,Labor Compensation (Manufacturing),LCEAMN01ESQ659S,OECD,q
+Korea,Labor Compensation (Manufacturing),LCEAMN01KRQ659S,OECD,q
+OECD,Labor Compensation (Manufacturing),OECDLCEAMN01GYSAQ,OECD,q
+Italy,Labor Compensation (Manufacturing),LCEAMN01ITQ659S,OECD,q
+Czech Republic,Labor Compensation (Manufacturing),LCEAMN01CZQ659S,OECD,q
+Sweden,Labor Compensation (Manufacturing),LCEAMN01SEQ659S,OECD,q
+Israel,Labor Compensation (Manufacturing),LCEAMN01ILQ659S,OECD,q
+France,Labor Compensation (Manufacturing),LCEAMN01FRQ659S,OECD,q
+Ireland,Labor Compensation (Manufacturing),LCEAMN01IEQ659S,OECD,q
+Norway,Labor Compensation (Manufacturing),LCEAMN01NOQ659S,OECD,q
+Denmark,Labor Compensation (Manufacturing),LCEAMN01DKQ659S,OECD,q
+Latvia,Labor Compensation (Manufacturing),LVALCEAMN01GYSAQ,OECD,q
+Australia,Labor Compensation (Manufacturing),LCEAMN01AUQ659S,OECD,q
+Luxembourg,Labor Compensation (Manufacturing),LCEAMN01LUQ659S,OECD,q
+Belgium,Labor Compensation (Manufacturing),LCEAMN01BEQ659S,OECD,q
+Hungary,Labor Compensation (Manufacturing),LCEAMN01HUQ659S,OECD,q
+OECD: Europe,Labor Compensation (Manufacturing),OECDELCEAMN01GYSAQ,OECD,q
+Slovenia,Labor Compensation (Manufacturing),LCEAMN01SIQ659S,OECD,q
+Portugal,Labor Compensation (Manufacturing),LCEAMN01PTQ659S,OECD,q
+Netherlands,Labor Compensation (Manufacturing),LCEAMN01NLQ659S,OECD,q
+Austria,Labor Compensation (Manufacturing),LCEAMN01ATQ659S,OECD,q
+New Zealand,Labor Compensation (Manufacturing),LCEAMN01NZQ659S,OECD,q
+Iceland,Labor Compensation (Manufacturing),LCEAMN01ISQ659S,OECD,q
+Slovak Republic,Labor Compensation (Manufacturing),LCEAMN01SKQ659S,OECD,q
+Lithuania,Labor Compensation (Manufacturing),LTULCEAMN01GYSAQ,OECD,q
+Estonia,Labor Compensation (Manufacturing),LCEAMN01EEQ659S,OECD,q
+Euro Area,Labor Compensation (Private Sector),LCEAPR01EZQ661S,OECD,q
+Germany,Labor Compensation (Private Sector),LCEAPR01DEQ661S,OECD,q
+Denmark,Labor Compensation (Private Sector),LCEAPR01DKQ661S,OECD,q
+Italy,Labor Compensation (Private Sector),LCEAPR01ITQ661S,OECD,q
+United States,Labor Compensation (Private Sector),LCEAPR01USQ661S,OECD,q
+Portugal,Labor Compensation (Private Sector),LCEAPR01PTQ661S,OECD,q
+Sweden,Labor Compensation (Private Sector),LCEAPR01SEQ661S,OECD,q
+France,Labor Compensation (Private Sector),LCEAPR01FRQ661S,OECD,q
+Spain,Labor Compensation (Private Sector),LCEAPR01ESQ661S,OECD,q
+Belgium,Labor Compensation (Private Sector),LCEAPR01BEQ661S,OECD,q
+Finland,Labor Compensation (Private Sector),LCEAPR01FIQ661S,OECD,q
+Luxembourg,Labor Compensation (Private Sector),LCEAPR01LUQ661S,OECD,q
+Austria,Labor Compensation (Private Sector),LCEAPR01ATQ661S,OECD,q
+Lithuania,Labor Compensation (Private Sector),LTULCEAPR01IXOBSAQ,OECD,q
+Latvia,Labor Compensation (Private Sector),LVALCEAPR01IXOBSAQ,OECD,q
+New Zealand,Labor Compensation (Private Sector),LCEAPR01NZQ661S,OECD,q
+Slovak Republic,Labor Compensation (Private Sector),LCEAPR01SKQ661S,OECD,q

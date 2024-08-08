@@ -4,7 +4,7 @@
 #
 ##############################################
 
-introUnempTab <- tabPanel("Intro Lecture", 
+introUnempTab <- tabPanel("Unemployment Rate", 
                             withMathJax(),
                             mainPanel(
                               
@@ -23,10 +23,24 @@ introUnempTab <- tabPanel("Intro Lecture",
                                        pickerInput(
                                          inputId = "pickerOcun",
                                          label = "Select Countries: ", 
-                                         choices = countries,
-                                         selected = "USA",
+                                         choices = countriesFred,
+                                         selected = "United States",
                                          multiple = TRUE
                                        ))
+                              ),
+                              fluidRow(
+                                column(4,
+                                       pickerInput(
+                                         inputId = "pickerLaborUS",
+                                         label = "Select Variables: ", 
+                                         choices = c("Unemployment Rate", "Labor Force Participation Rate"),
+                                         selected = "Unemployment Rate",
+                                         multiple = FALSE
+                                       ),
+                                       p("Question 1: Find three reasons for the sharp drop of the unemployment rate after the first lockdown in 2020."),
+                                       p("Quesiton 2: Select the Labor Force Participation Rate and find an explanation for the strong increase in the labor force participation rate from the mid 60ies to the late 90ies.")),
+                                column(8, 
+                                       plotlyOutput("laborMarketUS"))
                               )
                               
                             )

@@ -16,6 +16,7 @@
 
 
 # 1. required packages ----------------------------------------------------------
+library(BISdata) # download data from BIS
 library(cicerone) # for guided tours
 library(data.table)
 library(shiny) # shiny functions
@@ -50,9 +51,29 @@ library(shinyvalidate)
 library(fredr)
 fredr_set_key("13cde7ca47173a5c9a9c1eece02455b9")
 
-
+df <- fredr_series_search_text(
+  search_text = "unemployment",
+  filter_variable = "frequency",
+  filter_value = "Monthly"
+)
 # 2. data files
-countries <- sort(c("USA", "Austria", "Germany", "Brazil", "South Africa", "Japan"))
+countriesFred <- sort(c("United States", "Austria", "Germany", "Brazil", "South Africa", "Japan"))
+
+countriesBis <- c(
+  "Algeria", "Argentina", "Australia", "Austria", "Belgium", "Brazil", 
+  "Bulgaria", "Canada", "Chile", "China", "Colombia", "Croatia", 
+  "Cyprus", "Czechia", "Denmark", "Estonia", "Euro area", "Finland", 
+  "France", "Germany", "Greece", "Hong Kong SAR", "Hungary", "Iceland", 
+  "India", "Indonesia", "Ireland", "Israel", "Italy", "Japan", 
+  "Korea", "Latvia", "Lithuania", "Luxembourg", "Malaysia", "Malta", 
+  "Mexico", "Morocco", "Netherlands", "New Zealand", "North Macedonia", 
+  "Norway", "Peru", "Philippines", "Poland", "Portugal", "Romania", 
+  "Russia", "Saudi Arabia", "Serbia", "Singapore", "Slovakia", 
+  "Slovenia", "South Africa", "Spain", "Sweden", "Switzerland", 
+  "Thailand", "Türkiye", "United Arab Emirates", "United Kingdom", 
+  "United States"
+)
+
 tab_names <- c("homeTab", "introGoalsTab", "introGdpTab", "introUnempTab",
             "introRatesTab", "introInflationTab", "introExercisesTab", 
             "goodsMarketTab", "islmTab", "policyAnalysisTab",
