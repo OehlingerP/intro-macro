@@ -32,9 +32,11 @@ output$laborMarketUS <- renderPlotly({
               fill = "grey70", alpha = 0.5) +
     geom_line(data = df, mapping = aes(x = date, y = value, color = variable)) 
   
-  ggplotly(gx_theme(plot,
-                    y1_title = "Share in %",
-                    title = "U.S. Labor Market"))
+  plot <- ggplotly(gx_theme(plot,
+                    y1_title = "Share in %"))#,
+                    #title = "U.S. Labor Market"))
+  
+  clean_plotly_legend(plot)
   
   
 })
@@ -59,7 +61,7 @@ output$plotOcunsLaw <- renderPlotly({
     select(-count) %>%
     summarize(value = sum(value)) %>%
     group_by(country) %>%
-    mutate(value = (value / lag(value, 1) - 1)*100) %>%
+    mutate(value = round((value / lag(value, 1) - 1)*100,2)) %>%
     rename("GDP (%-change)" = value)
   
   df_une <- df %>% filter(variable %in% c("Unemployment Rate"),
@@ -68,16 +70,36 @@ output$plotOcunsLaw <- renderPlotly({
     group_by(country, date) %>%
     summarize(value = mean(value)) %>%
     group_by(country) %>%
-    mutate(value = value - lag(value, 1)) %>%
+    mutate(value = round(value - lag(value, 1), 2)) %>%
     rename("Unemployment (change)" = value)
   
   df_plot <- left_join(df_gdp, 
                     df_une)
   
-  plot <- ggplot(df_plot, aes(x = `GDP (%-change)`, y = `Unemployment (change)`, color = country)) + 
-    geom_point( size = 2 ) +
-    geom_smooth(method = "lm", se = F, lwd = 1.2 ) 
+  # Fit linear models for each country and extract slopes
+  slopes <- do.call(rbind, lapply(unique(df_plot$country), function(x){
+    
+    tmp <- df_plot %>%
+      filter(country == x)
+    
+    coeffs <- summary(lm(`Unemployment (change)` ~ `GDP (%-change)`, data = tmp))$coefficients
+    
+    c(x, round(coeffs[2,1],2))
+    
+  }))
   
-  ggplotly(gx_theme(plot))
+  slopes <- as.data.frame(slopes)
+  colnames(slopes) <- c("country", "Slope")
+  
+  df_plot <- left_join(df_plot, slopes)
+  
+  plot <- ggplot(df_plot, aes(x = `GDP (%-change)`,
+                              y = `Unemployment (change)`, 
+                              color = country,
+                              text = paste("Slope:", Slope))) + 
+    geom_point( size = 2 ) +
+    geom_smooth(method = "lm", se = F, lwd = 1.2) 
+  
+  clean_plotly_legend(ggplotly(gx_theme(plot)))
   
 })

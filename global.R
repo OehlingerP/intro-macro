@@ -58,7 +58,8 @@ df <- fredr_series_search_text(
   filter_value = "Monthly"
 )
 # 2. data files
-countriesFred <- sort(c("United States", "Austria", "Germany", "Brazil", "South Africa", "Japan"))
+
+meta_fred <- read.csv("data/fred_tickers.csv", sep = ",")
 
 countriesBis <- c(
   "Algeria", "Argentina", "Australia", "Austria", "Belgium", "Brazil", 

@@ -44,7 +44,7 @@ introGdpTab <- tabPanel("Gross Domestic Product",
                                 column(8,
                                        plotlyOutput("plotGdpGini")), 
                                 column(4, 
-                                       tags$h3("Exercise - Welfare"), 
+                                       tags$h4("Exercise - Welfare"), 
                                        tags$p("It was previously mentioned that GDP is often used as a measure of welfare. 
                                      Since GDP is equivalent to total income of an economy, a higher GDP implies higher income 
                                      levels. However, using GDP as a measure of overall welfare can be problematic. 
@@ -77,7 +77,7 @@ introGdpTab <- tabPanel("Gross Domestic Product",
                               tags$p("Changes in real GDP only reflect changes in production."),
                               fluidRow(
                                 column(4, 
-                                       tags$h3("Exercise - U.S. GDP"),
+                                       tags$h4("Exercise - U.S. GDP"),
                                        tags$p("The chart on the right shows U.S. real and nominal GDP over time."),
                                        tags$ol(
                                          tags$li("Why is the curve for nominal GDP steeper than for real GDP?"),

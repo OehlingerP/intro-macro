@@ -22,6 +22,8 @@ Austria,Europe,Labor Compensation (Manufacturing),LCEAMN01ATQ659S,OECD,q
 Austria,Europe,Labor Compensation (Private Sector),LCEAPR01ATQ661S,OECD,q
 Austria,Europe,Gini Index,SIPOVGINIAUT,World Bank,a
 Austria,Europe,GDP per Capita,NYGDPPCAPKDAUT,World Bank,a
+Austria,Europe,Unemployment Rate,LRHUTTTTATM156S,OECD,m
+Austria,Europe,Real GDP,CLVMNACSCAB1GQAT,Eurostat,q
 Belgium,Europe,Unemployment Rate,LRHUTTTTBEM156S,OECD,m
 Belgium,Europe,Real GDP,CLVMNACSCAB1GQBE,Eurostat,q
 Belgium,Europe,Inflation Rate,CPALTT01BEM659N,OECD,m
@@ -328,10 +330,8 @@ United States,North America,Real GDP,GDPC1,U.S. Bureau of Economic Analysis,q
 United States,North America,Nominal GDP,GDP,U.S. Bureau of Economic Analysis,q
 United States,North America,Unemployment Rate,UNRATE,U.S. Bureau of Labor Statistics,m
 United States,North America,US Recessions,JHDUSRGDPBR,"Hamilton, James",q
-United States,North America,Unemployment Rate,LRHUTTTTUSM156S,OECD,m
 United States,North America,Inflation Rate,CPALTT01USM659N,OECD,m
 United States,North America,Labor Force Participation Rate,CIVPART,U.S. Bureau of Labor Statistics,m
-United States,North America,Labor Force Participation Rate,LRAC64TTUSQ156S,OECD,q
 United States,North America,Labor Compensation (Manufacturing),LCEAMN01USQ659S,OECD,q
 United States,North America,Labor Compensation (Private Sector),LCEAPR01USQ661S,OECD,q
 United States,North America,Gini Index,SIPOVGINIUSA,World Bank,a
