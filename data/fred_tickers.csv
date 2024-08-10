@@ -1,219 +1,340 @@
-﻿country,variable,series_id,source,frequency
-United States,10 Year Interest Rate,IRLTLT01USM156N,OECD,m
-Germany,10 Year Interest Rate,IRLTLT01DEM156N,OECD,m
-Austria,10 Year Interest Rate,IRLTLT01ATM156N,OECD,m
-Japan,10 Year Interest Rate,IRLTLT01JPM156N,OECD,m
-South Africa,10 Year Interest Rate,IRLTLT01ZAM156N,OECD,m
-India,10 Year Interest Rate,INDIRLTLT01STM,OECD,m
-United States,Central Bank Policy Rate,FEDFUNDS,Fed,m
-Euro Area,Central Bank Policy Rate,ECBMRRFR,ECB,m
-United States,Real GDP,GDPC1,U.S. Bureau of Economic Analysis,q
-India,Real GDP,NAEXKP01INQ652S,OECD,q
-United States,Unemployment Rate,UNRATE,U.S. Bureau of Labor Statistics,m
-United States,US Recessions,JHDUSRGDPBR,"Hamilton, James",q
-Euro Area,Unemployment Rate,LRHUTTTTEZM156S,OECD,m
-France,Unemployment Rate,LRHUTTTTFRM156S,OECD,m
-United Kingdom,Unemployment Rate,LRHUTTTTGBM156S,OECD,m
-Italy,Unemployment Rate,LRHUTTTTITM156S,OECD,m
-Germany,Unemployment Rate,LRHUTTTTDEM156S,OECD,m
-Spain,Unemployment Rate,LRHUTTTTESM156S,OECD,m
-Sweden,Unemployment Rate,LRHUTTTTSEM156S,OECD,m
-European Union,Unemployment Rate,LRHUTTTTEUM156S,OECD,m
-Netherlands,Unemployment Rate,LRHUTTTTNLM156S,OECD,m
-Poland,Unemployment Rate,LRHUTTTTPLM156S,OECD,m
-Japan,Unemployment Rate,LRHUTTTTJPM156S,OECD,m
-Finland,Unemployment Rate,LRHUTTTTFIM156S,OECD,m
-OECD,Unemployment Rate,OECDLRHUTTTTSTSAM,OECD,m
-Mexico,Unemployment Rate,LRHUTTTTMXM156S,OECD,m
-Greece,Unemployment Rate,LRHUTTTTGRM156S,OECD,m
-Denmark,Unemployment Rate,LRHUTTTTDKM156S,OECD,m
-United States,Unemployment Rate,LRHUTTTTUSM156S,OECD,m
-Australia,Unemployment Rate,LRHUTTTTAUM156S,OECD,m
-Belgium,Unemployment Rate,LRHUTTTTBEM156S,OECD,m
-Canada,Unemployment Rate,LRHUTTTTCAM156S,OECD,m
-Portugal,Unemployment Rate,LRHUTTTTPTM156S,OECD,m
-Korea,Unemployment Rate,LRHUTTTTKRM156S,OECD,m
-Ireland,Unemployment Rate,LRHUTTTTIEM156S,OECD,m
-Czechia,Unemployment Rate,LRHUTTTTCZM156S,OECD,m
-Germany,Real GDP,CLVMNACSCAB1GQDE,Eurostat,q
-Italy,Real GDP,CLVMNACSCAB1GQIT,Eurostat,q
-France,Real GDP,CLVMNACSCAB1GQFR,Eurostat,q
-Spain,Real GDP,CLVMNACSCAB1GQES,Eurostat,q
-Greece,Real GDP,CLVMNACSCAB1GQEL,Eurostat,q
-European Union,Real GDP,CLVMNACSCAB1GQEU28,Eurostat,q
-Sweden,Real GDP,CLVMNACSCAB1GQSE,Eurostat,q
-Norway,Real GDP,CLVMNACSCAB1GQNO,Eurostat,q
-Poland,Real GDP,CLVMNACSCAB1GQPL,Eurostat,q
-Switzerland,Real GDP,CLVMNACSCAB1GQCH,Eurostat,q
-Netherlands,Real GDP,CLVMNACSCAB1GQNL,Eurostat,q
-Euro Area,Real GDP,CLVMNACSCAB1GQEA19,Eurostat,q
-Portugal,Real GDP,CLVMNACSCAB1GQPT,Eurostat,q
-Finland,Real GDP,CLVMNACSCAB1GQFI,Eurostat,q
-Denmark,Real GDP,CLVMNACSCAB1GQDK,Eurostat,q
-Belgium,Real GDP,CLVMNACSCAB1GQBE,Eurostat,q
-Czech Republic,Real GDP,CLVMNACSCAB1GQCZ,Eurostat,q
-Hungary,Real GDP,CLVMNACSCAB1GQHU,Eurostat,q
-Japan,Real GDP,NGDPRSAXDCJPQ,IMF,q
-Canada,Real GDP,NGDPRSAXDCCAQ,IMF,q
-Mexico,Real GDP,NGDPRSAXDCMXQ,IMF,q
-Australia,Real GDP,NGDPRSAXDCAUQ,IMF,q
-Great Britain,Real GDP,NGDPRSAXDCGBQ,IMF,q
-Brazil,Real GDP,NGDPRSAXDCBRQ,IMF,q
-Turkey,Real GDP,NGDPRSAXDCTRQ,IMF,q
-Republic of Korea,Real GDP,NGDPRSAXDCKRQ,IMF,q
-South Africa,Real GDP,NGDPRSAXDCZAQ,IMF,q
-Indonesia,Real GDP,NGDPRSAXDCIDQ,IMF,q
-Argentina,Real GDP,NGDPRSAXDCARQ,IMF,q
-Saudi Arabia,Real GDP,NGDPRSAXDCSAQ,IMF,q
-Estonia,Real GDP,NGDPRSAXDCESQ,IMF,q
-United States,Inflation Rate,CPALTT01USM659N,OECD,m
-United Kingdom,Inflation Rate,CPALTT01GBM659N,OECD,m
-China,Inflation Rate,CPALTT01CNM659N,OECD,m
-Japan,Inflation Rate,CPALTT01JPM659N,OECD,m
-India,Inflation Rate,CPALTT01INM659N,OECD,m
-Germany,Inflation Rate,CPALTT01DEM659N,OECD,m
-France,Inflation Rate,CPALTT01FRM659N,OECD,m
-Brazil,Inflation Rate,CPALTT01BRM659N,OECD,m
-Canada,Inflation Rate,CPALTT01CAM659N,OECD,m
-Italy,Inflation Rate,CPALTT01ITM659N,OECD,m
-Mexico,Inflation Rate,CPALTT01MXM659N,OECD,m
-Turkiye,Inflation Rate,CPALTT01TRM659N,OECD,m
-South Africa,Inflation Rate,CPALTT01ZAM659N,OECD,m
-Korea,Inflation Rate,CPALTT01KRM659N,OECD,m
-Argentina,Inflation Rate,ARGCPALTT01GYM,OECD,m
-Indonesia,Inflation Rate,CPALTT01IDM659N,OECD,m
-Spain,Inflation Rate,CPALTT01ESM659N,OECD,m
-Switzerland,Inflation Rate,CPALTT01CHM659N,OECD,m
-Sweden,Inflation Rate,CPALTT01SEM659N,OECD,m
-Russia,Inflation Rate,CPALTT01RUM659N,OECD,m
-Poland,Inflation Rate,CPALTT01PLM659N,OECD,m
-OECD,Inflation Rate,OECDCPALTT01GYM,OECD,m
-Chile,Inflation Rate,CPALTT01CLM659N,OECD,m
-Norway,Inflation Rate,CPALTT01NOM659N,OECD,m
-Netherlands,Inflation Rate,CPALTT01NLM659N,OECD,m
-Saudi Arabia,Inflation Rate,SAUCPALTT01GYM,OECD,m
-Denmark,Inflation Rate,CPALTT01DKM659N,OECD,m
-Greece,Inflation Rate,CPALTT01GRM659N,OECD,m
-Belgium,Inflation Rate,CPALTT01BEM659N,OECD,m
-Colombia,Inflation Rate,COLCPALTT01GYM,OECD,m
-Portugal,Inflation Rate,CPALTT01PTM659N,OECD,m
-Austria,Inflation Rate,CPALTT01ATM659N,OECD,m
-Hungary,Inflation Rate,CPALTT01HUM659N,OECD,m
-Ireland,Inflation Rate,CPALTT01IEM659N,OECD,m
-Finland,Inflation Rate,CPALTT01FIM659N,OECD,m
-Israel,Inflation Rate,CPALTT01ILM659N,OECD,m
-Czechia,Inflation Rate,CPALTT01CZM659N,OECD,m
-G7,Inflation Rate,G7CPALTT01GYM,OECD,m
-Iceland,Inflation Rate,CPALTT01ISM659N,OECD,m
-Luxembourg,Inflation Rate,CPALTT01LUM659N,OECD,m
-Slovak Republic,Inflation Rate,CPALTT01SKM659N,OECD,m
-Estonia,Inflation Rate,CPALTT01EEM659N,OECD,m
-OECD Europe,Inflation Rate,OECDECPALTT01GYM,OECD,m
-Costa Rica,Inflation Rate,CRICPALTT01GYM,OECD,m
-Lithuania,Inflation Rate,LTUCPALTT01GYM,OECD,m
-Latvia,Inflation Rate,LVACPALTT01GYM,OECD,m
-Slovenia,Inflation Rate,CPALTT01SIM659N,OECD,m
-G20,Inflation Rate,G20CPALTT01GYM,OECD,m
-Canada,Central Bank Policy Rate,IRSTCB01CAM156N,OECD,m
-Japan,Central Bank Policy Rate,IRSTCB01JPM156N,OECD,m
-China,Central Bank Policy Rate,IRSTCB01CNM156N,OECD,m
-Brazil,Central Bank Policy Rate,IRSTCB01BRM156N,OECD,m
-India,Central Bank Policy Rate,IRSTCB01INM156N,OECD,m
-Russia,Central Bank Policy Rate,IRSTCB01RUM156N,OECD,m
-Hungary,Central Bank Policy Rate,IRSTCB01HUM156N,OECD,m
-Czech Republic,Central Bank Policy Rate,IRSTCB01CZM156N,OECD,m
-South Africa,Central Bank Policy Rate,IRSTCB01ZAM156N,OECD,m
-Denmark,Central Bank Policy Rate,IRSTCB01DKM156N,OECD,m
-Indonesia,Central Bank Policy Rate,IRSTCB01IDM156N,OECD,m
-Poland,Central Bank Policy Rate,IRSTCB01PLM156N,OECD,m
-United States,Labor Force Participation Rate,CIVPART,U.S. Bureau of Labor Statistics,m
-Japan,Labor Force Participation Rate,LRAC64TTJPQ156S,OECD,q
-France,Labor Force Participation Rate,LRAC64TTFRQ156S,OECD,q
-United States,Labor Force Participation Rate,LRAC64TTUSQ156S,OECD,q
-United Kingdom,Labor Force Participation Rate,LRAC64TTGBQ156S,OECD,q
-South Africa,Labor Force Participation Rate,LRAC64TTZAQ156S,OECD,q
-Germany,Labor Force Participation Rate,LRAC64TTDEQ156S,OECD,q
-Italy,Labor Force Participation Rate,LRAC64TTITQ156S,OECD,q
-Spain,Labor Force Participation Rate,LRAC64TTESQ156S,OECD,q
-Sweden,Labor Force Participation Rate,LRAC64TTSEQ156S,OECD,q
-Greece,Labor Force Participation Rate,LRAC64TTGRQ156S,OECD,q
-Belgium,Labor Force Participation Rate,LRAC64TTBEQ156S,OECD,q
-Korea,Labor Force Participation Rate,LRAC64TTKRQ156S,OECD,q
-Canada,Labor Force Participation Rate,LRAC64TTCAQ156S,OECD,q
-Switzerland,Labor Force Participation Rate,LRAC64TTCHQ156S,OECD,q
-Portugal,Labor Force Participation Rate,LRAC64TTPTQ156S,OECD,q
-Mexico,Labor Force Participation Rate,LRAC64TTMXQ156S,OECD,q
-Poland,Labor Force Participation Rate,LRAC64TTPLQ156S,OECD,q
-Netherlands,Labor Force Participation Rate,LRAC64TTNLQ156S,OECD,q
-Norway,Labor Force Participation Rate,LRAC64TTNOQ156S,OECD,q
-New Zealand,Labor Force Participation Rate,LRAC64TTNZQ156S,OECD,q
-Denmark,Labor Force Participation Rate,LRAC64TTDKQ156S,OECD,q
-Turkiye,Labor Force Participation Rate,LRAC64TTTRQ156S,OECD,q
-Luxembourg,Labor Force Participation Rate,LRAC64TTLUQ156S,OECD,q
-Slovak Republic,Labor Force Participation Rate,LRAC64TTSKQ156S,OECD,q
-OECD,Labor Force Participation Rate,OECDLRAC64TTSTSAQ,OECD,q
-Finland,Labor Force Participation Rate,LRAC64TTFIQ156S,OECD,q
-Slovenia,Labor Force Participation Rate,LRAC64TTSIQ156S,OECD,q
-Hungary,Labor Force Participation Rate,LRAC64TTHUQ156S,OECD,q
-Czechia,Labor Force Participation Rate,LRAC64TTCZQ156S,OECD,q
-Latvia,Labor Force Participation Rate,LVALRAC64TTSTSAQ,OECD,q
-Lithuania,Labor Force Participation Rate,LTULRAC64TTSTSAQ,OECD,q
-Australia,Labor Force Participation Rate,LRAC64TTAUQ156S,OECD,q
-Israel,Labor Force Participation Rate,LRAC64TTILQ156S,OECD,q
-Chile,Labor Force Participation Rate,LRAC64TTCLQ156S,OECD,q
-Ireland,Labor Force Participation Rate,LRAC64TTIEQ156S,OECD,q
-Iceland,Labor Force Participation Rate,LRAC64TTISQ156S,OECD,q
-Austria,Labor Force Participation Rate,LRAC64TTATQ156S,OECD,q
-Estonia,Labor Force Participation Rate,LRAC64TTEEQ156S,OECD,q
-Mexico,Labor Compensation (Manufacturing),LCEAMN01MXQ659S,OECD,q
-United States,Labor Compensation (Manufacturing),LCEAMN01USQ659S,OECD,q
-Japan,Labor Compensation (Manufacturing),LCEAMN01JPQ659S,OECD,q
-Euro Area,Labor Compensation (Manufacturing),LCEAMN01EZQ659S,OECD,q
-Canada,Labor Compensation (Manufacturing),LCEAMN01CAQ659S,OECD,q
-Turkey,Labor Compensation (Manufacturing),LCEAMN01TRQ659S,OECD,q
-Germany,Labor Compensation (Manufacturing),LCEAMN01DEQ659S,OECD,q
-Poland,Labor Compensation (Manufacturing),LCEAMN01PLQ659S,OECD,q
-United Kingdom,Labor Compensation (Manufacturing),LCEAMN01GBQ659S,OECD,q
-Spain,Labor Compensation (Manufacturing),LCEAMN01ESQ659S,OECD,q
-Korea,Labor Compensation (Manufacturing),LCEAMN01KRQ659S,OECD,q
-OECD,Labor Compensation (Manufacturing),OECDLCEAMN01GYSAQ,OECD,q
-Italy,Labor Compensation (Manufacturing),LCEAMN01ITQ659S,OECD,q
-Czech Republic,Labor Compensation (Manufacturing),LCEAMN01CZQ659S,OECD,q
-Sweden,Labor Compensation (Manufacturing),LCEAMN01SEQ659S,OECD,q
-Israel,Labor Compensation (Manufacturing),LCEAMN01ILQ659S,OECD,q
-France,Labor Compensation (Manufacturing),LCEAMN01FRQ659S,OECD,q
-Ireland,Labor Compensation (Manufacturing),LCEAMN01IEQ659S,OECD,q
-Norway,Labor Compensation (Manufacturing),LCEAMN01NOQ659S,OECD,q
-Denmark,Labor Compensation (Manufacturing),LCEAMN01DKQ659S,OECD,q
-Latvia,Labor Compensation (Manufacturing),LVALCEAMN01GYSAQ,OECD,q
-Australia,Labor Compensation (Manufacturing),LCEAMN01AUQ659S,OECD,q
-Luxembourg,Labor Compensation (Manufacturing),LCEAMN01LUQ659S,OECD,q
-Belgium,Labor Compensation (Manufacturing),LCEAMN01BEQ659S,OECD,q
-Hungary,Labor Compensation (Manufacturing),LCEAMN01HUQ659S,OECD,q
-OECD: Europe,Labor Compensation (Manufacturing),OECDELCEAMN01GYSAQ,OECD,q
-Slovenia,Labor Compensation (Manufacturing),LCEAMN01SIQ659S,OECD,q
-Portugal,Labor Compensation (Manufacturing),LCEAMN01PTQ659S,OECD,q
-Netherlands,Labor Compensation (Manufacturing),LCEAMN01NLQ659S,OECD,q
-Austria,Labor Compensation (Manufacturing),LCEAMN01ATQ659S,OECD,q
-New Zealand,Labor Compensation (Manufacturing),LCEAMN01NZQ659S,OECD,q
-Iceland,Labor Compensation (Manufacturing),LCEAMN01ISQ659S,OECD,q
-Slovak Republic,Labor Compensation (Manufacturing),LCEAMN01SKQ659S,OECD,q
-Lithuania,Labor Compensation (Manufacturing),LTULCEAMN01GYSAQ,OECD,q
-Estonia,Labor Compensation (Manufacturing),LCEAMN01EEQ659S,OECD,q
-Euro Area,Labor Compensation (Private Sector),LCEAPR01EZQ661S,OECD,q
-Germany,Labor Compensation (Private Sector),LCEAPR01DEQ661S,OECD,q
-Denmark,Labor Compensation (Private Sector),LCEAPR01DKQ661S,OECD,q
-Italy,Labor Compensation (Private Sector),LCEAPR01ITQ661S,OECD,q
-United States,Labor Compensation (Private Sector),LCEAPR01USQ661S,OECD,q
-Portugal,Labor Compensation (Private Sector),LCEAPR01PTQ661S,OECD,q
-Sweden,Labor Compensation (Private Sector),LCEAPR01SEQ661S,OECD,q
-France,Labor Compensation (Private Sector),LCEAPR01FRQ661S,OECD,q
-Spain,Labor Compensation (Private Sector),LCEAPR01ESQ661S,OECD,q
-Belgium,Labor Compensation (Private Sector),LCEAPR01BEQ661S,OECD,q
-Finland,Labor Compensation (Private Sector),LCEAPR01FIQ661S,OECD,q
-Luxembourg,Labor Compensation (Private Sector),LCEAPR01LUQ661S,OECD,q
-Austria,Labor Compensation (Private Sector),LCEAPR01ATQ661S,OECD,q
-Lithuania,Labor Compensation (Private Sector),LTULCEAPR01IXOBSAQ,OECD,q
-Latvia,Labor Compensation (Private Sector),LVALCEAPR01IXOBSAQ,OECD,q
-New Zealand,Labor Compensation (Private Sector),LCEAPR01NZQ661S,OECD,q
-Slovak Republic,Labor Compensation (Private Sector),LCEAPR01SKQ661S,OECD,q
+﻿country,Continent,variable,series_id,source,frequency
+Albania,Europe,Gini Index,SIPOVGINIALB,World Bank,a
+Albania,Europe,GDP per Capita,NYGDPPCAPKDALB,World Bank,a
+Algeria,Africa,Gini Index,SIPOVGINIDZA,World Bank,a
+Algeria,Africa,GDP per Capita,NYGDPPCAPKDDZA,World Bank,a
+Angola,Africa,Gini Index,SIPOVGINIAGO,World Bank,a
+Angola,Africa,GDP per Capita,NYGDPPCAPKDAGO,World Bank,a
+Argentina,South America,Real GDP,NGDPRSAXDCARQ,IMF,q
+Argentina,South America,Inflation Rate,ARGCPALTT01GYM,OECD,m
+Argentina,South America,Gini Index,SIPOVGINIARG,World Bank,a
+Argentina,South America,GDP per Capita,NYGDPPCAPKDARG,World Bank,a
+Australia,Australia and Oceania,Unemployment Rate,LRHUTTTTAUM156S,OECD,m
+Australia,Australia and Oceania,Real GDP,NGDPRSAXDCAUQ,IMF,q
+Australia,Australia and Oceania,Labor Force Participation Rate,LRAC64TTAUQ156S,OECD,q
+Australia,Australia and Oceania,Labor Compensation (Manufacturing),LCEAMN01AUQ659S,OECD,q
+Australia,Australia and Oceania,Gini Index,SIPOVGINIAUS,World Bank,a
+Australia,Australia and Oceania,GDP per Capita,NYGDPPCAPKDAUS,World Bank,a
+Austria,Europe,10 Year Interest Rate,IRLTLT01ATM156N,OECD,m
+Austria,Europe,Inflation Rate,CPALTT01ATM659N,OECD,m
+Austria,Europe,Labor Force Participation Rate,LRAC64TTATQ156S,OECD,q
+Austria,Europe,Labor Compensation (Manufacturing),LCEAMN01ATQ659S,OECD,q
+Austria,Europe,Labor Compensation (Private Sector),LCEAPR01ATQ661S,OECD,q
+Austria,Europe,Gini Index,SIPOVGINIAUT,World Bank,a
+Austria,Europe,GDP per Capita,NYGDPPCAPKDAUT,World Bank,a
+Belgium,Europe,Unemployment Rate,LRHUTTTTBEM156S,OECD,m
+Belgium,Europe,Real GDP,CLVMNACSCAB1GQBE,Eurostat,q
+Belgium,Europe,Inflation Rate,CPALTT01BEM659N,OECD,m
+Belgium,Europe,Labor Force Participation Rate,LRAC64TTBEQ156S,OECD,q
+Belgium,Europe,Labor Compensation (Manufacturing),LCEAMN01BEQ659S,OECD,q
+Belgium,Europe,Labor Compensation (Private Sector),LCEAPR01BEQ661S,OECD,q
+Belgium,Europe,Gini Index,SIPOVGINIBEL,World Bank,a
+Belgium,Europe,GDP per Capita,NYGDPPCAPKDBEL,World Bank,a
+Bosnia and Herzegovina,Europe,Gini Index,SIPOVGINIBIH,World Bank,a
+Bosnia and Herzegovina,Europe,GDP per Capita,NYGDPPCAPKDBIH,World Bank,a
+Brazil,South America,Real GDP,NGDPRSAXDCBRQ,IMF,q
+Brazil,South America,Inflation Rate,CPALTT01BRM659N,OECD,m
+Brazil,South America,Central Bank Policy Rate,IRSTCB01BRM156N,OECD,m
+Brazil,South America,Gini Index,SIPOVGINIBRA,World Bank,a
+Brazil,South America,GDP per Capita,NYGDPPCAPKDBRA,World Bank,a
+Bulgaria,Europe,Gini Index,SIPOVGINIBGR,World Bank,a
+Bulgaria,Europe,GDP per Capita,NYGDPPCAPKDBGR,World Bank,a
+Canada,North America,Unemployment Rate,LRHUTTTTCAM156S,OECD,m
+Canada,North America,Real GDP,NGDPRSAXDCCAQ,IMF,q
+Canada,North America,Inflation Rate,CPALTT01CAM659N,OECD,m
+Canada,North America,Central Bank Policy Rate,IRSTCB01CAM156N,OECD,m
+Canada,North America,Labor Force Participation Rate,LRAC64TTCAQ156S,OECD,q
+Canada,North America,Labor Compensation (Manufacturing),LCEAMN01CAQ659S,OECD,q
+Canada,North America,Gini Index,SIPOVGINICAN,World Bank,a
+Canada,North America,GDP per Capita,NYGDPPCAPKDCAN,World Bank,a
+Chile,South America,Inflation Rate,CPALTT01CLM659N,OECD,m
+Chile,South America,Labor Force Participation Rate,LRAC64TTCLQ156S,OECD,q
+Chile,South America,Gini Index,SIPOVGINICHL,World Bank,a
+Chile,South America,GDP per Capita,NYGDPPCAPKDCHL,World Bank,a
+China,Asia,Inflation Rate,CPALTT01CNM659N,OECD,m
+China,Asia,Central Bank Policy Rate,IRSTCB01CNM156N,OECD,m
+China,Asia,Gini Index,SIPOVGINICHN,World Bank,a
+China,Asia,GDP per Capita,NYGDPPCAPKDCHN,World Bank,a
+Colombia,South America,Inflation Rate,COLCPALTT01GYM,OECD,m
+Colombia,South America,Gini Index,SIPOVGINICOL,World Bank,a
+Colombia,South America,GDP per Capita,NYGDPPCAPKDCOL,World Bank,a
+Costa Rica,North America,Inflation Rate,CRICPALTT01GYM,OECD,m
+Costa Rica,North America,Gini Index,SIPOVGINICRI,World Bank,a
+Costa Rica,North America,GDP per Capita,NYGDPPCAPKDCRI,World Bank,a
+Croatia,Europe,Gini Index,SIPOVGINIHRV,World Bank,a
+Croatia,Europe,GDP per Capita,NYGDPPCAPKDHRV,World Bank,a
+Cyprus,Europe,Gini Index,SIPOVGINICYP,World Bank,a
+Cyprus,Europe,GDP per Capita,NYGDPPCAPKDCYP,World Bank,a
+Czech Republic,Europe,Real GDP,CLVMNACSCAB1GQCZ,Eurostat,q
+Czech Republic,Europe,Central Bank Policy Rate,IRSTCB01CZM156N,OECD,m
+Czech Republic,Europe,Labor Compensation (Manufacturing),LCEAMN01CZQ659S,OECD,q
+Czech Republic,Europe,Gini Index,SIPOVGINICZE,World Bank,a
+Czech Republic,Europe,GDP per Capita,NYGDPPCAPKDCZE,World Bank,a
+Czech Republic,Europe,Unemployment Rate,LRHUTTTTCZM156S,OECD,m
+Czech Republic,Europe,Inflation Rate,CPALTT01CZM659N,OECD,m
+Czech Republic,Europe,Labor Force Participation Rate,LRAC64TTCZQ156S,OECD,q
+Denmark,Europe,Unemployment Rate,LRHUTTTTDKM156S,OECD,m
+Denmark,Europe,Real GDP,CLVMNACSCAB1GQDK,Eurostat,q
+Denmark,Europe,Inflation Rate,CPALTT01DKM659N,OECD,m
+Denmark,Europe,Central Bank Policy Rate,IRSTCB01DKM156N,OECD,m
+Denmark,Europe,Labor Force Participation Rate,LRAC64TTDKQ156S,OECD,q
+Denmark,Europe,Labor Compensation (Manufacturing),LCEAMN01DKQ659S,OECD,q
+Denmark,Europe,Labor Compensation (Private Sector),LCEAPR01DKQ661S,OECD,q
+Denmark,Europe,Gini Index,SIPOVGINIDNK,World Bank,a
+Denmark,Europe,GDP per Capita,NYGDPPCAPKDDNK,World Bank,a
+Egypt,Africa,Gini Index,SIPOVGINIEGY,World Bank,a
+Egypt,Africa,GDP per Capita,NYGDPPCAPKDEGY,World Bank,a
+Estonia,Europe,Real GDP,NGDPRSAXDCESQ,IMF,q
+Estonia,Europe,Inflation Rate,CPALTT01EEM659N,OECD,m
+Estonia,Europe,Labor Force Participation Rate,LRAC64TTEEQ156S,OECD,q
+Estonia,Europe,Labor Compensation (Manufacturing),LCEAMN01EEQ659S,OECD,q
+Estonia,Europe,Gini Index,SIPOVGINIEST,World Bank,a
+Estonia,Europe,GDP per Capita,NYGDPPCAPKDEST,World Bank,a
+Ethiopia,Africa,Gini Index,SIPOVGINIETH,World Bank,a
+Ethiopia,Africa,GDP per Capita,NYGDPPCAPKDETH,World Bank,a
+Euro Area,Europe,Central Bank Policy Rate,ECBMRRFR,ECB,m
+Euro Area,Europe,Unemployment Rate,LRHUTTTTEZM156S,OECD,m
+Euro Area,Europe,Real GDP,CLVMNACSCAB1GQEA19,Eurostat,q
+Euro Area,Europe,Labor Compensation (Manufacturing),LCEAMN01EZQ659S,OECD,q
+Euro Area,Europe,Labor Compensation (Private Sector),LCEAPR01EZQ661S,OECD,q
+European Union,Europe,Unemployment Rate,LRHUTTTTEUM156S,OECD,m
+European Union,Europe,Real GDP,CLVMNACSCAB1GQEU28,Eurostat,q
+Finland,Europe,Unemployment Rate,LRHUTTTTFIM156S,OECD,m
+Finland,Europe,Real GDP,CLVMNACSCAB1GQFI,Eurostat,q
+Finland,Europe,Inflation Rate,CPALTT01FIM659N,OECD,m
+Finland,Europe,Labor Force Participation Rate,LRAC64TTFIQ156S,OECD,q
+Finland,Europe,Labor Compensation (Private Sector),LCEAPR01FIQ661S,OECD,q
+Finland,Europe,Gini Index,SIPOVGINIFIN,World Bank,a
+Finland,Europe,GDP per Capita,NYGDPPCAPKDFIN,World Bank,a
+France,Europe,Unemployment Rate,LRHUTTTTFRM156S,OECD,m
+France,Europe,Real GDP,CLVMNACSCAB1GQFR,Eurostat,q
+France,Europe,Inflation Rate,CPALTT01FRM659N,OECD,m
+France,Europe,Labor Force Participation Rate,LRAC64TTFRQ156S,OECD,q
+France,Europe,Labor Compensation (Manufacturing),LCEAMN01FRQ659S,OECD,q
+France,Europe,Labor Compensation (Private Sector),LCEAPR01FRQ661S,OECD,q
+France,Europe,Gini Index,SIPOVGINIFRA,World Bank,a
+France,Europe,GDP per Capita,NYGDPPCAPKDFRA,World Bank,a
+Germany,Europe,10 Year Interest Rate,IRLTLT01DEM156N,OECD,m
+Germany,Europe,Unemployment Rate,LRHUTTTTDEM156S,OECD,m
+Germany,Europe,Real GDP,CLVMNACSCAB1GQDE,Eurostat,q
+Germany,Europe,Inflation Rate,CPALTT01DEM659N,OECD,m
+Germany,Europe,Labor Force Participation Rate,LRAC64TTDEQ156S,OECD,q
+Germany,Europe,Labor Compensation (Manufacturing),LCEAMN01DEQ659S,OECD,q
+Germany,Europe,Labor Compensation (Private Sector),LCEAPR01DEQ661S,OECD,q
+Germany,Europe,Gini Index,SIPOVGINIDEU,World Bank,a
+Germany,Europe,GDP per Capita,NYGDPPCAPKDDEU,World Bank,a
+United Kingdom,Europe,Real GDP,NGDPRSAXDCGBQ,IMF,q
+Greece,Europe,Unemployment Rate,LRHUTTTTGRM156S,OECD,m
+Greece,Europe,Real GDP,CLVMNACSCAB1GQEL,Eurostat,q
+Greece,Europe,Inflation Rate,CPALTT01GRM659N,OECD,m
+Greece,Europe,Labor Force Participation Rate,LRAC64TTGRQ156S,OECD,q
+Greece,Europe,Gini Index,SIPOVGINIGRC,World Bank,a
+Greece,Europe,GDP per Capita,NYGDPPCAPKDGRC,World Bank,a
+Hungary,Europe,Real GDP,CLVMNACSCAB1GQHU,Eurostat,q
+Hungary,Europe,Inflation Rate,CPALTT01HUM659N,OECD,m
+Hungary,Europe,Central Bank Policy Rate,IRSTCB01HUM156N,OECD,m
+Hungary,Europe,Labor Force Participation Rate,LRAC64TTHUQ156S,OECD,q
+Hungary,Europe,Labor Compensation (Manufacturing),LCEAMN01HUQ659S,OECD,q
+Hungary,Europe,Gini Index,SIPOVGINIHUN,World Bank,a
+Hungary,Europe,GDP per Capita,NYGDPPCAPKDHUN,World Bank,a
+India,Asia,10 Year Interest Rate,INDIRLTLT01STM,OECD,m
+India,Asia,Real GDP,NAEXKP01INQ652S,OECD,q
+India,Asia,Inflation Rate,CPALTT01INM659N,OECD,m
+India,Asia,Central Bank Policy Rate,IRSTCB01INM156N,OECD,m
+India,Asia,Gini Index,SIPOVGINIIND,World Bank,a
+India,Asia,GDP per Capita,NYGDPPCAPKDIND,World Bank,a
+Indonesia,Asia,Real GDP,NGDPRSAXDCIDQ,IMF,q
+Indonesia,Asia,Inflation Rate,CPALTT01IDM659N,OECD,m
+Indonesia,Asia,Central Bank Policy Rate,IRSTCB01IDM156N,OECD,m
+Indonesia,Asia,Gini Index,SIPOVGINIIDN,World Bank,a
+Indonesia,Asia,GDP per Capita,NYGDPPCAPKDIDN,World Bank,a
+Ireland,Europe,Unemployment Rate,LRHUTTTTIEM156S,OECD,m
+Ireland,Europe,Inflation Rate,CPALTT01IEM659N,OECD,m
+Ireland,Europe,Labor Force Participation Rate,LRAC64TTIEQ156S,OECD,q
+Ireland,Europe,Labor Compensation (Manufacturing),LCEAMN01IEQ659S,OECD,q
+Ireland,Europe,Gini Index,SIPOVGINIIRL,World Bank,a
+Ireland,Europe,GDP per Capita,NYGDPPCAPKDIRL,World Bank,a
+Israel,Asia,Inflation Rate,CPALTT01ILM659N,OECD,m
+Israel,Asia,Labor Force Participation Rate,LRAC64TTILQ156S,OECD,q
+Israel,Asia,Labor Compensation (Manufacturing),LCEAMN01ILQ659S,OECD,q
+Israel,Asia,Gini Index,SIPOVGINIISR,World Bank,a
+Israel,Asia,GDP per Capita,NYGDPPCAPKDISR,World Bank,a
+Italy,Europe,Unemployment Rate,LRHUTTTTITM156S,OECD,m
+Italy,Europe,Real GDP,CLVMNACSCAB1GQIT,Eurostat,q
+Italy,Europe,Inflation Rate,CPALTT01ITM659N,OECD,m
+Italy,Europe,Labor Force Participation Rate,LRAC64TTITQ156S,OECD,q
+Italy,Europe,Labor Compensation (Manufacturing),LCEAMN01ITQ659S,OECD,q
+Italy,Europe,Labor Compensation (Private Sector),LCEAPR01ITQ661S,OECD,q
+Italy,Europe,Gini Index,SIPOVGINIITA,World Bank,a
+Italy,Europe,GDP per Capita,NYGDPPCAPKDITA,World Bank,a
+Japan,Asia,10 Year Interest Rate,IRLTLT01JPM156N,OECD,m
+Japan,Asia,Unemployment Rate,LRHUTTTTJPM156S,OECD,m
+Japan,Asia,Real GDP,NGDPRSAXDCJPQ,IMF,q
+Japan,Asia,Inflation Rate,CPALTT01JPM659N,OECD,m
+Japan,Asia,Central Bank Policy Rate,IRSTCB01JPM156N,OECD,m
+Japan,Asia,Labor Force Participation Rate,LRAC64TTJPQ156S,OECD,q
+Japan,Asia,Labor Compensation (Manufacturing),LCEAMN01JPQ659S,OECD,q
+Japan,Asia,Gini Index,SIPOVGINIJPN,World Bank,a
+Japan,Asia,GDP per Capita,NYGDPPCAPKDJPN,World Bank,a
+Kenya,Africa,Gini Index,SIPOVGINIKEN,World Bank,a
+Kenya,Africa,GDP per Capita,NYGDPPCAPKDKEN,World Bank,a
+Korea,Asia,Unemployment Rate,LRHUTTTTKRM156S,OECD,m
+Korea,Asia,Inflation Rate,CPALTT01KRM659N,OECD,m
+Korea,Asia,Labor Force Participation Rate,LRAC64TTKRQ156S,OECD,q
+Korea,Asia,Labor Compensation (Manufacturing),LCEAMN01KRQ659S,OECD,q
+Kosovo,Europe,Gini Index,SIPOVGINIKSV,World Bank,a
+Kosovo,Europe,GDP per Capita,NYGDPPCAPKDKSV,World Bank,a
+Latvia,Europe,Inflation Rate,LVACPALTT01GYM,OECD,m
+Latvia,Europe,Labor Force Participation Rate,LVALRAC64TTSTSAQ,OECD,q
+Latvia,Europe,Labor Compensation (Manufacturing),LVALCEAMN01GYSAQ,OECD,q
+Latvia,Europe,Labor Compensation (Private Sector),LVALCEAPR01IXOBSAQ,OECD,q
+Latvia,Europe,Gini Index,SIPOVGINILVA,World Bank,a
+Latvia,Europe,GDP per Capita,NYGDPPCAPKDLVA,World Bank,a
+Lithuania,Europe,Inflation Rate,LTUCPALTT01GYM,OECD,m
+Lithuania,Europe,Labor Force Participation Rate,LTULRAC64TTSTSAQ,OECD,q
+Lithuania,Europe,Labor Compensation (Manufacturing),LTULCEAMN01GYSAQ,OECD,q
+Lithuania,Europe,Labor Compensation (Private Sector),LTULCEAPR01IXOBSAQ,OECD,q
+Lithuania,Europe,Gini Index,SIPOVGINILTU,World Bank,a
+Lithuania,Europe,GDP per Capita,NYGDPPCAPKDLTU,World Bank,a
+Luxembourg,Europe,Inflation Rate,CPALTT01LUM659N,OECD,m
+Luxembourg,Europe,Labor Force Participation Rate,LRAC64TTLUQ156S,OECD,q
+Luxembourg,Europe,Labor Compensation (Manufacturing),LCEAMN01LUQ659S,OECD,q
+Luxembourg,Europe,Labor Compensation (Private Sector),LCEAPR01LUQ661S,OECD,q
+Luxembourg,Europe,Gini Index,SIPOVGINILUX,World Bank,a
+Luxembourg,Europe,GDP per Capita,NYGDPPCAPKDLUX,World Bank,a
+Mexico,North America,Unemployment Rate,LRHUTTTTMXM156S,OECD,m
+Mexico,North America,Real GDP,NGDPRSAXDCMXQ,IMF,q
+Mexico,North America,Inflation Rate,CPALTT01MXM659N,OECD,m
+Mexico,North America,Labor Force Participation Rate,LRAC64TTMXQ156S,OECD,q
+Mexico,North America,Labor Compensation (Manufacturing),LCEAMN01MXQ659S,OECD,q
+Mexico,North America,Gini Index,SIPOVGINIMEX,World Bank,a
+Mexico,North America,GDP per Capita,NYGDPPCAPKDMEX,World Bank,a
+Montenegro,Europe,Gini Index,SIPOVGINIMNE,World Bank,a
+Montenegro,Europe,GDP per Capita,NYGDPPCAPKDMNE,World Bank,a
+Morocco,Africa,Gini Index,SIPOVGINIMAR,World Bank,a
+Morocco,Africa,GDP per Capita,NYGDPPCAPKDMAR,World Bank,a
+Netherlands,Europe,Unemployment Rate,LRHUTTTTNLM156S,OECD,m
+Netherlands,Europe,Real GDP,CLVMNACSCAB1GQNL,Eurostat,q
+Netherlands,Europe,Inflation Rate,CPALTT01NLM659N,OECD,m
+Netherlands,Europe,Labor Force Participation Rate,LRAC64TTNLQ156S,OECD,q
+Netherlands,Europe,Labor Compensation (Manufacturing),LCEAMN01NLQ659S,OECD,q
+Netherlands,Europe,Gini Index,SIPOVGININLD,World Bank,a
+Netherlands,Europe,GDP per Capita,NYGDPPCAPKDNLD,World Bank,a
+New Zealand,Australia and Oceania,Labor Force Participation Rate,LRAC64TTNZQ156S,OECD,q
+New Zealand,Australia and Oceania,Labor Compensation (Manufacturing),LCEAMN01NZQ659S,OECD,q
+New Zealand,Australia and Oceania,Labor Compensation (Private Sector),LCEAPR01NZQ661S,OECD,q
+Nigeria,Africa,Gini Index,SIPOVGININGA,World Bank,a
+Nigeria,Africa,GDP per Capita,NYGDPPCAPKDNGA,World Bank,a
+Norway,Europe,Real GDP,CLVMNACSCAB1GQNO,Eurostat,q
+Norway,Europe,Inflation Rate,CPALTT01NOM659N,OECD,m
+Norway,Europe,Labor Force Participation Rate,LRAC64TTNOQ156S,OECD,q
+Norway,Europe,Labor Compensation (Manufacturing),LCEAMN01NOQ659S,OECD,q
+Norway,Europe,Gini Index,SIPOVGININOR,World Bank,a
+Norway,Europe,GDP per Capita,NYGDPPCAPKDNOR,World Bank,a
+Pakistan,Asia,Gini Index,SIPOVGINIPAK,World Bank,a
+Pakistan,Asia,GDP per Capita,NYGDPPCAPKDPAK,World Bank,a
+Panama,North America,Gini Index,SIPOVGINIPAN,World Bank,a
+Panama,North America,GDP per Capita,NYGDPPCAPKDPAN,World Bank,a
+Poland,Europe,Unemployment Rate,LRHUTTTTPLM156S,OECD,m
+Poland,Europe,Real GDP,CLVMNACSCAB1GQPL,Eurostat,q
+Poland,Europe,Inflation Rate,CPALTT01PLM659N,OECD,m
+Poland,Europe,Central Bank Policy Rate,IRSTCB01PLM156N,OECD,m
+Poland,Europe,Labor Force Participation Rate,LRAC64TTPLQ156S,OECD,q
+Poland,Europe,Labor Compensation (Manufacturing),LCEAMN01PLQ659S,OECD,q
+Poland,Europe,Gini Index,SIPOVGINIPOL,World Bank,a
+Poland,Europe,GDP per Capita,NYGDPPCAPKDPOL,World Bank,a
+Portugal,Europe,Unemployment Rate,LRHUTTTTPTM156S,OECD,m
+Portugal,Europe,Real GDP,CLVMNACSCAB1GQPT,Eurostat,q
+Portugal,Europe,Inflation Rate,CPALTT01PTM659N,OECD,m
+Portugal,Europe,Labor Force Participation Rate,LRAC64TTPTQ156S,OECD,q
+Portugal,Europe,Labor Compensation (Manufacturing),LCEAMN01PTQ659S,OECD,q
+Portugal,Europe,Labor Compensation (Private Sector),LCEAPR01PTQ661S,OECD,q
+Portugal,Europe,Gini Index,SIPOVGINIPRT,World Bank,a
+Portugal,Europe,GDP per Capita,NYGDPPCAPKDPRT,World Bank,a
+Romania,Europe,Gini Index,SIPOVGINIROU,World Bank,a
+Romania,Europe,GDP per Capita,NYGDPPCAPKDROU,World Bank,a
+Russia,Asia,Inflation Rate,CPALTT01RUM659N,OECD,m
+Russia,Asia,Central Bank Policy Rate,IRSTCB01RUM156N,OECD,m
+Russia,Asia,Gini Index,SIPOVGINIRUS,World Bank,a
+Russia,Asia,GDP per Capita,NYGDPPCAPKDRUS,World Bank,a
+Saudi Arabia,Asia,Real GDP,NGDPRSAXDCSAQ,IMF,q
+Saudi Arabia,Asia,Inflation Rate,SAUCPALTT01GYM,OECD,m
+Senegal,Africa,Gini Index,SIPOVGINISEN,World Bank,a
+Senegal,Africa,GDP per Capita,NYGDPPCAPKDSEN,World Bank,a
+Serbia,Europe,Gini Index,SIPOVGINISRB,World Bank,a
+Serbia,Europe,GDP per Capita,NYGDPPCAPKDSRB,World Bank,a
+Slovak Republic,Europe,Inflation Rate,CPALTT01SKM659N,OECD,m
+Slovak Republic,Europe,Labor Force Participation Rate,LRAC64TTSKQ156S,OECD,q
+Slovak Republic,Europe,Labor Compensation (Manufacturing),LCEAMN01SKQ659S,OECD,q
+Slovak Republic,Europe,Labor Compensation (Private Sector),LCEAPR01SKQ661S,OECD,q
+Slovak Republic,Europe,Gini Index,SIPOVGINISVK,World Bank,a
+Slovak Republic,Europe,GDP per Capita,NYGDPPCAPKDSVK,World Bank,a
+Slovenia,Europe,Inflation Rate,CPALTT01SIM659N,OECD,m
+Slovenia,Europe,Labor Force Participation Rate,LRAC64TTSIQ156S,OECD,q
+Slovenia,Europe,Labor Compensation (Manufacturing),LCEAMN01SIQ659S,OECD,q
+Slovenia,Europe,Gini Index,SIPOVGINISVN,World Bank,a
+Slovenia,Europe,GDP per Capita,NYGDPPCAPKDSVN,World Bank,a
+South Africa,Africa,10 Year Interest Rate,IRLTLT01ZAM156N,OECD,m
+South Africa,Africa,Real GDP,NGDPRSAXDCZAQ,IMF,q
+South Africa,Africa,Inflation Rate,CPALTT01ZAM659N,OECD,m
+South Africa,Africa,Central Bank Policy Rate,IRSTCB01ZAM156N,OECD,m
+South Africa,Africa,Labor Force Participation Rate,LRAC64TTZAQ156S,OECD,q
+South Africa,Africa,Gini Index,SIPOVGINIZAF,World Bank,a
+South Africa,Africa,GDP per Capita,NYGDPPCAPKDZAF,World Bank,a
+Spain,Europe,Unemployment Rate,LRHUTTTTESM156S,OECD,m
+Spain,Europe,Real GDP,CLVMNACSCAB1GQES,Eurostat,q
+Spain,Europe,Inflation Rate,CPALTT01ESM659N,OECD,m
+Spain,Europe,Labor Force Participation Rate,LRAC64TTESQ156S,OECD,q
+Spain,Europe,Labor Compensation (Manufacturing),LCEAMN01ESQ659S,OECD,q
+Spain,Europe,Labor Compensation (Private Sector),LCEAPR01ESQ661S,OECD,q
+Spain,Europe,Gini Index,SIPOVGINIESP,World Bank,a
+Spain,Europe,GDP per Capita,NYGDPPCAPKDESP,World Bank,a
+Sweden,Europe,Unemployment Rate,LRHUTTTTSEM156S,OECD,m
+Sweden,Europe,Real GDP,CLVMNACSCAB1GQSE,Eurostat,q
+Sweden,Europe,Inflation Rate,CPALTT01SEM659N,OECD,m
+Sweden,Europe,Labor Force Participation Rate,LRAC64TTSEQ156S,OECD,q
+Sweden,Europe,Labor Compensation (Manufacturing),LCEAMN01SEQ659S,OECD,q
+Sweden,Europe,Labor Compensation (Private Sector),LCEAPR01SEQ661S,OECD,q
+Sweden,Europe,Gini Index,SIPOVGINISWE,World Bank,a
+Sweden,Europe,GDP per Capita,NYGDPPCAPKDSWE,World Bank,a
+Switzerland,Europe,Real GDP,CLVMNACSCAB1GQCH,Eurostat,q
+Switzerland,Europe,Inflation Rate,CPALTT01CHM659N,OECD,m
+Switzerland,Europe,Labor Force Participation Rate,LRAC64TTCHQ156S,OECD,q
+Switzerland,Europe,Gini Index,SIPOVGINICHE,World Bank,a
+Switzerland,Europe,GDP per Capita,NYGDPPCAPKDCHE,World Bank,a
+Thailand,Asia,Gini Index,SIPOVGINITHA,World Bank,a
+Thailand,Asia,GDP per Capita,NYGDPPCAPKDTHA,World Bank,a
+Tunisia,Africa,Gini Index,SIPOVGINITUN,World Bank,a
+Tunisia,Africa,GDP per Capita,NYGDPPCAPKDTUN,World Bank,a
+Turkey,Asia,Real GDP,NGDPRSAXDCTRQ,IMF,q
+Turkey,Asia,Labor Compensation (Manufacturing),LCEAMN01TRQ659S,OECD,q
+Turkey,Asia,Gini Index,SIPOVGINITUR,World Bank,a
+Turkey,Asia,GDP per Capita,NYGDPPCAPKDTUR,World Bank,a
+Turkey,Asia,Inflation Rate,CPALTT01TRM659N,OECD,m
+Turkey,Asia,Labor Force Participation Rate,LRAC64TTTRQ156S,OECD,q
+Uganda,Africa,Gini Index,SIPOVGINIUGA,World Bank,a
+Uganda,Africa,GDP per Capita,NYGDPPCAPKDUGA,World Bank,a
+Ukraine,Europe,Gini Index,SIPOVGINIUKR,World Bank,a
+Ukraine,Europe,GDP per Capita,NYGDPPCAPKDUKR,World Bank,a
+United Kingdom,Europe,Unemployment Rate,LRHUTTTTGBM156S,OECD,m
+United Kingdom,Europe,Inflation Rate,CPALTT01GBM659N,OECD,m
+United Kingdom,Europe,Labor Force Participation Rate,LRAC64TTGBQ156S,OECD,q
+United Kingdom,Europe,Labor Compensation (Manufacturing),LCEAMN01GBQ659S,OECD,q
+United Kingdom,Europe,Gini Index,SIPOVGINIGBR,World Bank,a
+United Kingdom,Europe,GDP per Capita,NYGDPPCAPKDGBR,World Bank,a
+United States,North America,10 Year Interest Rate,IRLTLT01USM156N,OECD,m
+United States,North America,Central Bank Policy Rate,FEDFUNDS,Fed,m
+United States,North America,Real GDP,GDPC1,U.S. Bureau of Economic Analysis,q
+United States,North America,Nominal GDP,GDP,U.S. Bureau of Economic Analysis,q
+United States,North America,Unemployment Rate,UNRATE,U.S. Bureau of Labor Statistics,m
+United States,North America,US Recessions,JHDUSRGDPBR,"Hamilton, James",q
+United States,North America,Unemployment Rate,LRHUTTTTUSM156S,OECD,m
+United States,North America,Inflation Rate,CPALTT01USM659N,OECD,m
+United States,North America,Labor Force Participation Rate,CIVPART,U.S. Bureau of Labor Statistics,m
+United States,North America,Labor Force Participation Rate,LRAC64TTUSQ156S,OECD,q
+United States,North America,Labor Compensation (Manufacturing),LCEAMN01USQ659S,OECD,q
+United States,North America,Labor Compensation (Private Sector),LCEAPR01USQ661S,OECD,q
+United States,North America,Gini Index,SIPOVGINIUSA,World Bank,a
+United States,North America,GDP per Capita,NYGDPPCAPKDUSA,World Bank,a
+Viet Nam,Asia,Gini Index,SIPOVGINIVNM,World Bank,a
+Viet Nam,Asia,GDP per Capita,NYGDPPCAPKDVNM,World Bank,a

@@ -24,3 +24,9 @@ in macro than in micro
   
   
 - goods market is the first model, we want to find equilibrium output
+  
+  
+Chart ideas:
+  - Gini coefficients
+    https://ourworldindata.org/income-inequality-before-and-after-taxes
+  -  

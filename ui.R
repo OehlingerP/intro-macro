@@ -48,11 +48,12 @@ tagList(
     
     
     # order of tabs --------------------------------
-    homeTab, 
+    introUnempTab,
+    #homeTab, 
     navbarMenu("Intro",
                introGoalsTab,
                introGdpTab,
-               introUnempTab,
+               #introUnempTab,
                introRatesTab,
                introInflationTab,
                introExercisesTab),

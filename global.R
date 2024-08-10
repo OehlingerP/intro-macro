@@ -27,6 +27,7 @@ library(ggplot2) # data visualization
 library(highcharter) # data visualisation
 library(plotly) # interactive graphs
 library(BH)
+library(DT)
 library(htmlwidgets)
 library(leaflet) #javascript maps
 library(shinyWidgets) # for extra widgets
