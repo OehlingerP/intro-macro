@@ -47,6 +47,7 @@ library(rmarkdown)
 library(knitr)
 library(gxplot)
 library(shinyvalidate)
+library(zoo)
 
 
 library(fredr)

@@ -10,6 +10,14 @@ output$tableGDP <- renderDataTable({
     check.names = F
   )
   
+  if(input$selectGDPCalcMethod == "None"){
+    
+    dt <- datatable(df,
+                    options = list(
+                      dom = 't'))
+    
+  }
+  
   if(input$selectGDPCalcMethod == "Expenditure Method"){
     
     dt <- datatable(df,

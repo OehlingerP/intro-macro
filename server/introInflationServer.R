@@ -1,56 +1,48 @@
-output$tabIntInfCorr <- renderDataTable({
-  
-  df <- fred_data()
-  
-  countries <- input$pickerInterestInflation
-  
-  df_int <-df %>% filter(variable %in% c("Central Bank Policy Rate"),
-                         country %in% countries) %>%
-    pivot_wider(names_from = "variable", values_from = "value")
-  
-  df_inf <- df %>% filter(variable %in% c("Inflation Rate"),
-                          country %in% countries) %>%
-    mutate(value = data.table::shift(value, input$numericLagInfInt)) %>%
-    pivot_wider(names_from = "variable", values_from = "value")
-  
-  df_plot <- left_join(df_int,
-                       df_inf) %>%
-    na.omit()
-  
-  correlation_results <- df_plot %>%
-    group_by(country) %>%
-    summarize(
-      Correlation = cor(`Central Bank Policy Rate`, `Inflation Rate`, use = "complete.obs")
-    )
-  
-  correlation_results
-  
-})
 
-output$plotInterestInflation <- renderPlotly({
+output$plotInflationWages <- renderPlotly({
   
-  df <- fred_data()
+  countries <-  "United States"
   
-  countries <- input$pickerInterestInflation
+  df <- fred_data() %>%
+    filter(variable == "US Recessions") %>%
+    mutate(startDate = ifelse(value == 1 & (lag(value) == 0 | is.na(lag(value))), date, NA),
+           endDate = ifelse(value == 1 & (lead(value) == 0 | is.na(lead(value))), date, NA)) 
   
-  df_int <-df %>% filter(variable %in% c("Central Bank Policy Rate"),
-                         country %in% countries) %>%
-    pivot_wider(names_from = "variable", values_from = "value")
+  df_recession <- data.frame("startDate" = df %>%
+                               select(startDate) %>%
+                               na.omit() %>%
+                               c() %>%
+                               unlist(),
+                             "endDate" = df %>%
+                               select(endDate) %>%
+                               na.omit() %>%
+                               c() %>%
+                               unlist())
   
-  df_inf <- df %>% filter(variable %in% c("Inflation Rate"),
-                          country %in% countries) %>%
-    mutate(value = shift(value, input$numericLagInfInt)) %>%
-    pivot_wider(names_from = "variable", values_from = "value")
+  df_recession$startDate <- as.Date(df_recession$startDate)
+  df_recession$endDate <- as.Date(df_recession$endDate)
   
-  df_plot <- left_join(df_int, 
-                       df_inf) %>%
-    na.omit()
+  df_plot <- fred_data() %>%
+    filter(country == countries,
+           variable == "Inflation Rate") %>%
+    mutate(date = as.yearqtr(date)) %>%
+    group_by(date, country, variable) %>%
+    summarize(value = mean(value)) %>%
+    rbind(fred_data() %>%
+            filter(variable %in% c("Labor Compensation (Manufacturing)"),
+                   country == countries) %>%
+            mutate(date = as.yearqtr(date)) %>%
+            select(date, country, variable, value))
   
-  plot <- ggplot(df_plot, aes(x = `Central Bank Policy Rate`, y = `Inflation Rate`, color = country)) + 
-    geom_point( size = 2 ) +
-    geom_smooth(method = "lm", se = F, lwd = 1.2 ) 
   
-  ggplotly(gx_theme(plot))
+    plot <- ggplot() +
+      geom_rect(data = df_recession,
+                aes(xmin = startDate, xmax = endDate, 
+                    ymin = min(df_plot$value, na.rm = T)-2, ymax = max(df_plot$value, na.rm = T)+2),
+                fill = "grey70", alpha = 0.5) +
+      geom_line(data = plot_df, mapping = aes(x = as.Date(date), y = value, color = variable))
+  
+  clean_plotly_legend(ggplotly(gx_theme(plot)))
   
 })
 
@@ -69,7 +61,7 @@ output$plotInflationHistory <- renderPlotly({
   plot <- ggplot(df, aes(x = date, y = value, color = country)) +
     geom_line()
   
-  ggplotly(gx_theme(plot))
+  clean_plotly_legend(ggplotly(gx_theme(plot)))
   
 })
 
@@ -110,9 +102,9 @@ output$plotInflationShareBelow2 <- renderPlotly({
               fill = "grey70", alpha = 0.5) +
     geom_line(data = df, mapping = aes(x = date, y = below2), color = gx_colors()[1]) 
   
-  ggplotly(gx_theme(plot,
-                    y1_title = "Share in %",
-                    title = "Share of (BIS) countries with inflation below 2%"))
+  clean_plotly_legend(ggplotly(gx_theme(plot,
+                    y1_title = "Share in %")))#,
+                    #title = "Share of (BIS) countries with inflation below 2%")))
   
 })
 

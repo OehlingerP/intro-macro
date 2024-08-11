@@ -6,7 +6,8 @@
 
 
 clean_plotly_legend <- function(plot,
-                                legend_title = T){
+                                legend_title = T,
+                                legend_bottom = T){
   
   l <- length(plot$x$data)
   
@@ -18,17 +19,30 @@ clean_plotly_legend <- function(plot,
   
   if(legend_title){
     
-    plot %>%
+    plot <- plot %>%
       layout(
         legend = list(
           title = "",  # Remove legend title
           titlefont = list(size = 0)
         ))
     
-  } else {
+  } 
+  
+  if(legend_bottom){
     
-    plot
+    plot <- plot %>%
+      layout(
+        legend = list(
+          orientation = 'h',  # Horizontal orientation
+          yanchor = 'top',    # Anchor at the top of the legend
+          #y = 0.2,           # Adjust vertical position
+          xanchor = 'center', # Center the legend horizontally
+          x = 0.5             # Center the legend horizontally
+        )
+      )
     
   }
+  
+  plot
   
 }

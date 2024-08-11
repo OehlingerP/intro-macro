@@ -48,15 +48,14 @@ tagList(
     
     
     # order of tabs --------------------------------
-    introUnempTab,
+    introInflationTab,
     #homeTab, 
     navbarMenu("Intro",
                introGoalsTab,
                introGdpTab,
-               #introUnempTab,
-               introRatesTab,
-               introInflationTab,
-               introExercisesTab),
+               introUnempTab,
+               #introInflationTab,
+               introRatesTab),
     goodsMarketTab,
     islmTab,
     policyAnalysisTab,

@@ -1,3 +1,69 @@
+# Data values
+population_total <- 83.2
+working_age_population <- 53.7
+youth <- 11.4
+elderly <- 18.1
+labor_force <- 46.5
+outside_labor_force <- 7.2
+unemployed <- 1.4
+employed <- 45.1
+
+# Output the custom HTML table
+output$tabEmpGermany <- renderUI({
+  HTML(
+    paste(
+      '<table border="1" style="border-collapse: collapse; width: 100%;">',
+      '<tr>',
+      '<td colspan="5";">Total Population: ', population_total, ' Millionen</td>',
+      '</tr>',
+      '<tr>',
+      '<td colspan="3">Working-Age Population: ', working_age_population, '</td>',
+      '<td>Under 15 Years: ', youth, '</td>',
+      '<td>65 Years and Older: ', elderly, '</td>',
+      '</tr>',
+      '<tr>',
+      '<td colspan="2">Labor Force: ', labor_force, '</td>',
+      '<td>Outside the Labor Force: ', outside_labor_force, '</td>',
+      '<tr>',
+      '<td>Unemployed: ', unemployed, '</td>',
+      '<td>Employed: ', employed, '</td>',
+      '</tr>',
+      '</table>',
+      '<p><em>Source: Population, Labor Force, Employment, and Unemployment in Germany, 2019, in millions. Blanchard and Illing (2021), page 223.</em></p>'
+    )
+  )
+})
+
+output$formEmpRate <- renderUI({
+  
+  eq <- paste0("$$\\begin{align}\\text{Employment Rate} &= ", 
+               "\\frac{\\text{Employed}}{\\text{Working-Age Population}}\\\\",
+               "&=\\frac{",employed,"}{",working_age_population,"}\\\\",
+               "&=", round(employed / working_age_population,4), "=", paste0(round( employed/ working_age_population,4)*100,"\\%"),"\\end{align}$$")
+  
+  withMathJax(HTML(eq))
+})
+
+output$formLaborForcePart <- renderUI({
+
+  eq <- paste0("$$\\begin{align}\\text{Praticipation Rate} &= ", 
+               "\\frac{\\text{Labor Force}}{\\text{Working-Age Population}}\\\\",
+               "&=\\frac{",labor_force,"}{",working_age_population,"}\\\\",
+               "&=", round(labor_force / working_age_population,4), "=", paste0(round(labor_force / working_age_population,4)*100,"\\%"),"\\end{align}$$")
+  
+  withMathJax(HTML(eq))
+})
+
+output$formUnempRate <- renderUI({
+  
+  eq <- paste0("$$\\begin{align}\\text{Unemployment Rate} &= ", 
+               "\\frac{\\text{Unemployed}}{\\text{Labor Force}}\\\\",
+               "&=\\frac{",unemployed,"}{",labor_force,"}\\\\",
+               "&=", round(unemployed / labor_force,4), "=", paste0(round(unemployed / labor_force,4)*100,"\\%"),"\\end{align}$$")
+  
+  withMathJax(HTML(eq))
+  
+})
 
 output$laborMarketUS <- renderPlotly({
 
@@ -40,10 +106,6 @@ output$laborMarketUS <- renderPlotly({
   
   
 })
-
-
-
-
 
 output$plotOcunsLaw <- renderPlotly({
   

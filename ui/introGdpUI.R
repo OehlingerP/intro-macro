@@ -22,18 +22,20 @@ introGdpTab <- tabPanel("Gross Domestic Product",
                                         in the production of goods and services. Factor income refers to earnings derived from the inputs used 
                                         in production, such as labor income (wages) and capital income (interest).")
                               ),
-                              tags$p("The three approaches are best explained by an example. Consider the closed economy in the following table
-                                     where the steel producers produces steel that is then used in car production."),
+                              tags$p(""),
                               fluidRow(
                                 column(8,
                                        dataTableOutput("tableGDP")),
                                 column(4, 
-                                       p("Select a calculation method to see what needs to be added (green) and subtracted (red) 
-                                         to calculate the GDP in the economy."),
+                                       h4("Exercise - GDP Calculation"),
+                                       p("The three approaches are best explained by an example. Consider the closed economy on the left
+                                          where steel is produced to be used in car production. Calculate the GDP of the economy according 
+                                          to the three methods described above. To check your results, select a calculation method below to see 
+                                          what needs to be added (green) and subtracted (red) in each method."),
                                        selectInput("selectGDPCalcMethod", 
                                                    label = "Select Calculation Method: ", 
-                                                   choices = c("Expenditure Method", "Output Method", "Income Method"),
-                                                   selected = "Expenditure Method"))
+                                                   choices = c("None", "Expenditure Method", "Output Method", "Income Method"),
+                                                   selected = "None"))
                               ),
                               tags$p("In summary, GDP can be calculated by summing the total value of final goods produced, the total value
                                        added, and the total income generated.", tags$strong("It is crucial to understand that income equals 
