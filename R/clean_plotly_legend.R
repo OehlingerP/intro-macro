@@ -30,12 +30,16 @@ clean_plotly_legend <- function(plot,
   
   if(legend_bottom){
     
+    vertical_distance = -0.2
+    
+    if(plot$x$layout$xaxis$title$text == "") vertical_distance <- -0.075
+    
     plot <- plot %>%
       layout(
         legend = list(
           orientation = 'h',  # Horizontal orientation
           yanchor = 'top',    # Anchor at the top of the legend
-          #y = 0.2,           # Adjust vertical position
+          y = vertical_distance,           # Adjust vertical position
           xanchor = 'center', # Center the legend horizontally
           x = 0.5             # Center the legend horizontally
         )

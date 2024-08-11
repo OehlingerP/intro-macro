@@ -1,26 +1,12 @@
 
 output$plotInflationWages <- renderPlotly({
   
-  countries <-  "United States"
+  countries <-  input$inflationWageSelector
   
   df <- fred_data() %>%
     filter(variable == "US Recessions") %>%
     mutate(startDate = ifelse(value == 1 & (lag(value) == 0 | is.na(lag(value))), date, NA),
            endDate = ifelse(value == 1 & (lead(value) == 0 | is.na(lead(value))), date, NA)) 
-  
-  df_recession <- data.frame("startDate" = df %>%
-                               select(startDate) %>%
-                               na.omit() %>%
-                               c() %>%
-                               unlist(),
-                             "endDate" = df %>%
-                               select(endDate) %>%
-                               na.omit() %>%
-                               c() %>%
-                               unlist())
-  
-  df_recession$startDate <- as.Date(df_recession$startDate)
-  df_recession$endDate <- as.Date(df_recession$endDate)
   
   df_plot <- fred_data() %>%
     filter(country == countries,
@@ -34,13 +20,8 @@ output$plotInflationWages <- renderPlotly({
             mutate(date = as.yearqtr(date)) %>%
             select(date, country, variable, value))
   
-  
     plot <- ggplot() +
-      geom_rect(data = df_recession,
-                aes(xmin = startDate, xmax = endDate, 
-                    ymin = min(df_plot$value, na.rm = T)-2, ymax = max(df_plot$value, na.rm = T)+2),
-                fill = "grey70", alpha = 0.5) +
-      geom_line(data = plot_df, mapping = aes(x = as.Date(date), y = value, color = variable))
+      geom_line(data = df_plot, mapping = aes(x = as.Date(date), y = value, color = variable))
   
   clean_plotly_legend(ggplotly(gx_theme(plot)))
   
