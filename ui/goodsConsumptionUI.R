@@ -35,6 +35,7 @@ goodsConsumptionTab <- tabPanel("Private Consumption",
                             fluidRow(
                               column(8,
                                      plotlyOutput("plotPrivateConsumption"),
+                                     br(),
                                      textOutput("textStep1ConsumptionPlot"),
                                      textOutput("textStep2ConsumptionPlot")),
                               column(4, 

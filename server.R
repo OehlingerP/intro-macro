@@ -13,6 +13,8 @@ function(input, output, session) {
   source(file.path("server/introUnempServer.R"), local = TRUE)$value  
   source(file.path("server/introInflationServer.R"), local = TRUE)$value 
   source(file.path("server/goodsConsumptionServer.R"), local = TRUE)$value 
+  source(file.path("server/goodsMultiplierServer.R"), local = TRUE)$value 
+  source(file.path("server/goodsGraphicalServer.R"), local = TRUE)$value 
   source(file.path("server/islmServer.R"), local = TRUE)$value  
   
   observe({
