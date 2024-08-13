@@ -48,8 +48,7 @@ tagList(
     
     
     # order of tabs --------------------------------
-    introRatesTab,
-    #homeTab, 
+    homeTab, 
     navbarMenu("Intro",
                introGoalsTab,
                introGdpTab,
@@ -57,6 +56,10 @@ tagList(
                introInflationTab#,
                #introRatesTab
                ),
+    navbarMenu("The Goods Market",
+               goodsGoalsTab, 
+               goodsComponentsTab,
+               goodsConsumptionTab),
     goodsMarketTab,
     islmTab,
     policyAnalysisTab,

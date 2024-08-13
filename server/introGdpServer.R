@@ -57,6 +57,25 @@ output$tableGDP <- renderDataTable({
   
 })
 
+output$gdpFormula <- renderUI({
+  
+  x <- input$selectGDPCalcMethod
+  
+  if(x == "None") eq <- 
+      paste0("\\(\\text{Try to solve it yourself before selecting different calculation methods.}\\)")
+  
+  if(x == "Expenditure Method") eq <- 
+      paste0("\\(\\text{The GDP of the economy is 250}\\)")
+  
+  if(x == "Output Method") eq <- 
+      paste0("\\(\\text{The GDP of the economy is: } 120 + (250 - 120) = 250\\)")
+  
+  if(x == "Income Method") eq <- 
+      paste0("\\(\\text{The GDP of the economy is: } (80 + 20 + 20) + (70 + 20 + 40) = 250\\)")
+  
+  withMathJax(HTML(eq))
+})
+
 output$plotGdpUS <- renderPlotly({
 
   df <- fred_data() %>%

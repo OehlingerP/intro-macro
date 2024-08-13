@@ -4,7 +4,7 @@
 #
 ##############################################
 
-introGoalsTab <- tabPanel("Intro", 
+introGoalsTab <- tabPanel("Course Goals", 
                             withMathJax(),
                             mainPanel(
                               tags$p("Macroeconomics is the study of the economy as a whole rather than focusing on 

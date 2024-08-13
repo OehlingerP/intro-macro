@@ -25,12 +25,15 @@ introGdpTab <- tabPanel("Gross Domestic Product",
                               tags$p(""),
                               fluidRow(
                                 column(8,
-                                       dataTableOutput("tableGDP")),
+                                       dataTableOutput("tableGDP"),
+                                       br(),
+                                       uiOutput("gdpFormula"),),
                                 column(4, 
                                        h4("Exercise - GDP Calculation"),
                                        p("The three approaches are best explained by an example. Consider the closed economy on the left
                                           where steel is produced to be used in car production. Calculate the GDP of the economy according 
-                                          to the three methods described above. To check your results, select a calculation method below to see 
+                                          to the three methods described above."),
+                                       p("To check your results, select a calculation method below to see 
                                           what needs to be added (green) and subtracted (red) in each method."),
                                        selectInput("selectGDPCalcMethod", 
                                                    label = "Select Calculation Method: ", 
