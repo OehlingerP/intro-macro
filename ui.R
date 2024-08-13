@@ -48,6 +48,7 @@ tagList(
     
     
     # order of tabs --------------------------------
+    goodsEquilibriumTab,
     homeTab, 
     navbarMenu("Intro",
                introGoalsTab,
@@ -59,8 +60,8 @@ tagList(
     navbarMenu("The Goods Market",
                goodsGoalsTab, 
                goodsComponentsTab,
-               goodsConsumptionTab),
-    goodsMarketTab,
+               goodsConsumptionTab
+               ),
     islmTab,
     policyAnalysisTab,
     mathPrereqTab,

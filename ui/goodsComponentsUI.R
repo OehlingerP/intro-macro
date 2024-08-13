@@ -11,7 +11,7 @@ goodsComponentsTab <- tabPanel("Components",
                                    between income/output and aggregate demand. We defined GDP
                                    as the total value of goods and services produced. Remember,
                                    that GDP can also be calculated by adding up all incomes generated
-                                   in the economy. This is why we write income/output as it is
+                                   in the economy. This is why we write ``income/output'' as it is
                                    basically the same. This will be crucial when we want to solve our model.
                                    The production of goods refers to the supply side of the economy. How does
                                    the demand side look like?"),
