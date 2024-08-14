@@ -84,8 +84,7 @@ output$plotGdpUS <- renderPlotly({
 
   plot <- gx_theme(
     ggplot(df, aes(x = date, y = value, color = variable)) + geom_line(),
-    y1_title = "Billions of Dollars", 
-    title = "U.S. Real and Nominal GDP")
+    y1_title = "Billions of Dollars")
   
   clean_plotly_legend(ggplotly(plot))
   

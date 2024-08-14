@@ -1,0 +1,65 @@
+/* color palette 41 with different background: https://visme.co/blog/website-color-schemes/*/
+
+/* General body styling */
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #ECECEC;
+  font-size: 14px;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #314455; /* Change to your preferred color */
+}
+
+/* color for not selected tabs */
+.navbar-nav > li > a {
+  color: #ECECEC !important; 
+}
+
+.navbar-nav > li > a:hover {
+  color: #C96567 !important; 
+}
+
+/* color selected tab*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-nav > li.active > a {
+  color: #C96567 !important;
+}
+
+/* color dropdown menu */
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: transparent;
+  border: none;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #C96567;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.dropdown-menu {
+  background-color: #314455;
+  border: none;
+}
+
+.dropdown-menu>li>a {
+  color: #ECECEC;
+}
+
+/* Custom styles for specific content */
+h1, h2, h3, h4 {
+  color: #9E5A63; /* Blue color for headers */
+}
+
+.tab-pane .row {
+  padding: 20px; /* Space inside the row */
+  margin-bottom: 20px; /* Space below each row */
+  border-radius: 5px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}

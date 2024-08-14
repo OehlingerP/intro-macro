@@ -7,7 +7,7 @@
 homeTab <- tabPanel("Home", 
                             withMathJax(),
                     fluidPage(
-                              h3("About this course", style = "color:black; font-weight: 600"),
+                              h3("About this course"),
                               p("This website is designed to provide an overview of key concepts in macroeconomics and 
                        supplement your learning. However, it is not a substitute for a comprehensive textbook. 
                        For a deeper understanding of the subject, please refer to the recommended textbook and 

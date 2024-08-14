@@ -48,7 +48,7 @@ islmTab <- tabPanel("ISLM Model",
                       
                       fluidRow(
                         column(6,
-                               plotOutput("plotGoodsMarket")),
+                               plotlyOutput("plotGoodsMarket")),
                         column(3, 
                                p("Here is an example of the goods market. You can vary the interest rate and 
                                  observe how we move to new equilibria in the goods market. The results are than 
@@ -59,7 +59,7 @@ islmTab <- tabPanel("ISLM Model",
                       ),
                       fluidRow(
                         column(6,
-                               plotOutput("plotIS")),
+                               plotlyOutput("plotIS")),
                         column(3,
                                h5("The IS Curve"),
                                p("On the left we record all goods market equilibria while varying the interest rate and holding everything 
@@ -93,7 +93,7 @@ islmTab <- tabPanel("ISLM Model",
                      fluidRow(
                        column(6,
                               h4("Goods Market"),
-                              plotOutput("goodsMarketPlot")),
+                              plotlyOutput("goodsMarketPlot")),
                        column(2,
                               h4("Parameters ISLM"),
                               p("Define parameters of the ISLM model and change 
@@ -131,10 +131,10 @@ islmTab <- tabPanel("ISLM Model",
                      fluidRow(
                        column(6,
                               h4("IS and LM Curve"),
-                              plotOutput("islmPlot")),
+                              plotlyOutput("islmPlot")),
                        column(6, 
                               h4("Money Market"),
-                              plotOutput("interestRatePlot"))
+                              plotlyOutput("interestRatePlot"))
                      )
                      
                   )

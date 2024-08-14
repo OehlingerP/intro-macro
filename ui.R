@@ -12,7 +12,7 @@ walk(list.files("ui", full.names = TRUE), ~ source(.x))
 tagList(
   useShinyjs(), 
   navbarPage(
-  
+    theme = "general layout.css",
     # add PHS logo to navigation bar 
     title = div(style = "position: relative; 
                        top: -15px; 

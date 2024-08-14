@@ -10,7 +10,7 @@
   eqStorage <- reactiveValues(equilibria = data.frame(iVal = numeric(), yVal = numeric()))
   
   # Update goods market plot based on interest rate
-  output$plotGoodsMarket <- renderPlot({
+  output$plotGoodsMarket <- renderPlotly({
     
     # Plot the goods market
     plot <- ggplot() +
@@ -21,9 +21,11 @@
       scale_y_continuous(limits = c(0, 3000), expand = c(0,0)) +
       scale_x_continuous(limits = c(0, 3000), expand = c(0,100))
     
-    gx_theme(plot,
+    plot <- gx_theme(plot,
              x_title = "Output/Income",
              y1_title = "Demand")
+    
+    ggplotly(plot)
   })
   
   # Update equilibrium plot and store the equilibrium
@@ -40,7 +42,7 @@
   })
 
   # Render the equilibria plot
-  output$plotIS <- renderPlot({
+  output$plotIS <- renderPlotly({
     eq_data <- eqStorage$equilibria
 
     plot <- ggplot(eq_data, aes(x = yVal, y = iVal)) +
@@ -50,10 +52,12 @@
       scale_y_continuous(limits = c(0, 0.3), expand = c(0,0)) +
       scale_x_continuous(limits = c(0, 3000), expand = c(0,100))
 
-    gx_theme(plot,
+    plot <- gx_theme(plot,
              x_title = "Output",
              y1_title = "Interest Rate")
 
+    ggplotly(plot)
+    
   })
 
   # Reset button functionality
@@ -69,7 +73,7 @@
 
 
 # ISLM Full Model (3 plots)
-output$goodsMarketPlot <- renderPlot({
+output$goodsMarketPlot <- renderPlotly({
   
   plot <- ggplot() +
     geom_abline(slope = 1) +
@@ -79,13 +83,15 @@ output$goodsMarketPlot <- renderPlot({
     scale_y_continuous(limits = c(0, 5000), expand = c(0,0)) +
     scale_x_continuous(limits = c(0, 5000), expand = c(0,100))
   
-  gx_theme(plot,
+  plot <- gx_theme(plot,
            x_title = "Output/Income",
            y1_title = "Demand")
 
+  ggplotly(plot)
+  
 })
 
-output$interestRatePlot <- renderPlot({
+output$interestRatePlot <- renderPlotly({
   
   plot <- ggplot() +
     geom_hline(yintercept = input$i_islm,
@@ -93,13 +99,15 @@ output$interestRatePlot <- renderPlot({
     scale_y_continuous(limits = c(-0.05, 0.5), expand = c(0,0)) +
     scale_x_continuous(limits = c(0, 5000), expand = c(0,100))
   
-  gx_theme(plot,
+  plot <- gx_theme(plot,
            x_title = "Output",
            y1_title = "Interest Rate")
   
+  ggplotly(plot)
+  
 })
 
-output$islmPlot <- renderPlot({
+output$islmPlot <- renderPlotly({
   
   plot <- ggplot() +
     geom_abline(intercept = (input$c0_islm-input$c1_islm*input$T_islm+input$I0_islm+input$G_islm)/input$I2_islm,
@@ -110,9 +118,11 @@ output$islmPlot <- renderPlot({
     scale_y_continuous(limits = c(-0.05, 0.5), expand = c(0,0)) +
     scale_x_continuous(limits = c(0, 5000), expand = c(0,100))
   
-  gx_theme(plot,
+  plot <- gx_theme(plot,
            x_title = "Output",
            y1_title = "Interest Rate")
+  
+  ggplotly(plot)
   
 })
 
