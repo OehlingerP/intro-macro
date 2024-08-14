@@ -90,9 +90,6 @@ islmTab <- tabPanel("ISLM Model",
                       
                       tags$p("This tool combines the two markets in the ISLM model. Vary the parameters and see how they impact equilibrium output!"),
                      hr(),
-                     tags$head(
-                       tags$style(type="text/css", "label{ display: table-cell; text-align: center; vertical-align: middle; } .form-group { display: table-row;}")
-                     ),
                      fluidRow(
                        column(6,
                               h4("Goods Market"),
