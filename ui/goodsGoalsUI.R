@@ -6,7 +6,7 @@
 
 goodsGoalsTab <- tabPanel("Goals", 
                             withMathJax(),
-                            mainPanel(
+                          fluidPage(
                               tags$p("In this section, we will develop a model of the goods market with a focus on 
                                      the short term. Before outlining the specific objectives, let's briefly discuss
                                      the role of economic models. Economic models are simplified representations of 

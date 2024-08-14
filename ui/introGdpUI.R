@@ -6,7 +6,7 @@
 
 introGdpTab <- tabPanel("Gross Domestic Product", 
                             withMathJax(),
-                            mainPanel(
+                        fluidPage(
                               tags$p("GDP, or Gross Domestic Product, is the total value 
                                      of all goods and services produced within a country 
                                      in a specific time period, usually a year or quarter."),

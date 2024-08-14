@@ -6,7 +6,7 @@
 
 goodsEquilibriumTab <- tabPanel("Equilibrium", 
                     withMathJax(),
-                    mainPanel(
+                    fluidPage(
                       p("Restating what we have learned so far:"),
                       tags$ul(
                         tags$li("Demand Function: \\(Z = C + I + G\\)"),

@@ -6,6 +6,6 @@
 
 policyAnalysisTab <- tabPanel("Policy Analysis", 
                             withMathJax(),
-                            mainPanel(
+                            fluidPage(
                               
                             ))

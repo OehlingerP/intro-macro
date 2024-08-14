@@ -6,7 +6,7 @@
 
 introGoalsTab <- tabPanel("Course Goals", 
                             withMathJax(),
-                            mainPanel(
+                          fluidPage(
                               tags$p("Macroeconomics is the study of the economy as a whole rather than focusing on 
                                      individual markets or firms. It focuses on understanding how entire economies 
                                      function and interact. In this course, you’ll explore key concepts such as 

@@ -6,7 +6,7 @@
 
 goodsStabilizerTab <- tabPanel("Automatic Stabilizers", 
                     withMathJax(),
-                    mainPanel(
+                    fluidPage(
                       p("So far, we have developed a basic model of the goods market, focusing on the 
                         multiplier as a key mechanism. Next, we will extend our model by incorporating
                         automatic stabilizers&mdash;economic policies or features that automatically adjust 

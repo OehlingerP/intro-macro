@@ -49,7 +49,6 @@ library(gxplot)
 library(shinyvalidate)
 library(zoo)
 
-
 library(fredr)
 fredr_set_key("13cde7ca47173a5c9a9c1eece02455b9")
 

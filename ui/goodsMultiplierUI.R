@@ -6,7 +6,7 @@
 
 goodsMultiplierTab <- tabPanel("Multiplier", 
                                 withMathJax(),
-                                mainPanel(
+                               fluidPage(
                                   p("When examining the equilibrium output, we observe that changes in exogenous parameters 
                       (\\(c_0\\), \\(I\\), \\(G\\), or \\(T\\)) do not lead to a one-to-one change in equilibrium 
                         output. Instead, these changes are amplified by a factor known as the", tags$strong("multiplier"), 

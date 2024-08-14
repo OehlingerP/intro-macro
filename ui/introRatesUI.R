@@ -6,7 +6,7 @@
 
 introRatesTab <- tabPanel("Interest Rates", 
                             withMathJax(),
-                            mainPanel(
+                          fluidPage(
                              
                               tags$h3("Interest Rate"),
                               

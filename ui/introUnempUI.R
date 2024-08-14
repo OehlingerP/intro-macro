@@ -6,7 +6,7 @@
 
 introUnempTab <- tabPanel("Unemployment Rate", 
                             withMathJax(),
-                            mainPanel(
+                          fluidPage(
                               p("The labor market is a crucial component of any economy, representing the dynamics between employers seeking to 
                               hire workers and individuals seeking employment. Macroeconomists closely monitor labor market indicators as they 
                               provide insights into the overall health of an economy, the effectiveness of economic policies, and potential areas 

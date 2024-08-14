@@ -6,7 +6,7 @@
 
 islmTab <- tabPanel("ISLM Model",
                     withMathJax(), 
-                    mainPanel(
+                    fluidPage(
                       #tags$h2("Introduction to the ISLM Model"),
                       tags$p("We will now derive the IS-LM model and explore how changes in the model's 
                              parameters affect the equilibrium of our economy. The tool at the end will 
@@ -69,7 +69,7 @@ islmTab <- tabPanel("ISLM Model",
                       tags$h3("The LM Curve"),
                       tags$p("The LM curve represents all equilibria in the money market. We have the following equilibrium condition:"),
                       withMathJax("$$M = PYL(i)\\Leftrightarrow\\frac{M}{P} = YL(i)$$"),
-                      tags$p("where M is the money supply, P are prices and L is the liquidity preference which depends on the interest rate. 
+                      tags$p("where \\(M\\) is the money supply, \\(P\\) are prices and \\(L\\) is the liquidity preference which depends on the interest rate. 
                              Thus, in equilibrium real money supply equals real money demand. As central banks directly control the interest rate, 
                              rather than money supply, we will also assume it here. This makes our derivation of the LM curve quite easy as it is 
                              just a flat line. The central bank just sets the interest rate according to its policy goals."),

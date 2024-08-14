@@ -6,6 +6,6 @@
 
 mathPrereqTab <- tabPanel("Math Prerequisites", 
                               withMathJax(),
-                              mainPanel(
+                              fluidPage(
                                 
                               ))

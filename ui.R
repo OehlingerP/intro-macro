@@ -12,7 +12,7 @@ walk(list.files("ui", full.names = TRUE), ~ source(.x))
 tagList(
   useShinyjs(), 
   navbarPage(
-    
+  
     # add PHS logo to navigation bar 
     title = div(style = "position: relative; 
                        top: -15px; 
@@ -24,7 +24,6 @@ tagList(
                        href = "https://www.peteroehlinger.com/",
                        target = "_blank")
     ),
-    
     
     # make navigation bar collapse on smaller screens
     windowTitle = "ScotPHO profiles",
@@ -48,6 +47,7 @@ tagList(
     
     
     # order of tabs --------------------------------
+    financialMoneyUI,
     homeTab, 
     navbarMenu("Intro",
                introGoalsTab,
@@ -65,7 +65,8 @@ tagList(
                goodsGraphicalTab,
                goodsStabilizerTab
                ),
-    navbarMenu("Financial Markets"),
+    navbarMenu("Financial Markets",
+               financialGoalsTab),
     islmTab,
     policyAnalysisTab,
     mathPrereqTab,
