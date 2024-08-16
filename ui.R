@@ -72,7 +72,8 @@ tagList(
                goodsStabilizerTab
                ),
     navbarMenu("Financial Markets",
-               financialGoalsTab),
+               financialGoalsTab,
+               financialMoneyUI),
     islmTab,
     policyAnalysisTab,
     mathPrereqTab,

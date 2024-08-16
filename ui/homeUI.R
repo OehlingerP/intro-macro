@@ -41,6 +41,7 @@ homeTab <- tabPanel("Home",
                                  class = "landing-page",
                           column(12,
                                  div(class = "course-description",
+                                     # add paralax here? use the first p() element to enduce scroll
                                      p(tags$strong("If any of the questions above sparked your curiosity, this course is a great opportunity to explore further!")),
                                      p("In this interactive introduction to macroeconomics, you’ll engage with a variety of questions, exercises, and conceptual solutions. 
                                        The course is designed to be engaging and hands-on, providing you with a solid foundation in macroeconomic principles. For now, we'll 
@@ -49,6 +50,16 @@ homeTab <- tabPanel("Home",
                                        tags$li(strong("Interactive Learning:"), " Dive into thought-provoking questions and real-world exercises that will help solidify your understanding of macroeconomic concepts."),
                                        tags$li(strong("Instant Feedback:"), " For each question, you’ll have the option to view the answer. However, it's important to approach this with discipline. Take the time to thoroughly think through each problem before checking the solution. This approach ensures you fully grasp the material and avoids merely memorizing answers."),
                                        tags$li(strong("Self-Paced Exploration:"), " The course is designed to fit into your schedule, allowing you to learn at your own pace. Stay committed, and you’ll find the concepts becoming clearer and more intuitive over time.")
+                                     ),
+                                     tags$h4("Course Goals"),
+                                     tags$p("This course is not about math. We will need some math but this is really simple 
+                                     math (see Math Prerequisites). This course can be called a success if you:"),
+                                     tags$ol(
+                                       tags$li("understand key macroeconomic variables."),
+                                       tags$li("are able to describe the general interactions between those variables"),
+                                       tags$li("are able to read and interpret economic news articles and reports such as the ", 
+                                               a(href = "https://www.imf.org/en/Publications/WEO/Issues/2024/07/16/world-economic-outlook-update-july-2024", 
+                                                 "World Economic Outlook"))
                                      ),
                                      h4("Tips for Success:"),
                                      tags$ul(

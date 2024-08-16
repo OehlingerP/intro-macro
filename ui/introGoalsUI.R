@@ -4,27 +4,14 @@
 #
 ##############################################
 
-introGoalsTab <- tabPanel("Course Goals", 
+introGoalsTab <- tabPanel("Section Goals", 
                             withMathJax(),
                           fluidPage(
+                            tags$h3("Section Goals"),
                               tags$p("Macroeconomics is the study of the economy as a whole rather than focusing on 
                                      individual markets or firms. It focuses on understanding how entire economies 
-                                     function and interact. In this course, you’ll explore key concepts such as 
-                                     national income, inflation, unemployment, and economic growth. We’ll examine 
-                                     how government policies, global events, and other factors influence the overall 
-                                     health of an economy. By the end of this course, you'll have a solid grasp of 
-                                     the major forces shaping our economic world and how they affect both individuals
-                                     and societies."),
-                              tags$h3("Course Goals"),
-                              tags$p("This course is not about math. We will need some math but this is really simple 
-                                     math (see Math Prerequisites). This course can be called a success if you:"),
-                              tags$ol(
-                                tags$li("understand key macroeconomic variables."),
-                                tags$li("are able to describe the general interactions between those variables"),
-                                tags$li("are able to read and interpret economic news articles and reports such as the ", 
-                                        a(href = "https://www.imf.org/en/Publications/WEO/Issues/2024/07/16/world-economic-outlook-update-july-2024", 
-                                          "World Economic Outlook"))
-                                ),
+                                     function and interact. However, before we start modelling, we need to talk about
+                                     the definitions of the most important economic variables."),
                               tags$h3("Example Articles"),
                               tags$p("Read the following articles (in German as the class is usually held in German) and answer the questions below:"),
                               tags$ol(

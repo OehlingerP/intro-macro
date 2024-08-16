@@ -7,6 +7,7 @@
 goodsConsumptionTab <- tabPanel("Private Consumption", 
                           withMathJax(),
                           fluidPage(
+                            h2("Private Consumption"),
                             tags$p("Recall the aggregate demand function \\(Z=C+I+G\\). 
                             We have not yet defined how consumption, investment, or 
                             government expenditure are determined. To develop our model for 

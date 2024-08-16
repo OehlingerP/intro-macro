@@ -7,7 +7,7 @@
 islmTab <- tabPanel("ISLM Model",
                     withMathJax(), 
                     fluidPage(
-                      #tags$h2("Introduction to the ISLM Model"),
+                      tags$h2("ISLM Model"),
                       tags$p("We will now derive the IS-LM model and explore how changes in the model's 
                              parameters affect the equilibrium of our economy. The tool at the end will 
                              help you understand the model better and allow you to review your assignments 

@@ -1,3 +1,16 @@
+- for each goals section add an article and a question related to it (otherwise it is too boring)
+
+- scroll down on main page
+
+
+
+
+
+
+
+
+
+- first MIT lecture notes and ideas
 - relate output and prices to micro, why is it more difficult 
 in macro than in micro
 - most is spent on services
