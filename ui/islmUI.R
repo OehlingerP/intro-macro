@@ -45,26 +45,27 @@ islmTab <- tabPanel("ISLM Model",
                              the interest rate. This can be done by varying the interest rate in the goods market while holding everything else 
                              fixed. We then record the interest rate and the associated equilibrium output value and draw them in the i-Y diagram."),
                       
-                      
                       fluidRow(
-                        column(6,
-                               plotlyOutput("plotGoodsMarket")),
-                        column(3, 
-                               p("Here is an example of the goods market. You can vary the interest rate and 
-                                 observe how we move to new equilibria in the goods market. The results are than 
-                                 transferred to the i-Y diagram below. Before you start varying the interest rate, what would you expect?"),
-                               numericInput("interestRateIS", "interest rate", value = 0.05, min = 0, max = 0.2, step = 0.01),
-                               actionButton("resetIS", "Reset")
-                        )
-                      ),
-                      fluidRow(
-                        column(6,
-                               plotlyOutput("plotIS")),
-                        column(3,
-                               h5("The IS Curve"),
-                               p("On the left we record all goods market equilibria while varying the interest rate and holding everything 
-                                 else constant. This is the IS curve.")
-                        )
+                        fluidRow(
+                          column(6,
+                                 plotlyOutput("plotGoodsMarket")),
+                          column(3, 
+                                 p("Here is an example of the goods market. You can vary the interest rate and 
+                                   observe how we move to new equilibria in the goods market. The results are than 
+                                   transferred to the i-Y diagram below. Before you start varying the interest rate, what would you expect?"),
+                                 numericInput("interestRateIS", "interest rate", value = 0.05, min = 0, max = 0.2, step = 0.01),
+                                 actionButton("resetIS", "Reset")
+                          )
+                        ),
+                        fluidRow(
+                          column(6,
+                                 plotlyOutput("plotIS")),
+                          column(3,
+                                 h5("The IS Curve"),
+                                 p("On the left we record all goods market equilibria while varying the interest rate and holding everything 
+                                   else constant. This is the IS curve.")
+                          )
+                        ),
                       ),
                       tags$h3("The LM Curve"),
                       tags$p("The LM curve represents all equilibria in the money market. We have the following equilibrium condition:"),
@@ -91,50 +92,52 @@ islmTab <- tabPanel("ISLM Model",
                       tags$p("This tool combines the two markets in the ISLM model. Vary the parameters and see how they impact equilibrium output!"),
                      hr(),
                      fluidRow(
-                       column(6,
-                              h4("Goods Market"),
-                              plotlyOutput("goodsMarketPlot")),
-                       column(2,
-                              h4("Parameters ISLM"),
-                              p("Define parameters of the ISLM model and change 
-                                endogenous and exogenous paramters to see how 
-                                those changes affect equilibrium output."),
-                              textOutput("islmEquilibrium")
+                       fluidRow(
+                         column(6,
+                                h4("Goods Market"),
+                                plotlyOutput("goodsMarketPlot")),
+                         column(2,
+                                h4("Parameters ISLM"),
+                                p("Define parameters of the ISLM model and change 
+                                  endogenous and exogenous paramters to see how 
+                                  those changes affect equilibrium output."),
+                                textOutput("islmEquilibrium")
+                         ),
+                         column(2,
+                                h4("Model Parameters (Intercept)"),
+                                numericInput("c0_islm", label = withMathJax("$$c_0 = $$"), 
+                                             value = 200, min = 100, max = 500, step = 50),
+                                
+                                numericInput("I0_islm", label = withMathJax("$$I_0 = $$"), 
+                                             value = 150, min = 0, max = 500, step = 50),
+                                
+                                numericInput("I2_islm", label = withMathJax("$$I_2 = $$"), 
+                                             value = 1000, min = 0, max = 10000, step = 50),
+                                h4("Model Parameters (Slope)"),
+                                numericInput("c1_islm", label = withMathJax("$$c_1 = $$"), 
+                                             value = 0.5, min = 0.01, max = 0.99, step = 0.1),
+                                numericInput("I1_islm", label = withMathJax("$$I_1 = $$"), 
+                                             value = 0.2, min = 0.0, max = 0.99, step = 0.1)
+                         ),
+                         column(2,
+                                h4("Decision Variables"),
+                                p("Parameters the government (G and T) and the Central Bank (i) can directly influence."),
+                                numericInput("G_islm", label = withMathJax("$$G = $$"), 
+                                             value = 200, min = 0, max = 500, step = 50),
+                                numericInput("T_islm", label = withMathJax("$$T = $$"), 
+                                             value = 100, min = 0, max = 500, step = 50),
+                                numericInput("i_islm", label = withMathJax("$$i = $$"), 
+                                             value = 0.02, min = -0.01, max = 0.5, step = 0.02)
+                         )
                        ),
-                       column(2,
-                              h4("Model Parameters (Intercept)"),
-                              numericInput("c0_islm", label = withMathJax("$$c_0 = $$"), 
-                                           value = 200, min = 100, max = 500, step = 50),
-                              
-                              numericInput("I0_islm", label = withMathJax("$$I_0 = $$"), 
-                                           value = 150, min = 0, max = 500, step = 50),
-                              
-                              numericInput("I2_islm", label = withMathJax("$$I_2 = $$"), 
-                                           value = 1000, min = 0, max = 10000, step = 50),
-                              h4("Model Parameters (Slope)"),
-                              numericInput("c1_islm", label = withMathJax("$$c_1 = $$"), 
-                                           value = 0.5, min = 0.01, max = 0.99, step = 0.1),
-                              numericInput("I1_islm", label = withMathJax("$$I_1 = $$"), 
-                                           value = 0.2, min = 0.0, max = 0.99, step = 0.1)
-                       ),
-                       column(2,
-                              h4("Decision Variables"),
-                              p("Parameters the government (G and T) and the Central Bank (i) can directly influence."),
-                              numericInput("G_islm", label = withMathJax("$$G = $$"), 
-                                           value = 200, min = 0, max = 500, step = 50),
-                              numericInput("T_islm", label = withMathJax("$$T = $$"), 
-                                           value = 100, min = 0, max = 500, step = 50),
-                              numericInput("i_islm", label = withMathJax("$$i = $$"), 
-                                           value = 0.02, min = -0.01, max = 0.5, step = 0.02)
+                       fluidRow(
+                         column(6,
+                                h4("IS and LM Curve"),
+                                plotlyOutput("islmPlot")),
+                         column(6, 
+                                h4("Money Market"),
+                                plotlyOutput("interestRatePlot"))
                        )
-                     ),
-                     fluidRow(
-                       column(6,
-                              h4("IS and LM Curve"),
-                              plotlyOutput("islmPlot")),
-                       column(6, 
-                              h4("Money Market"),
-                              plotlyOutput("interestRatePlot"))
                      )
                      
                   )

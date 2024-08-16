@@ -24,7 +24,7 @@ output$tableGDP <- renderDataTable({
               options = list(
                 dom = 't')) %>%
       formatStyle(2, 
-                  backgroundColor = styleEqual(250, "lightgreen")) %>%
+                  backgroundColor = styleEqual(250, "#66a669")) %>%
       formatRound(columns = 2:6, digits = 0)
     
   }
@@ -35,9 +35,9 @@ output$tableGDP <- renderDataTable({
               options = list(
                 dom = 't')) %>%
       formatStyle(2, 
-                  backgroundColor = styleEqual(c(120, 250), "lightgreen")) %>%
+                  backgroundColor = styleEqual(c(120, 250), "#66a669")) %>%
       formatStyle(5, 
-                  backgroundColor = styleEqual(120, "#FF7F7F")) %>%
+                  backgroundColor = styleEqual(120, "#C96567")) %>%
       formatRound(columns = 2:6, digits = 0)
     
   }
@@ -48,7 +48,7 @@ output$tableGDP <- renderDataTable({
                     options = list(
                       dom = 't')) %>%
       formatStyle(c(3, 4, 6), 
-                  backgroundColor = styleEqual(c(20, 70, 80, 40), "lightgreen")) %>%
+                  backgroundColor = styleEqual(c(20, 70, 80, 40), "#66a669")) %>%
       formatRound(columns = 2:6, digits = 0)
     
   }
@@ -62,7 +62,7 @@ output$gdpFormula <- renderUI({
   x <- input$selectGDPCalcMethod
   
   if(x == "None") eq <- 
-      paste0("\\(\\text{Try to solve it yourself before selecting different calculation methods.}\\)")
+      paste0("")
   
   if(x == "Expenditure Method") eq <- 
       paste0("\\(\\text{The GDP of the economy is 250}\\)")

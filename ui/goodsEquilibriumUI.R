@@ -22,8 +22,16 @@ goodsEquilibriumTab <- tabPanel("Equilibrium",
                         by GDP. Therefore, at equilibrium, the total production of goods (GDP) must equal the total demand 
                         for goods. Thus, our equilibrium condition is:"),
                       withMathJax("$$Y=Z$$"),
-                      fluidRow(
-                        column(12, p("Question: Why do we denote both, income and production, by \\(Y\\)?"))
+                      fluidRow(class = "question",
+                        column(12, 
+                               p("Question: Why do we denote both, income and production, by \\(Y\\)?"), 
+                               actionBttn(
+                                 inputId = "a1goodsEqBttn",
+                                 label = "Show Answer", 
+                                 style = "minimal",
+                                 color = "danger"
+                               ),
+                               textOutput("a1goodsEq"))
                       ),
                       p("Combining the equilibrium condition and the aggregate demand function we can finally solve for 
                         equilibrium output in the economy:"),

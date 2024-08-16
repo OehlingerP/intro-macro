@@ -13,18 +13,27 @@ tagList(
   useShinyjs(), 
   navbarPage(
     theme = "general layout.css",
-    # add PHS logo to navigation bar 
-    title = div(style = "position: relative; 
-                       top: -15px; 
-                       margin-left: 10px; 
-                       margin-top: 5px;",
-                tags$a(img(src = "crane_circle.png", 
-                           width = 43, 
+    title = div(class = "navbar-brand",
+                tags$a(img(src = "logo-crane2.png", 
                            alt = "link to personal website"),
                        href = "https://www.peteroehlinger.com/",
-                       target = "_blank")
+                       target = "_blank")#,
+                #div(
+                  #h4("Peter Öhlinger"),
+                  #p("PhD Candidate")
+                #)
     ),
-    
+    tags$script(HTML("
+      // Add 'scrolled' class to navbar on scroll
+      document.addEventListener('scroll', function() {
+        var navbar = document.querySelector('.navbar');
+        if (window.scrollY > 0) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    ")),
     # make navigation bar collapse on smaller screens
     windowTitle = "ScotPHO profiles",
     collapsible = TRUE,
@@ -34,9 +43,7 @@ tagList(
       #includeCSS("www/styles.css"),
       
       # include scotpho icon in web browser
-      HTML("<html lang='en'>"),
-      tags$link(rel = "shortcut icon", 
-                href = "favicon_scotpho.ico")#, 
+      HTML("<html lang='en'>")
       
       # include google analytics scripts
       #includeScript("google-analytics.js"), # GA 3 
@@ -47,9 +54,8 @@ tagList(
     
     
     # order of tabs --------------------------------
-    financialMoneyUI,
     homeTab, 
-    navbarMenu("Intro",
+    navbarMenu("Variables",
                introGoalsTab,
                introGdpTab,
                introUnempTab,

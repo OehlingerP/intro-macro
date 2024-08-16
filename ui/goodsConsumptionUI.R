@@ -20,7 +20,7 @@ goodsConsumptionTab <- tabPanel("Private Consumption",
                             tags$p("While investment and government expenditure are held constant, consumption (\\(C\\))
                                    will be determined endogenously within the model. In other words, consumption will be 
                                    calculated based on the equilibrium conditions of the model."),
-                            fluidRow(
+                            fluidRow(class = "question",
                               column(12, 
                                      p("Question: Why did we choose to determine consumption rather than investment within the model?"),
                                      p("Answer: Consumption is the largest component of aggregate demand, and accounts for 

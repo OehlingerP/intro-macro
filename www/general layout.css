@@ -1,20 +1,45 @@
-/* color palette 41 with different background: https://visme.co/blog/website-color-schemes/*/
+/* see 42 https://visme.co/blog/website-color-schemes/ for website-color-schemes*/
+/* set maximum page width */
+.tab-content {
+            max-width: 1200px; /* Set your maximum width here */
+            margin: 0 auto; /* Center the element horizontally */
+            padding: 0 20px; /* Optional: add padding inside the element */
+        }
 
 /* General body styling */
 body {
   font-family: Helvetica, sans-serif;
-  background-color: #ECECEC;
+  background-color: #fffaf5;
   font-size: 14px;
+  color: #17181a;
 }
 
 /* Navbar styling */
 .navbar {
-  background-color: #314455; /* Change to your preferred color */
+  background-color: #fffaf5; /* Change to your preferred color */
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it is above other content */
+  border-bottom: none;
+  transition: border-bottom 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* State when scrolling: border appears */
+.navbar.scrolled {
+  border-bottom: 0.1px solid #17181a; /* Customize the border as needed */
+}
+
+ /* Align navbar tabs to the right */
+ul.nav.navbar-nav.nav-underline {
+  
+  margin-left: auto;
+  
 }
 
 /* color for not selected tabs */
 .navbar-nav > li > a {
-  color: #ECECEC !important; 
+  color: #17181a !important; 
 }
 
 .navbar-nav > li > a:hover {
@@ -31,6 +56,8 @@ body {
   color: #C96567 !important;
 }
 
+/**/
+
 /* color dropdown menu */
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     background-color: transparent;
@@ -43,13 +70,20 @@ body {
     background-color: transparent;
 }
 
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    color: #C96567;
+    text-decoration: none;
+    background-color: transparent;
+    outline: 0;
+}
+
 .dropdown-menu {
-  background-color: #314455;
+  background-color: #fffaf5;
   border: none;
 }
 
 .dropdown-menu>li>a {
-  color: #ECECEC;
+  color: #17181a;
 }
 
 /* Custom styles for specific content */
@@ -57,9 +91,145 @@ h1, h2, h3, h4 {
   color: #9E5A63; /* Blue color for headers */
 }
 
+/**/
+
+/*style fluidRows*/
 .tab-pane .row {
-  padding: 20px; /* Space inside the row */
+  padding: 40px; /* Space inside the row */
+  margin-top: 20px; /* Space below each row */
   margin-bottom: 20px; /* Space below each row */
   border-radius: 5px; /* Optional: Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* exclude nested fluidRow() */
+.row > .row{
+  padding: 0;
+  margin-bottom: 0;
+  box-shadow: none;
+  
+}
+
+.row.landing-page {
+  
+  padding: 0;
+  margin-bottom: 0;
+  box-shadow: none;
+  
+}
+
+/**/
+
+/* style questions*/
+.row.question{
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: none;
+  border-left: 6px solid #9E5A63;
+}
+
+.row.question button {
+  color: #9E5A63;
+  font-size: 14px;
+  position: relative;
+  float: right;
+}
+
+/*STYLE BUTTONS AND SELECTORS*/
+
+.btn-default {
+  background-color: #fffaf5;
+  color: #17181a;
+}
+
+.btn-default.focus, .btn-default:focus {
+  background-color: #fffaf5;
+}
+
+.btn-default:hover {
+  color: #9E5A63;
+  background-color: #fffaf5;
+}
+
+.selectize-input.full {
+  border-color: #17181a;
+  color: #17181a;
+  background-color: #fffaf5;
+}
+
+.selectize-input {
+  border-color: #17181a;
+  color: #17181a;
+}
+
+.selectize-control.single .selectize-input:not(.no-arrow):after {
+    border-color: #17181a transparent transparent transparent;
+}
+
+.selectize-input.focus {
+  border-color: #17181a;
+  color: #C96567;
+  box-shadow: none;
+}
+
+.selectize-dropdown-content {
+    background-color: #fffaf5;
+    color: #17181a;
+}
+
+.selectize-dropdown .selected {
+    background-color: #fffaf5;
+    color: #C96567;
+}
+
+.selectize-dropdown .active:not(.selected) {
+    color: #C96567;
+    background-color: #fffaf5;
+}
+
+
+
+.landing-page-chart-col h4 {
+  color: #17181a;
+  text-align: center;
+}
+
+
+ .navbar-custom {
+        background-color: #f8f9fa;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.1rem 1rem;
+}
+.navbar-brand img {
+    height: 100%; /* Make the image height fill the navbar height */
+    max-height: 50px; /* Set a maximum height if needed */
+    width: auto; /* Maintain the aspect ratio */
+}
+
+/* style data.tables*/
+div.datatables {
+  color: #17181a;
+}
+
+table.dataTable.display>tbody>tr.odd.selected>* {
+    box-shadow: inset 0 0 0 9999px rgb(158 90 99 / 92%) !important;
+}
+
+/* date input selector */
+.datepicker table tr td.active:active, .datepicker table tr td.active.active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active.highlighted.active {
+    color: #fffaf5;
+    background-color: #9E5A63;
+    border-color: #9E5A63;
+}
+
+.form-control {
+  background-color: #fffaf5;
+}
+
+.form-control:focus {
+    border-color: #ccc;
 }
