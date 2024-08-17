@@ -16,36 +16,35 @@
 
 
 # 1. required packages ----------------------------------------------------------
-library(BISdata) # download data from BIS
-library(cicerone) # for guided tours
+#library(BISdata) # download data from BIS
+#library(cicerone) # for guided tours
 library(data.table)
 library(shiny) # shiny functions
 library(shinydashboard) # more shiny functions
-library(shinyBS) # modals
+#library(shinyBS) # modals
 library(dplyr) # data manipulation
 library(ggplot2) # data visualization
-library(highcharter) # data visualisation
+#library(highcharter) # data visualisation
 library(plotly) # interactive graphs
-library(BH)
+#library(BH)
 library(DT)
 library(htmlwidgets)
-library(leaflet) #javascript maps
+#library(leaflet) #javascript maps
 library(shinyWidgets) # for extra widgets
 library(shinyjs) # for using javascript
-library(rintrojs) # for introbox in summary tab
+#library(rintrojs) # for introbox in summary tab
 library(lubridate) # for automated list of dates in welcome modal
-library(shinycssloaders) # for loading icons
-library(webshot) # to download plotly charts
+#library(shinycssloaders) # for loading icons
+#library(webshot) # to download plotly charts
 library(tidyr) # for pivoting
 library(stringr) # for working with strings
-library(reactable) # interactive tables
+#library(reactable) # interactive tables
 library(htmltools) # for using html tags
 library(purrr) # for applying function to lists
 library(data.table) # for working with large datasets
 library(jsonlite)
 library(rmarkdown)
 library(knitr)
-library(gxplot)
 library(shinyvalidate)
 library(zoo)
 

@@ -35,15 +35,13 @@ tagList(
       });
     ")),
     # make navigation bar collapse on smaller screens
-    windowTitle = "ScotPHO profiles",
+    windowTitle = "Peter Öhlinger - Intro Macro",
     collapsible = TRUE,
     
     header = tags$head(
       # sourcing css style sheet 
       #includeCSS("www/styles.css"),
-      
-      # include scotpho icon in web browser
-      HTML("<html lang='en'>")
+      tags$link(rel = "icon", type = "image/png", href = "favicon-32x32.png")
       
       # include google analytics scripts
       #includeScript("google-analytics.js"), # GA 3 

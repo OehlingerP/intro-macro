@@ -58,6 +58,10 @@ ul.nav.navbar-nav.nav-underline {
 
 /**/
 
+#motivational-text {
+          min-height: 400px
+        }
+
 /* color dropdown menu */
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     background-color: transparent;
