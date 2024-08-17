@@ -60,12 +60,56 @@ financialSupplyUI <- tabPanel("Money Supply",
                                           or money supply?"),
                                         selectInput("cbControlSelector",
                                                     "Select central bank control mechanism",
-                                                    choices = c("", "Interest Rate Control", "Money Supply Control"))
+                                                    choices = c("Starting Position", "Interest Rate Control", "Money Supply Control"))
                                         )
                                ),
                                h3("Monetary Policy"),
-                               p("Now that we know the tools of a central bank, let's think about how the central bank changes
-                                 money supply and interest rates in reality.")
+                               p("Now that we've explored the tools of a central bank, let's consider how these are 
+                                 applied in practice to manage the money supply and interest rates. Central banks 
+                                 implement monetary policy primarily through open market operations, where they buy 
+                                 or sell securities on the open market. These actions directly affect short-term 
+                                 interest rates, which then ripple through to influence longer-term rates and overall 
+                                 economic activity. We distinguish between expansive and contractive open market 
+                                 operations:"),
+                               tags$ol(
+                                 tags$li(p(tags$strong("Expansive Open Market Operations:")),
+                                         tags$ul(
+                                           tags$li(p("Increase in the money supply / reduction in the interest rate")),
+                                           tags$li(p("Securities purchases by the central bank are referred to as 
+                                                     expansionary monetary policy, as they increase the supply of money.
+                                                     The central bank buys these securities by paying for them with newly 
+                                                     created money."))
+                                         )),
+                                 tags$li(p(tags$strong("Contractive Open Market Operations:")),
+                                         tags$ul(
+                                           tags$li(p("Reduction in the money supply / increase in the interest rate")),
+                                           tags$li(p("Sales of securities by the central bank are referred to as contractionary
+                                                     monetary policy, as they reduce the supply of money. CB sells securities and 
+                                                     withdraws the money received from the economic cycle."))
+                                         ))
+                               ),
+                               fluidRow(
+                                 column(4, 
+                                        h4("Exercise: Central Bank Control"),
+                                        p("In the diagram on the left we have the quantity of money on the 
+                                          x-axis and the interest rate on the y-axis. How would an expansive monetary 
+                                          policy look like for (i) interest rate control, (ii) money supply control?"),
+                                        selectInput("cbExpansiveSelector",
+                                                    "Select central bank control mechanism",
+                                                    choices = c("Starting Position", "Interest Rate Control", "Money Supply Control")),
+                                        p("Given your selected control mechanism, what would happen to the equilibrium interest rate
+                                          if nominal income (\\(PY\\)) increases?"),
+                                        awesomeCheckbox("step3CbExpansive",
+                                                       "Show increase in nominal income")
+                                 ),
+                                 column(8,
+                                        plotlyOutput("plotCbExpansive"),
+                                        br(),
+                                        uiOutput("textStep1CbExpansivePlot"),
+                                        uiOutput("textStep2CbExpansivePlot"),
+                                        uiOutput("textStep3CbExpansivePlot"),
+                                        uiOutput("textStep4CbExpansivePlot"))
+                               )
                                
                               )
                               
