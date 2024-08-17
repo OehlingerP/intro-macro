@@ -22,12 +22,16 @@ goodsConsumptionTab <- tabPanel("Private Consumption",
                                    will be determined endogenously within the model. In other words, consumption will be 
                                    calculated based on the equilibrium conditions of the model."),
                             fluidRow(class = "question",
-                              column(12, 
-                                     p("Question: Why did we choose to determine consumption rather than investment within the model?"),
-                                     p("Answer: Consumption is the largest component of aggregate demand, and accounts for 
-                                     roughly 60% of GDP on average in OECD countries.")
-                                     )
-                              ),
+                                     column(12, 
+                                            p("Question: Why did we choose to determine consumption rather than investment within the model?"), 
+                                            actionBttn(
+                                              inputId = "a4goodsBttn",
+                                              label = "Show Answer", 
+                                              style = "minimal",
+                                              color = "danger"
+                                            ),
+                                            uiOutput("a4goods"))
+                            ),
                             tags$h3("What determines private consumption?"),
                             p("Consumption is mainly determined by disposable income \\(Y_D\\) of households.
                               Disposable income is defined by the difference between income \\(Y\\) and 

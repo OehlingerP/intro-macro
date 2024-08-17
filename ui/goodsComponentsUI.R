@@ -4,10 +4,10 @@
 #
 ##############################################
 
-goodsComponentsTab <- tabPanel("Components", 
+goodsComponentsTab <- tabPanel("Aggregate Demand", 
                           withMathJax(),
                           fluidPage(
-                            h2("Components"),
+                            h2("Aggregate Demand"),
                             tags$p("On the goods market we are interested in the relationship
                                    between income/output and aggregate demand. We defined GDP
                                    as the total value of goods and services produced. Remember,
@@ -38,8 +38,16 @@ goodsComponentsTab <- tabPanel("Components",
                             tags$p("Aggregate Demand, \\(Z\\), results from the sum of the individual demand 
                                    components:"),
                             withMathJax("$$Z:= C+I+G+X-IM$$"),
-                            fluidRow(
-                              column(12, p("Question: Why do we subtract imports?"))
+                            fluidRow(class = "question",
+                                     column(12, 
+                                            p("Question: Why do we subtract imports in the aggregate demand equation?"), 
+                                            actionBttn(
+                                              inputId = "a2goodsBttn",
+                                              label = "Show Answer", 
+                                              style = "minimal",
+                                              color = "danger"
+                                            ),
+                                            textOutput("a2goods"))
                             ),
                             tags$h3("Assumptions"),
                             tags$p("To keep our model a simple as possible we will assume the following:"), 
@@ -50,17 +58,17 @@ goodsComponentsTab <- tabPanel("Components",
                                       prices as given, can be relaxed)"),
                               tags$li("We consider a closed economy (no imports, no exports).")
                             ),
-                            fluidRow(
-                              column(12, 
-                                     p("Question: How reasonable are those assumptions?"),
-                                     p("Depending on the time horizon the assumption that prices are fixed can be 
-                                       reasonable. For example, wages usually adjust once a year. Also when you 
-                                       visit your favourite restaurant prices usually remain constant from one month
-                                       to the other (see ", tags$a(href = "https://en.wikipedia.org/wiki/Menu_cost", 
-                                       "menu costs"), "). No inventories, while not realistic does not seem
-                                       to be too strong of an assumption given that inventories usually account for
-                                       less than 1% of total GDP.")
-                            )),
+                            fluidRow(class = "question",
+                                     column(12, 
+                                            p("Question: How reasonable are those assumptions?"), 
+                                            actionBttn(
+                                              inputId = "a3goodsBttn",
+                                              label = "Show Answer", 
+                                              style = "minimal",
+                                              color = "danger"
+                                            ),
+                                            uiOutput("a3goods"))
+                            ),
                             tags$p("Due to our last assumption, aggregate demand simplifies to:"),
                             withMathJax("$$Z:= C+I+G.$$")
                           )

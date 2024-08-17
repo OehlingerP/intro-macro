@@ -7,13 +7,14 @@
 introUnempTab <- tabPanel("Unemployment Rate", 
                             withMathJax(),
                           fluidPage(
+                            h2("Unemployment Rate"),
                               p("The labor market is a crucial component of any economy, representing the dynamics between employers seeking to 
                               hire workers and individuals seeking employment. Macroeconomists closely monitor labor market indicators as they 
                               provide insights into the overall health of an economy, the effectiveness of economic policies, and potential areas 
                               of concern."),
-                              p("The table provides a snapshot of the labor market in Germany for the year 2019, detailing various aspects of the 
+                              p("The figure below provides a snapshot of the labor market in Germany for the year 2019, in millions, detailing various aspects of the 
                                 population and employment statistics:"),
-                              htmlOutput("tabEmpGermany"),
+                            plotlyOutput("plotEmpGermany"),
                               h4("Key Measures"),
                               p(tags$strong("Unemployment Rate: "), "This measure indicates the percentage of the labor force that is unemployed but 
                                 actively seeking work, offering insights into the efficiency of the job market."),
@@ -69,13 +70,13 @@ introUnempTab <- tabPanel("Unemployment Rate",
                                        )),
                                 column(8, plotlyOutput("plotOcunsLaw"))
                                 
-                              ),
-                              fluidRow(
-                                column(8),
-                                column(4,
-                                       h4("Exercise - ILO vs. National"))
-                                       
-                              )
+                              )#,
+                              # fluidRow(
+                              #   column(8),
+                              #   column(4,
+                              #          h4("Exercise - ILO vs. National"))
+                              #          
+                              # )
                               
                             )
                             

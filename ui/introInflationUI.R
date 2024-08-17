@@ -7,6 +7,7 @@
 introInflationTab <- tabPanel("Inflation", 
                               withMathJax(),
                               fluidPage(
+                                h2("Inflation"),
                                 p("Inflation is the rate at which the prices of goods and services increase,
                                 meaning your money buys less over time. For example, if inflation is 2%, 
                                 something that costs $100 today will cost, on average, $102 next year.

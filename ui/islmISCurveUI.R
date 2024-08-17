@@ -7,7 +7,7 @@
 islmISCurveTab <- tabPanel("IS Curve",
                     withMathJax(), 
                     fluidPage(
-                      tags$h2("The IS Curve"),
+                      tags$h2("IS Curve"),
                       tags$p("Recall that in the goods market equilibrium, production equals demand, which can be 
        expressed as:"),
                       withMathJax("$$Y = Z \\Leftrightarrow Y = C(Y_d) + I + G,$$"),

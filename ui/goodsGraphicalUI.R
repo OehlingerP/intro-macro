@@ -7,6 +7,7 @@
 goodsGraphicalTab <- tabPanel("Graphical Solution", 
                                withMathJax(),
                               fluidPage(
+                                h2("Graphical Solution"),
                                 p("We will now solve for the equilibrium output graphically. This 
                                   approach will enhance our understanding of the equilibrium concept 
                                   and also illustrate how the multiplier effect operates in practice. 

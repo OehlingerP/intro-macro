@@ -4,9 +4,10 @@
 #
 ##############################################
 
-goodsMultiplierTab <- tabPanel("Multiplier", 
+goodsMultiplierTab <- tabPanel("Multiplier Effect", 
                                 withMathJax(),
                                fluidPage(
+                                 h2("Mutliplier Effect"),
                                   p("When examining the equilibrium output, we observe that changes in exogenous parameters 
                       (\\(c_0\\), \\(I\\), \\(G\\), or \\(T\\)) do not lead to a one-to-one change in equilibrium 
                         output. Instead, these changes are amplified by a factor known as the", tags$strong("multiplier"), 
@@ -39,7 +40,6 @@ goodsMultiplierTab <- tabPanel("Multiplier",
                         impact through a cyclical process. When you spend $100, that money becomes income for 
                         someone else, who then spends part of it, creating further income for others. This cycle 
                         of spending and re-spending amplifies the initial amount, resulting in a total economic 
-                        growth greater than the original expenditure."),
-                                  fluidRow()
+                        growth greater than the original expenditure. We will explore this concept in greater detail in the following section.")
                                 )
 )

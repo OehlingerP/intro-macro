@@ -8,30 +8,59 @@ outside_labor_force <- 7.2
 unemployed <- 1.4
 employed <- 45.1
 
-# Output the custom HTML table
-output$tabEmpGermany <- renderUI({
-  HTML(
-    paste(
-      '<table border="1" style="border-collapse: collapse; width: 100%;">',
-      '<tr>',
-      '<td colspan="5";">Total Population: ', population_total, ' Millionen</td>',
-      '</tr>',
-      '<tr>',
-      '<td colspan="3">Working-Age Population: ', working_age_population, '</td>',
-      '<td>Under 15 Years: ', youth, '</td>',
-      '<td>65 Years and Older: ', elderly, '</td>',
-      '</tr>',
-      '<tr>',
-      '<td colspan="2">Labor Force: ', labor_force, '</td>',
-      '<td>Outside the Labor Force: ', outside_labor_force, '</td>',
-      '<tr>',
-      '<td>Unemployed: ', unemployed, '</td>',
-      '<td>Employed: ', employed, '</td>',
-      '</tr>',
-      '</table>',
-      '<p><em>Source: Population, Labor Force, Employment, and Unemployment in Germany, 2019, in millions. Blanchard and Illing (2021), page 223.</em></p>'
-    )
+output$plotEmpGermany <- renderPlotly({
+  
+  # Define the positions and labels of the nodes
+  tree_data <- data.frame(
+    x = c(4, 3, 4, 5, 2, 4, 1, 3),  
+    y = c(5, 4, 4, 4, 3, 3, 2, 2),  
+    label = c("Population: 83.2", "Working Age\nPopulation: 53.7", "Youth: 11.4", 
+              "Elderly: 18.1", "Labor Force: 46.5", "Outside of\nLabor Force: 7.2", 
+              "Unemployed: 1.4", "Employed:45.1")  
   )
+  
+  # Define the edges connecting the nodes
+  edges <- data.frame(
+    from = c(1, 1, 1, 2, 2, 5, 5),
+    to = c(2, 3, 4, 5, 6, 7, 8) 
+  )
+  
+  vec <- rep(1, 8)
+  vec[c(2, 6)] <- 2
+  # Create a data frame for the label background rectangles
+  label_backgrounds <- data.frame(
+    x = tree_data$x,
+    y = tree_data$y,
+    xmin = tree_data$x - 0.1*vec,  # Adjust these values as needed
+    xmax = tree_data$x + 0.1*vec, 
+    ymin = tree_data$y - 0.1*vec, 
+    ymax = tree_data$y + 0.1*vec
+  )
+  
+  # Plot the tree
+  plot <- ggplot() +
+    geom_segment(data = edges, aes(x = tree_data$x[from], y = tree_data$y[from], 
+                                   xend = tree_data$x[to], yend = tree_data$y[to]),
+                 color = "#17181a") +
+    geom_rect(data = label_backgrounds, aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax), 
+              fill = "#fffaf5", color = NA) +  # Background rectangles for text
+    
+    geom_text(data = tree_data, aes(x = x, y = y, label = label), fill = "#fffaf5",
+               color = "#C96567", label.size = 0) + 
+    theme_void() +
+    theme(legend.position = "none") +
+    theme(
+      plot.background = element_rect(fill = "#fffaf5"),  
+      panel.background = element_rect(fill = "#fffaf5")
+    ) +
+    scale_x_continuous(limits = c(0.5,5.5))
+
+  ggplotly(plot) %>%
+    layout(
+      xaxis = list(showgrid = FALSE, showline = FALSE, showticklabels = FALSE),
+      yaxis = list(showgrid = FALSE, showline = FALSE, showticklabels = FALSE)
+    )
+  
 })
 
 output$formEmpRate <- renderUI({

@@ -25,7 +25,7 @@ function(input, output, session) {
   # islm model
   source(file.path("server/islmISCurveServer.R"), local = TRUE)$value  
   source(file.path("server/islmToolServer.R"), local = TRUE)$value  
-  source(file.path("server/islmPolicyServer.R"), local = TRUE)$value  
+  #source(file.path("server/islmPolicyServer.R"), local = TRUE)$value  
   
   # Keeps the shiny app from timing out quickly 
   autoInvalidate <- reactiveTimer(10000)

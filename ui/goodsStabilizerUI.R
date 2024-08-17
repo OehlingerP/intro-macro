@@ -7,6 +7,7 @@
 goodsStabilizerTab <- tabPanel("Automatic Stabilizers", 
                     withMathJax(),
                     fluidPage(
+                      h2("Automatic Stabilizers"),
                       p("So far, we have developed a basic model of the goods market, focusing on the 
                         multiplier as a key mechanism. Next, we will extend our model by incorporating
                         automatic stabilizers&mdash;economic policies or features that automatically adjust 
@@ -33,8 +34,17 @@ goodsStabilizerTab <- tabPanel("Automatic Stabilizers",
                                   Y(1-c_1+c_1t_1) &= c_0 -c_1t_0 +I +T\\\\
                                   Y &= \\frac{1}{1-c_1+c_1t_1}(c_0 -c_1T +I +T)\\\\
                            \\end{align}$$"),
-                      fluidRow(
-                        column(12, p("Question: Is the multiplier larger or smaller compared to the model without income-dependent taxes?"))
+                      fluidRow(class = "question",
+                               column(12, 
+                                      p("Question: Is the multiplier larger or smaller compared to the model 
+                                     without income-dependent taxes?"), 
+                                      actionBttn(
+                                        inputId = "a5goodsBttn",
+                                        label = "Show Answer", 
+                                        style = "minimal",
+                                        color = "danger"
+                                      ),
+                                      uiOutput("a5goods"))
                       )
                       
                     )
