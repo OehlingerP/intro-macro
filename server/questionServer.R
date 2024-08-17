@@ -12,3 +12,14 @@ output$a1goodsEq <- renderText({
   }
   
 })
+
+output$a1FinancialSupply <- renderText({
+  
+  if(input$a1FinancialSupplyBttn %% 2 == 1){
+    
+    "The main objective of a central bank is price stability. In some countries, 
+    such as the U.S., central banks should also support full employment."
+    
+  }
+  
+})

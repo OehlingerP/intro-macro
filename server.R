@@ -19,7 +19,7 @@ function(input, output, session) {
   source(file.path("server/goodsGraphicalServer.R"), local = TRUE)$value 
   # financial market
   source(file.path("server/financialDemandServer.R"), local = TRUE)$value 
-  
+  source(file.path("server/financialSupplyServer.R"), local = TRUE)$value 
   
   source(file.path("server/islmServer.R"), local = TRUE)$value  
   source(file.path("server/questionServer.R"), local = TRUE)$value 

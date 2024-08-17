@@ -4,7 +4,7 @@
 #
 ##############################################
 
-financialMoneyUI <- tabPanel("Money Demand", 
+financialDemandUI <- tabPanel("Money Demand", 
                               withMathJax(),
                              fluidPage(
                                h2("Money Demand"),

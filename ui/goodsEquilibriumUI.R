@@ -4,9 +4,10 @@
 #
 ##############################################
 
-goodsEquilibriumTab <- tabPanel("Equilibrium", 
+goodsEquilibriumTab <- tabPanel("Goods Market Equilibrium", 
                     withMathJax(),
                     fluidPage(
+                      h2("Goods Market Equilibrium"),
                       p("Restating what we have learned so far:"),
                       tags$ul(
                         tags$li("Demand Function: \\(Z = C + I + G\\)"),
