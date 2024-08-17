@@ -54,7 +54,6 @@ tagList(
     
     
     # order of tabs --------------------------------
-    financialSupplyUI,
     homeTab, 
     navbarMenu("Variables",
                introGoalsTab,
@@ -74,12 +73,19 @@ tagList(
                ),
     navbarMenu("Financial Markets",
                financialGoalsTab,
-               financialDemandUI),
-    islmTab,
-    policyAnalysisTab,
+               financialDemandUI,
+               financialSupplyUI),
+    navbarMenu("ISLM Model",
+               islmGoalsTab,
+               islmISCurveTab,
+               islmLMCurveTab,
+               islmToolTab#, 
+               #islmPolicyTab
+               ),
     mathPrereqTab,
     navbarMenu("Info",
-               aboutTab)
+               aboutTab,
+               impressumTab)
     
   ) # close navbarPage
 ) # close taglist

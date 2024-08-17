@@ -7,6 +7,7 @@
 goodsComponentsTab <- tabPanel("Components", 
                           withMathJax(),
                           fluidPage(
+                            h2("Components"),
                             tags$p("On the goods market we are interested in the relationship
                                    between income/output and aggregate demand. We defined GDP
                                    as the total value of goods and services produced. Remember,

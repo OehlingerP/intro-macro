@@ -135,6 +135,42 @@ h1, h2, h3, h4 {
   float: right;
 }
 
+/* If you want to change back to a switch input
+.question-switch {
+  position: relative;
+  float: right;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {
+    background: #fffaf5 !important;
+    color: #9E5A63;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
+    background: #fffaf5 !important;
+    color: #9E5A63;
+}
+.bootstrap-switch.bootstrap-switch-focused {
+    border-color: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-label, .bootstrap-switch.bootstrap-switch-inverse.bootstrap-switch-on .bootstrap-switch-label {
+    border: none;
+}
+
+.bootstrap-switch .bootstrap-switch-label {
+    text-align: center;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    z-index: 100;
+    color: #9E5A63;
+    background: #fffaf5;
+    padding: 8px 12px;
+}
+*/
+
 /*STYLE BUTTONS AND SELECTORS*/
 
 .btn-default {
