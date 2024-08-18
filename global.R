@@ -18,7 +18,7 @@
 # 1. required packages ----------------------------------------------------------
 #library(BISdata) # download data from BIS
 #library(cicerone) # for guided tours
-library(data.table)
+# library(data.table)
 library(shiny) # shiny functions
 library(shinydashboard) # more shiny functions
 #library(shinyBS) # modals
@@ -37,25 +37,20 @@ library(lubridate) # for automated list of dates in welcome modal
 #library(shinycssloaders) # for loading icons
 #library(webshot) # to download plotly charts
 library(tidyr) # for pivoting
-library(stringr) # for working with strings
+# library(stringr) # for working with strings
 #library(reactable) # interactive tables
 library(htmltools) # for using html tags
 library(purrr) # for applying function to lists
 library(data.table) # for working with large datasets
-library(jsonlite)
-library(rmarkdown)
-library(knitr)
+# library(jsonlite)
+# library(rmarkdown)
+# library(knitr)
 library(shinyvalidate)
 library(zoo)
 
-library(fredr)
-fredr_set_key("13cde7ca47173a5c9a9c1eece02455b9")
+# library(fredr)
+# fredr_set_key("13cde7ca47173a5c9a9c1eece02455b9")
 
-df <- fredr_series_search_text(
-  search_text = "unemployment",
-  filter_variable = "frequency",
-  filter_value = "Monthly"
-)
 # 2. data files
 
 meta_fred <- read.csv("data/fred_tickers.csv", sep = ",")

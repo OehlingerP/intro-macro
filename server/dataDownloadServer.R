@@ -16,9 +16,11 @@ fred_data <- reactive({
   
   df_ids <- read.csv("data/fred_tickers.csv", sep = ",")
   
-  df <- fetch_data(tickers = df_ids$series_id, 
-                   freq = df_ids$frequency,
-                   file_name = "data/fred_cached_data")
+  # df <- fetch_data(tickers = df_ids$series_id, 
+  #                  freq = df_ids$frequency,
+  #                  file_name = "data/fred_cached_data")
+  
+  df <- readRDS("data/fred_cached_data.RDS")
   
   df <- left_join(df, df_ids) %>%
     select(-realtime_start, -realtime_end)
