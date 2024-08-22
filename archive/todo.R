@@ -1,8 +1,8 @@
-# - for each goals section add an article and a question related to it (otherwise it is too boring)
+# TODO: for each goals section add an article and a question related to it (otherwise it is too boring)
 # 
-# - scroll down on main page
+# TODO: scroll down on main page
 # 
-# 
+# TODO: limit data usage by preparing the data offline and restricting the set of countries
 # 
 # 
 # 
