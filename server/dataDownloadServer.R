@@ -13,7 +13,7 @@
 # Fred Data Download ------------------------------------------------------
 
 fred_data <- reactive({
-  browser()
+
   df_ids <- read.csv("data/fred_tickers.csv", sep = ",")
   
   # df <- fetch_data(tickers = df_ids$series_id, 
