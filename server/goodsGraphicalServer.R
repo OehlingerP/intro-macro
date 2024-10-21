@@ -305,12 +305,12 @@ output$plotGoodsMarketTrans <- renderPlotly({
     slope <- 0.4
     newInter <- 50
     
-    df <- data.frame(x = numeric(36), 
-                     y = numeric(36))
+    df <- data.frame(x = numeric(18), 
+                     y = numeric(18))
     
     x <- startEq
     
-    for(i in 1:18){
+    for(i in 1:9){
       
       df$x[i*2-1] <- x
       
@@ -334,7 +334,7 @@ output$plotGoodsMarketTrans <- renderPlotly({
       "Step 2" = 3,
       "Step 3" = 4,
       "Step 4" = 5,
-      "Show all steps" = 37
+      "Show all steps" = 19
     )
     
     df <- df[1:n_values[selector],]
@@ -624,3 +624,43 @@ output$textGoodsMarketTransPlot <- renderUI({
   
 })
 
+
+# Transition using a non-linear consumption function --------------
+
+output$plotGoodsMarketNonLinear <- renderPlotly({
+  
+  # Define the coefficients
+  c0 <- 0.1    # Autonomous consumption
+  c1 <- 0.5  # Marginal propensity to consume
+  c2 <- 0.06 # Coefficient for Y^2 term (diminishing returns)
+  G <- 0.1
+  
+  # only to check that results are real
+  #(1-c1)^2
+  #4*(-c2)*(-c0-G)
+  
+  interval <- seq(0, 5, 0.001)
+  
+  df <- data.frame(Y = interval, 
+                   Z = c0+G+c1*interval-c2*interval^2) 
+    
+  roots <- round(Re(polyroot(c(-c2, 1-c1, -c0 - G))), 3)
+
+  plot <- gx_theme(ggplot(df, aes(Y, Z)) +
+                     geom_line(),
+                   x_title = "Income (Y)",
+                   y1_title = "Demand (Z), Production (Y)") +
+    theme(axis.text = element_blank(),
+          axis.text.x = element_blank()) +
+    scale_y_continuous(limits = c(-0.2, 2), expand = c(0, 0)) +
+    scale_x_continuous(limits = c(0, 5), expand = c(0.015, 0))
+  
+  if(input$plotNonLinearEq){
+    plot <- plot +
+      geom_point(aes(x=roots[1], y=df[Y == roots[1], 2]), color = "red") +
+      geom_point(aes(x=roots[2], y=df[Y == roots[2], 2]), color = "red")
+  }
+  
+  plot
+  
+})
