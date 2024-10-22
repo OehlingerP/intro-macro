@@ -1,0 +1,26 @@
+﻿German,English,Answer
+Die Inflation gemessen am BIP-Deflator berücksichtigt Exporte.,The inflation measured by the GDP deflator takes exports into account,TRUE
+Die Inflation gemessen am BIP-Deflator berücksichtigt Importe., The inflation measured by the GDP deflator takes imports into account,FALSE
+Die Inflation gemessen am Verbraucherpreisindex berücksichtigt Exporte., The inflation measured by the consumer price index takes exports into account,FALSE
+Die Inflation gemessen am Verbraucherpreisindex berücksichtigt Importe., The inflation measured by the consumer price index takes imports into account,TRUE
+Der BIP-Deflator wird berechnet durch (nominales BIP)/(reales BIP)*100., The GDP deflator is calculated by (nominal GDP) / (real GDP) * 100,TRUE
+Der BIP-Deflator wird berechnet durch (reales BIP)/(nominales BIP)*100., The GDP deflator is calculated by (real GDP) / (nominal GDP) * 100,FALSE
+Deflation bezeichnet den Rückgang des allgemeinen Preisniveaus einer Ökonomie., Deflation refers to the decrease inthe general price level of an economy,TRUE
+Deflation bezeichnet den Anstieg des allgemeinen Preisniveaus einer Ökonomie., Deflation refers to the increase in the general price level of an economy,FALSE
+Das reale BIP Wachstum gibt die Produktionssteigerung an., Real GDP growth indicates the increase in production,TRUE
+Das reale BIP Wachstum gibt Preis- und Produktionssteigerungen an., Real GDP growth indicates increases in prices and production,FALSE
+Das nominale BIP Wachstum gibt die Produktionssteigerung an., Nominal GDP growth indicates the increase in production,FALSE
+Das nominale BIP Wachstum gibt Preis- und Produktionssteigerungen an., Nominal GDP growth indicates increases in prices and production,TRUE
+Nach der Verwendungsrechnung wird das BIP aus dem Gesamtwert aller Verbrauchsgüter und Dienstleistungen berechnet.," According to the expenditure approach, GDP is calculated from the total value of all consumer goods and services",TRUE
+Nach der Entstehungsrechnung wird das BIP aus der Summe aller Wertschöpfungen berechnet.," According to the production approach, GDP is calculated from the sum of all value-added",TRUE
+Nach der Verteilungsrechnung wird das BIP aus der Summe aller Faktoreinkommen berechnet.," According to the income approach, GDP iscalculated from the sum of all factor incomes",TRUE
+Nach der Entstehungsrechnung wird das BIP aus dem Gesamtwert aller Verbrauchsgüter und Dienstleistungen berechnet.," According to the production approach, GDP is calculated from the total value of all consumer goods and services",FALSE
+Nach der Entstehungsrechnung wird das BIP aus der Summe aller Faktoreinkommen berechnet.," According to the production approach, GDP is calculated from the sum of all factor incomes",FALSE
+Nach der Verteilungsrechnung wird das BIP aus dem Gesamtwert aller Verbrauchsgüter und Dienstleistungen berechnet.," According to the income approach, GDP is calculated from the total value of all consumer goods andservices",FALSE
+Nach der Verteilungsrechnung wird das BIP aus der Summe aller Wertschöpfungen berechnet.," According to the income approach, GDP is calculated from the sum of all value-added",FALSE
+Nach der Verwendungsrechnung wird das BIP aus der Summe aller Wertschöpfungen berechnet.," According to the expenditure approach, GDP is calculated from the sum of all value-added",FALSE
+Nach der Verwendungsrechnung wird das BIP aus der Summe aller Faktoreinkommen berechnet.," According to the expenditure approach, GDP iscalculated from the sum of all factor incomes",FALSE
+Der Gewinn eines Unternehmens zählt zum Faktoreinkommen einer Ökonomie., A company's profit counts as a factor income of an economy,TRUE
+Der Gewinn eines Unternehmens zählt nicht zum Faktoreinkommen einer Ökonomie., A company's profit does not count as a factor income of an economy,FALSE
+In der Arbeitsmarktstatistik zählt eine Studentin die nicht nebeinbei arbeitet zu den Erwerbspersonen.," In labor market statistics, a student who does not work alongside studying is counted as part of the labor force",FALSE
+Eine arbeitslose gemeldete Person zählt zu den Erwerbspersonen., A registered unemployed person is counted as part of the labor force,TRUE

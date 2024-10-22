@@ -81,6 +81,7 @@ tagList(
                #islmPolicyTab
                ),
     mathPrereqTab,
+    quizTab,
     navbarMenu("Info",
                aboutTab,
                impressumTab)
