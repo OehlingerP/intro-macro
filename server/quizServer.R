@@ -24,7 +24,7 @@ output$questions_ui <- renderUI({
       column(8, strong(selected_questions$q[i])),
       column(4, radioButtons(
         inputId = paste0("q", i),
-        label = "Select True or False",
+        label = NULL,
         choices = list("True" = TRUE, "False" = FALSE),
         selected = NULL,
         inline = TRUE
