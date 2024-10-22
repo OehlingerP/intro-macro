@@ -73,4 +73,4 @@ countriesBis <- c(
 tab_names <- c("homeTab", "introGoalsTab", "introGdpTab", "introUnempTab",
             "introRatesTab", "introInflationTab", "introExercisesTab", 
             "goodsMarketTab", "islmTab", "policyAnalysisTab",
-            "mathPrereqTab","aboutTab")
+            "mathPrereqTab", "quizTab", "aboutTab")
