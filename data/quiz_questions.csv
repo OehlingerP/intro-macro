@@ -1,4 +1,4 @@
-﻿German,English,Answer
+﻿Aussagen,Question,Answer
 Die Inflation gemessen am BIP-Deflator berücksichtigt Exporte.,The inflation measured by the GDP deflator takes exports into account,TRUE
 Die Inflation gemessen am BIP-Deflator berücksichtigt Importe., The inflation measured by the GDP deflator takes imports into account,FALSE
 Die Inflation gemessen am Verbraucherpreisindex berücksichtigt Exporte., The inflation measured by the consumer price index takes exports into account,FALSE
@@ -24,3 +24,38 @@ Der Gewinn eines Unternehmens zählt zum Faktoreinkommen einer Ökonomie., A com
 Der Gewinn eines Unternehmens zählt nicht zum Faktoreinkommen einer Ökonomie., A company's profit does not count as a factor income of an economy,FALSE
 In der Arbeitsmarktstatistik zählt eine Studentin die nicht nebeinbei arbeitet zu den Erwerbspersonen.," In labor market statistics, a student who does not work alongside studying is counted as part of the labor force",FALSE
 Eine arbeitslose gemeldete Person zählt zu den Erwerbspersonen., A registered unemployed person is counted as part of the labor force,TRUE
+Durch den Multiplikatoreffekt werden wirtschaftliche Schocks verstärkt.,Economic shocks are amplified by the multiplier effect,TRUE
+Durch den Multiplikatoreffekt werden wirtschaftliche Schocks abgeschwächt., Economic shocks are mitigated by the multiplier effect,FALSE
+Importe sind Teil des Bruttoinlandsproduktes. , Imports are part of the gross domestic product,FALSE
+Exporte sind Teil des Bruttoinlandsproduktes. , Exports are part of the gross domestic product,TRUE
+In unserem Gütermarktmodell werden Lagerinvestitionen nicht berücksichtigt.," In our goods market model, inventory investments are not considered",TRUE
+In unserem Gütermarktmodell werden Lagerinvestitionen berücksichtigt.," In our goods market model, inventory investments are considered",FALSE
+In unserem Gütermarktmodell ignorieren wir Preisveränderungen.," In our goods market model, we ignore price changes",TRUE
+Der Konsum hängt in erster Linie vom verfügbaren Einkommen ab., Consumption primarily depends on disposable income,TRUE
+Das verfügbare Einkommen ist als die Differenz zwischen Steuern und Einkommen definiert., Disposable income is defined as the difference between taxes and income,FALSE
+Das verfügbare Einkommen ist als die Differenz zwischen Einkommen und Steuern definiert., Disposable income is defined as the difference between income and taxes,TRUE
+Die marginale Konsumquote kann größer als 1 sein., The marginal propensity to consume can be greater than 1,FALSE
+Die marginale Konsumquote kann nicht größer als 1 sein., The marginal propensity to consume cannot be greater than 1,TRUE
+Entscheidungen über die Höhe der Staatsausgaben und der Steuern bezeichnet man als Fiskalpolitik., Decisions about the level of government spending and taxes are called fiscal policy,TRUE
+Entscheidungen über die Höhe der Staatsausgaben und der Steuern bezeichnet man als Steuerpolitik., Decisions about the level of government spending and taxes are called tax policy,FALSE
+"Eine Variable, die von anderen Variablen abhängig ist, nennt man endogen.", A variable that depends on other variables is called endogenous,TRUE
+"Eine Variable, die nicht von den anderen Variablen eines Modells abhängt, nennt man exogen.", A variable that does not depend on other variables in a model is called exogenous,TRUE
+"Eine Variable, die von anderen Variablen abhängig ist, nennt man exogen.", A variable that depends on other variables is called exogenous,FALSE
+"Eine Variable, die nicht von den anderen Variablen eines Modells abhängt, nennt man endogen.", A variable that does not depend on other variables in a model is called endogenous,FALSE
+Im Gütermarktgleichgewicht ist die Produktion von Gütern gleich der Nachfrage von Gütern.," In goods market equilibrium, the production of goods equals the demand for goods",TRUE
+Im Gütermarktgleichgewicht ist die Produktion von Gütern gleich dem Einkommen.," In goods market equilibrium, the production of goods equals income",TRUE
+Im Gütermarktgleichgewicht ist die Produktion von Gütern gleich dem Staatsausgaben.," In goods market equilibrium, the production of goods equals government spending",FALSE
+Im Gütermarktgleichgewicht sind die Investionen gleich dem öffentlichen Sparen.," In goods market equilibrium, investments equal public savings",FALSE
+Im Gütermarktgleichgewicht sind die Investionen gleich der gesamtwirtschaftlichen Ersparnis.," In goods market equilibrium, investments equal aggregate savings",TRUE
+Einkommensabhängige Steuern verringern den Multiplikator. , Income-dependent taxes reduce the multiplier,TRUE
+Einkommensabhängige Steuern erhöhen den Multiplikator. , Income-dependent taxes increase the multiplier,FALSE
+Eine Erhöhung der Staatsausgaben führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach oben., An increase in government spending leads to an upward shift in the demand curve in the goods market model,TRUE
+Eine Senkung der Staatsausgaben führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach unten., A decrease in government spending leads to a downward shift in the demand curve in the goods market model,TRUE
+Eine Erhöhung der Steuern führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach oben., An increase in taxes leads to an upward shift in the demand curve in the goods market model,FALSE
+Eine Senkung der Steuern führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach unten., A decrease in taxes leads to a downward shift in the demand curve in the goods market model,FALSE
+Eine Erhöhung der Staatsausgaben führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach unten., An increase in government spending leads to a downward shift in the demand curve in the goods market model,TRUE
+Eine Senkung der Staatsausgaben führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach oben., A decrease in government spending leads to an upward shift in the demand curve in the goods market model,TRUE
+Eine Erhöhung der Steuern führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach unten., An increase in taxes leads to a downward shift in the demand curve in the goods market model,FALSE
+Eine Senkung der Steuern führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach oben., A decrease in taxes leads to an upward shift in the demand curve in the goods market model,FALSE
+"Steigt im Gütermarktmodell die marginale Konsumquote, wird die Nachfragekurve steiler. "," If the marginal propensity to consume rises in the goods market model, the demand curve becomes steeper",TRUE
+"Steigt im Gütermarktmodell die marginale Konsumquote, wird die Nachfragekurve flacher. "," If the marginal propensity to consume rises in the goods market model, the demand curve becomes flatter.",FALSE
