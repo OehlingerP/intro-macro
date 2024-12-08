@@ -3,7 +3,7 @@
 output$a1goodsEq <- renderText({
   
   if(input$a1goodsEqBttn %% 2 == 1){
-    
+    withMathJax()
     "In GDP accounting, \\(Y\\) denotes both income and production because GDP 
     can be measured from two equivalent perspectives: the production approach 
     and the income approach. The production approach calculates GDP as the total 

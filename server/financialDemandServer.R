@@ -113,7 +113,7 @@ output$plotMoneyDemand <- renderPlotly({
 output$textStep1moneyDemandPlot <- renderText({
   
   if(input$step1moneyDemand){
-    
+    withMathJax()
     "There is an inverse relationship between money demand (\\(M^d\\)) and the interest rate
     (\\(i\\)). When nominal income (\\(PY\\)) remains constant, an increase in the interest rate 
     results in a decrease in money demand. This occurs because higher interest rates reduce 
@@ -139,7 +139,7 @@ output$textStep3moneyDemandPlot <- renderText({
   
   if(input$step3moneyDemand){
     
-    " If our preference for liquidity decreases, meaning we are less concerned about holding cash,
+    "If our preference for liquidity decreases, meaning we are less concerned about holding cash,
     the money demand curve becomes flatter. In other words, the curve rotates inward along the 
     interest rate axis. This is because with a lower preference for liquidity, people are more 
     responsive to changes in interest rates when deciding how much money to hold."

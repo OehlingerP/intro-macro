@@ -53,9 +53,90 @@ Eine Erhöhung der Staatsausgaben führt im Gütermarktmodell zu einer Verschieb
 Eine Senkung der Staatsausgaben führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach unten., A decrease in government spending leads to a downward shift in the demand curve in the goods market model,TRUE
 Eine Erhöhung der Steuern führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach oben., An increase in taxes leads to an upward shift in the demand curve in the goods market model,FALSE
 Eine Senkung der Steuern führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach unten., A decrease in taxes leads to a downward shift in the demand curve in the goods market model,FALSE
-Eine Erhöhung der Staatsausgaben führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach unten., An increase in government spending leads to a downward shift in the demand curve in the goods market model,TRUE
-Eine Senkung der Staatsausgaben führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach oben., A decrease in government spending leads to an upward shift in the demand curve in the goods market model,TRUE
-Eine Erhöhung der Steuern führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach unten., An increase in taxes leads to a downward shift in the demand curve in the goods market model,FALSE
-Eine Senkung der Steuern führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach oben., A decrease in taxes leads to an upward shift in the demand curve in the goods market model,FALSE
+Eine Erhöhung der Staatsausgaben führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach unten., An increase in government spending leads to a downward shift in the demand curve in the goods market model,FALSE
+Eine Senkung der Staatsausgaben führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach oben., A decrease in government spending leads to an upward shift in the demand curve in the goods market model,FALSE
+Eine Erhöhung der Steuern führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach unten., An increase in taxes leads to a downward shift in the demand curve in the goods market model,TRUE
+Eine Senkung der Steuern führt im Gütermarktmodell zu einer Verschiebung der Nachfragekurve nach oben., A decrease in taxes leads to an upward shift in the demand curve in the goods market model,TRUE
 "Steigt im Gütermarktmodell die marginale Konsumquote, wird die Nachfragekurve steiler. "," If the marginal propensity to consume rises in the goods market model, the demand curve becomes steeper",TRUE
 "Steigt im Gütermarktmodell die marginale Konsumquote, wird die Nachfragekurve flacher. "," If the marginal propensity to consume rises in the goods market model, the demand curve becomes flatter.",FALSE
+"Je höher das Transaktionsvolumen, desto höher die Geldnachfrage.","The higher the transaction volume, the higher the demand for money",TRUE
+"Je höher das Transaktionsvolumen, desto niedriger die Geldnachfrage."," The higher the transaction volume, the lower the demand for money",FALSE
+"Je niedriger das Transaktionsvolumen, desto höher die Geldnachfrage."," The lower the transaction volume, the higher the demand for money",FALSE
+"Je niedriger das Transaktionsvolumen, desto niedriger die Geldnachfrage."," The lower the transaction volume, the lower the demand for money",TRUE
+Je höher der Zinssatz desto niedriger die Geldnachfrage.," The higher the interest rate, the lower the demand for money",TRUE
+Je höher der Zinssatz desto höher die Geldnachfrage.," The higher the interest rate, the higher the demand for money",FALSE
+Je niedriger der Zinssatz desto niedriger die Geldnachfrage.," The lower the interest rate, the lower the demand for money",FALSE
+Je niedriger der Zinssatz desto höher die Geldnachfrage.," The lower the interest rate, the higher the demand for money",TRUE
+Bei gegebenem Zinssatz führt ein Anstieg des Nominaleinkommens zu einem Anstieg der Geldnachfrage.," At a given interest rate, an increase in nominal income leads to an increase in the demand for money",TRUE
+Bei gegebenem Zinssatz führt ein Anstieg des Nominaleinkommens zu einem Rückgang der Geldnachfrage.," At a given interest rate, an increase in nominal income leads to a decrease in the demand for money",FALSE
+Bei gegebenem Zinssatz führt ein Rückgang des Nominaleinkommens zu einem Anstieg der Geldnachfrage.," At a given interest rate, a decrease in nominal income leads to an increase in the demand for money",FALSE
+Bei gegebenem Zinssatz führt ein Rückgang des Nominaleinkommens zu einem Rückgang der Geldnachfrage.," At a given interest rate, a decrease in nominal income leads to a decrease in the demand for money",TRUE
+Bei gegebenem Zinssatz führt ein Anstieg der Preise zu einem Anstieg der Geldnachfrage.," At a given interest rate, an increase in prices leads to an increase in the demand for money",TRUE
+Bei gegebenem Zinssatz führt ein Anstieg der Preise zu einem Rückgang der Geldnachfrage.," At a given interest rate, an increase in prices leads to a decrease in the demand for money",FALSE
+Bei gegebenem Zinssatz führt ein Rückgang der Preise zu einem Anstieg der Geldnachfrage.," At a given interest rate, a decrease in prices leads to an increase in the demand for money",FALSE
+Bei gegebenem Zinssatz führt ein Rückgang der Preise zu einem Rückgang der Geldnachfrage.," At a given interest rate, a decrease in prices leads to a decrease in the demand for money",TRUE
+Das Hauptziel der meisten Zentralbanken ist die Preisstabilität., The main goal of most central banks is price stability,TRUE
+Die EZB hat neben der Preisstabilität auch das Ziel der Vollbeschäftigung., The ECB has the goal of full employment in addition to price stability,FALSE
+Die Fed hat neben der Preisstabilität auch das Ziel der Vollbeschäftigung., The Fed has the goal of full employment in addition to price stability,TRUE
+"Steigt die Inflation über das Inflationsziel hinaus, werden Zentralbanken die Zinsen eher anheben."," If inflation rises above the inflation target, central banks are more likely to raise interest rates",TRUE
+"Steigt die Inflation über das Inflationsziel hinaus, werden Zentralbanken die Zinsen eher senken."," If inflation rises above the inflation target, central banks are more likely to lower interest rates",FALSE
+Zinssenkungen kurbeln das Wirtschaftswachstum an., Interest rate cuts stimulate economic growth,TRUE
+Zinssenkungen bremsen das Wirtschaftswachstum., Interest rate cuts slow down economic growth,FALSE
+Zinserhöhungen kurbeln das Wirtschaftswachstum an., Interest rate hikes stimulate economic growth,FALSE
+Zinserhöhungen bremsen das Wirtschaftswachstum., Interest rate hikes slow down economic growth,TRUE
+Expansive Offenmarktoperationen führen zu einer Erhöhung der Geldmenge., Expansionary open market operations increase the money supply,TRUE
+Expansive Offenmarktoperationen führen zu einer Reduktion der Geldmenge., Expansionary open market operations reduce the money supply,FALSE
+Kontraktive Offenmarktoperationen führen zu einer Erhöhung der Geldmenge., Contractionary open market operations increase the money supply,FALSE
+Kontraktive Offenmarktoperationen führen zu einer Reduktion der Geldmenge., Contractionary open market operations reduce the money supply,TRUE
+"Verfolgt die Zentralbank eine Zinssteuerung, bleibt der Zins bei einer Erhöhung der Geldnachfrage unverändert."," If the central bank follows an interest rate policy, the interest rate remains unchanged when the demand for money increases",TRUE
+"Verfolgt die Zentralbank eine Zinssteuerung, bleibt die Geldmenge bei einer Erhöhung der Geldnachfrage unverändert."," If the central bank follows an interest rate policy, the money supply remains unchanged when the demand for money increases",FALSE
+"Verfolgt die Zentralbank eine Geldmengensteuerung, bleibt der Zins bei einer Erhöhung der Geldnachfrage unverändert."," If the central bank follows a money supply policy, the interest rate remains unchanged when the demand for money increases",FALSE
+"Verfolgt die Zentralbank eine Geldmengensteuerung, bleibt die Geldmenge bei einer Erhöhung der Geldnachfrage unverändert."," If the central bank follows a money supply policy, the money supply remains unchanged when the demand for money increases",TRUE
+"Steigt die Nachfrage nach einem Wertpapier, sinkt der Preis und der Zinssatz steigt. "," If the demand for a security increases, the price falls, and the interest rate rises",FALSE
+"Sinkt die Nachfrage nach einem Wertpapier, sinkt der Preis und der Zinssatz steigt. "," If the demand for a security decreases, the price falls, and the interest rate rises",TRUE
+"Steigt die Nachfrage nach einem Wertpapier, steigt der Preis und der Zinssatz steigt. "," If the demand for a security increases, the price rises, and the interest rate rises",FALSE
+"Sinkt die Nachfrage nach einem Wertpapier, steigt der Preis und der Zinssatz steigt. "," If the demand for a security decreases, the price rises, and the interest rate rises",FALSE
+"Steigt die Nachfrage nach einem Wertpapier, sinkt der Preis und der Zinssatz sinkt. "," If the demand for a security increases, the price falls, and the interest rate falls",FALSE
+"Sinkt die Nachfrage nach einem Wertpapier, sinkt der Preis und der Zinssatz sinkt. "," If the demand for a security decreases, the price falls, and the interest rate falls",FALSE
+"Steigt die Nachfrage nach einem Wertpapier, steigt der Preis und der Zinssatz sinkt. "," If the demand for a security increases, the price rises, and the interest rate falls",TRUE
+"Sinkt die Nachfrage nach einem Wertpapier, steigt der Preis und der Zinssatz sinkt. "," If the demand for a security decreases, the price rises, and the interest rate falls",FALSE
+In der Praxis verfolgen Zentralbanken meist eine Zinssteuerung.," In practice, central banks usually follow an interest rate policy",TRUE
+In der Praxis verfolgen Zentralbanken meist eine Geldmengensteuerung.," In practice, central banks usually follow a money supply policy.",FALSE
+Im ISLM Modell sinken die Investitionen mit steigendem Einkommen.,"In the ISLM model, investments decrease as income increases",FALSE
+Im ISLM Modell steigen die Investitionen mit steigendem Einkommen.,"In the ISLM model, investments increase as income increases",TRUE
+Im ISLM Modell sinken die Investitionen mit steigendem Zins.,"In the ISLM model, investments decrease as the interest rate increases",TRUE
+Im ISLM Modell steigen die Investitionen mit steigendem Zins.,"In the ISLM model, investments increase as the interest rate increases",FALSE
+"Je höher die Zinssensitivität der Investitionsnachfrage, desto steiler die IS Kurve.","The higher the interest sensitivity of investment demand, the steeper the IS curve",FALSE
+"Je höher die Zinssensitivität der Investitionsnachfrage, desto flacher die IS Kurve.","The higher the interest sensitivity of investment demand, the flatter the IS curve",TRUE
+Ein Anstieg des Zinssatzes verschiebt die Güternachfragekurve nach unten.,An increase in the interest rate shifts the goods demand curve downward,TRUE
+Ein Anstieg des Zinssatzes verschiebt die Güternachfragekurve nach oben.,An increase in the interest rate shifts the goods demand curve upward,FALSE
+Eine Reduktion des Zinssatzes verschiebt die Güternachfragekurve nach unten.,A reduction in the interest rate shifts the goods demand curve downward,FALSE
+Eine Reduktion des Zinssatzes verschiebt die Güternachfragekurve nach oben.,A reduction in the interest rate shifts the goods demand curve upward,TRUE
+Die IS Kurve hat einen fallenden Verlauf.,The IS curve has a downward slope,TRUE
+Die IS Kurve hat einen steigenden Verlauf.,The IS curve has an upward slope,FALSE
+Eine Erhöhung der Staatsausgaben führt zu einer Verschiebung der IS Kurve nach rechts.,An increase in government spending shifts the IS curve to the right,TRUE
+Eine Erhöhung der Staatsausgaben führt zu einer Verschiebung der IS Kurve nach links.,An increase in government spending shifts the IS curve to the left,FALSE
+Eine Erhöhung der Steuern führt zu einer Verschiebung der IS Kurve nach rechts.,An increase in taxes shifts the IS curve to the right,FALSE
+Eine Erhöhung der Steuern führt zu einer Verschiebung der IS Kurve nach links.,An increase in taxes shifts the IS curve to the left,TRUE
+Eine Senkung der Staatsausgaben führt zu einer Verschiebung der IS Kurve nach rechts.,A decrease in government spending shifts the IS curve to the right,FALSE
+Eine Senkung der Staatsausgaben führt zu einer Verschiebung der IS Kurve nach links.,A decrease in government spending shifts the IS curve to the left,TRUE
+Eine Senkung der Steuern führt zu einer Verschiebung der IS Kurve nach rechts.,A decrease in taxes shifts the IS curve to the right,TRUE
+Eine Senkung der Steuern führt zu einer Verschiebung der IS Kurve nach links.,A decrease in taxes shifts the IS curve to the left,FALSE
+"Die IS Kurve beschreibt alle Kombinationen von Zins und Produktion, bei denen der Gütermarkt im Gleichgewicht ist.",The IS curve represents all combinations of interest rates and output where the goods market is in equilibrium,TRUE
+"Faktoren, die auf Gütermarkt bei gegebenem Zins zu einem Rückgang des Einkommens führen, verschieben die IS-Kurve nach links.",Factors in the goods market that lead to a decrease in income at a given interest rate shift the IS curve to the left,TRUE
+"Faktoren, die auf Gütermarkt bei gegebenem Zins zu einem Anstieg des Einkommens führen, verschieben die IS-Kurve nach rechts.",Factors in the goods market that lead to an increase in income at a given interest rate shift the IS curve to the right,TRUE
+"Faktoren, die auf Gütermarkt bei gegebenem Zins zu einem Anstieg des Einkommens führen, verschieben die IS-Kurve nach links.",Factors in the goods market that lead to an increase in income at a given interest rate shift the IS curve to the left,FALSE
+"Faktoren, die auf Gütermarkt bei gegebenem Zins zu einem Rückgang des Einkommens führen, verschieben die IS-Kurve nach rechts.",Factors in the goods market that lead to a decrease in income at a given interest rate shift the IS curve to the right,FALSE
+Bei einer Zinssteuerung können wir die LM-Kurve durch eine horizontale Linie beschreiben.,"Under an interest rate policy, the LM curve can be represented by a horizontal line",TRUE
+Bei einer Zinssteuerung können wir die LM-Kurve durch eine vertikale Linie beschreiben.,"Under an interest rate policy, the LM curve can be represented by a vertical line",FALSE
+Bei einer Zinssteuerung können wir die IS-Kurve durch eine horizontale Linie beschreiben.,"Under an interest rate policy, the IS curve can be represented by a horizontal line",FALSE
+Das Budgetdefizt wird folgendermaßen berechnet: Steuern - Staatsausgaben,The budget deficit is calculated as taxes minus government spending,FALSE
+Das Budgetdefizt wird folgendermaßen berechnet: Staatsausgaben - Steuern,The budget deficit is calculated as government spending minus taxes,TRUE
+Eine kontraktive Geldpolitik führt zu einer Verschiebung der LM Kurve nach oben.,A contractionary monetary policy shifts the LM curve upward,TRUE
+Eine kontraktive Geldpolitik führt zu einer Verschiebung der LM Kurve nach unten.,A contractionary monetary policy shifts the LM curve downward,FALSE
+Eine expansive Geldpolitik führt zu einer Verschiebung der LM Kurve nach oben.,An expansionary monetary policy shifts the LM curve upward,FALSE
+Eine expansive Geldpolitik führt zu einer Verschiebung der LM Kurve nach unten.,An expansionary monetary policy shifts the LM curve downward,TRUE
+Geldpolitik hat einen Einfluss auf die IS Kurve.,Monetary policy influences the IS curve,FALSE
+Geldpolitik hat keinen Einfluss auf die IS Kurve.,Monetary policy does not influence the IS curve,TRUE
+Fiskalpolitik hat einen Einfluss auf die IS Kurve.,Fiscal policy influences the IS curve,TRUE
+Fiskalpolitik hat keinen Einfluss auf die IS Kurve.,Fiscal policy does not influence the IS curve.,FALSE

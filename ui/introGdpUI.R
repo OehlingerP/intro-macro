@@ -65,11 +65,10 @@ introGdpTab <- tabPanel("Gross Domestic Product",
                               tags$p("Calculation of nominal GDP:"),
                               withMathJax("$$\\$Y_t = P_tY_t = \\sum_{g\\in G} p_{g,t}y_{g,t},$$"),
                               tags$p(
-                                "where ", withMathJax("G"), " is the set of final goods produced in the economy, e.g., cars in the above example. ",
-                                withMathJax("t"), " is the time period considered, e.g., a certain year or quarter. ",
-                                withMathJax("p_{g,t}"), " is the price of good ", withMathJax("g"), " in period ", withMathJax("t"), ", and ",
-                                withMathJax("y_{g,t}"), " is the production of good ", withMathJax("g"), " in period ", withMathJax("t"), ". ",
-                                "Thus, we multiply the number of goods produced by their current price and add them up."
+                                "where \\(G\\) is the set of final goods produced in the economy, e.g., cars in the above example.
+                                \\(t\\), is the time period considered, e.g., a certain year or quarter. \\(p_{g,t}\\) is the price of good
+                                \\(g\\), in period \\(t\\), and \\(y_{g,t}\\) is the production of good \\(g\\) in period \\(t\\). 
+                                Thus, we multiply the number of goods produced by their current price and add them up."
                               ),
                               tags$p("Question: Why might nominal GDP increase/decrease?"),
                               tags$ol(

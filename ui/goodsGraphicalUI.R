@@ -81,11 +81,11 @@ goodsGraphicalTab <- tabPanel("Graphical Solution",
                                          h4("Exercise - Non-Linear Consumption Function"),
                                          p("On the left, you see a graph with income on the horizontal 
                                            axis and demand/output on the vertical axis. This time however 
-                                           consumption is assumed to be non-linear. The graph was built using",
-                                           withMathJax("Y = c_0 + c_1Y -c_2Y^2+G"), "with, ", withMathJax("c_0=0.1"),
-                                           " ", withMathJax("c_1=0.5"), " ", withMathJax("c_2=0.06"), " ", withMathJax("G=0.1"),
-                                           ". Solve for the equilibrium output in this non-linear model and compare your results
-                                           to the equilibrium shown here. What differences and/or complications do you observe compared
+                                           consumption is assumed to be non-linear. The graph was built using
+                                           \\(Y = c_0 + c_1Y -c_2Y^2+G\\) with \\(c_0=0.1\\), \\(c_1=0.5\\),
+                                           \\(c_2=0.06\\) and \\(G=0.1\\). Solve for the equilibrium output in this
+                                           non-linear model and compare your results to the equilibrium shown 
+                                           here. What differences and/or complications do you observe compared
                                            to the liner consumption function?"),
                                          awesomeCheckbox(
                                            inputId = "plotNonLinearEq",

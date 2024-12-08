@@ -621,7 +621,7 @@ output$textStep2CbExpansivePlot <- renderUI({
 output$textStep3CbExpansivePlot <- renderUI({
   
   if(input$step3CbExpansive & input$cbExpansiveSelector == "Money Supply Control"){
-    
+    withMathJax()
     HTML(
       "<b>Money Supply Control</b>: When nominal income (\\(PY\\)) increases, the demand for money rises, shifting 
     the money demand curve to the right (Step 1). With a constant 
@@ -636,7 +636,7 @@ output$textStep3CbExpansivePlot <- renderUI({
 output$textStep4CbExpansivePlot <- renderUI({
   
   if(input$step3CbExpansive & input$cbExpansiveSelector == "Interest Rate Control"){
-    
+    withMathJax()
     HTML(
       "<strong>Interest Rate Control</strong>: When nominal income (\\(PY\\)) increases, the demand 
     for money rises, shifting the money demand curve to the right (Step 1). With  

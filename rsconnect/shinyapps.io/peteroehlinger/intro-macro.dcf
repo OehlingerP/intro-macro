@@ -5,6 +5,6 @@ account: peteroehlinger
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 12468851
-bundleId: 8996151
+bundleId: 9378550
 url: https://peteroehlinger.shinyapps.io/intro-macro/
 version: 1

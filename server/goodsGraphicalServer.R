@@ -252,7 +252,7 @@ output$textStep1GoodsMarketEqPlot <- renderUI({
 output$textStep2GoodsMarketEqPlot <- renderUI({
   
   if(input$zzLine){
-    
+    withMathJax()
     HTML(
       "<b>Solution Step 2:</b> Consider the aggregate demand function:
 
@@ -276,7 +276,7 @@ output$textStep2GoodsMarketEqPlot <- renderUI({
 output$textStep3GoodsMarketEqPlot <- renderUI({
   
   if(input$goodsMarketGincrease){
-    
+    withMathJax()
     HTML(
       "<b>Solution Step 3:</b> Consider again the aggregate demand function:
 
@@ -639,26 +639,24 @@ output$plotGoodsMarketNonLinear <- renderPlotly({
   #(1-c1)^2
   #4*(-c2)*(-c0-G)
   
-  interval <- seq(0, 5, 0.001)
+  interval <- seq(-0.5, 5, 0.001)
   
   df <- data.frame(Y = interval, 
                    Z = c0+G+c1*interval-c2*interval^2) 
     
-  roots <- round(Re(polyroot(c(-c2, 1-c1, -c0 - G))), 3)
+  roots <- round(Re(polyroot(c(c2, 1-c1, -c0 - G))), 3)
 
   plot <- gx_theme(ggplot(df, aes(Y, Z)) +
                      geom_line(),
                    x_title = "Income (Y)",
                    y1_title = "Demand (Z), Production (Y)") +
     theme(axis.text = element_blank(),
-          axis.text.x = element_blank()) +
-    scale_y_continuous(limits = c(-0.2, 2), expand = c(0, 0)) +
-    scale_x_continuous(limits = c(0, 5), expand = c(0.015, 0))
+          axis.text.x = element_blank())
   
   if(input$plotNonLinearEq){
     plot <- plot +
-      geom_point(aes(x=roots[1], y=df[Y == roots[1], 2]), color = "red") +
-      geom_point(aes(x=roots[2], y=df[Y == roots[2], 2]), color = "red")
+      geom_point(aes(x=roots[1], y=df[as.character(Y) == as.character(roots[1]), 2]), color = "red") +
+      geom_point(aes(x=roots[2], y=df[as.character(Y) == as.character(roots[2]), 2]), color = "red")
   }
   
   plot
